@@ -91,7 +91,8 @@
                 "name": "Undying",
                 "detail": "Imotekh the Stormlord regains D3 lost wounds at the beginning of your turn, rather than 1, from his Living Metal ability."
             }
-        ]
+        ],
+		"psyker": ""
 
     },
     {
@@ -160,7 +161,8 @@
                 "name": "Technomancer",
                 "detail": "Add 1 to all Reanimation Protocol rolls for models from friendly SAUTEKH units withing 3\" of any friendly SAUTEKH CRYPTEKS."
             }
-        ]
+        ],
+		"psyker": ""
     },
     {
         "name": "Necron Warriors",
@@ -204,7 +206,8 @@
                 "name": "Reanimation Protocols",
                 "detail": "(pg 84)"
             }
-         ]
+         ],
+		"psyker": ""
     },
     {
         "name": "Canoptek Scarabs",
@@ -243,7 +246,8 @@
             }
         ],
         "wargear": [],
-        "abilities": []
+        "abilities": [],
+		"psyker": ""
     },
     {
         "name": "Tomb Blades",
@@ -333,7 +337,8 @@
                 "name": "Shiledvanes",
                 "detail": "A model with shieldvanes has a Save characteristic of 3+."
             }
-         ]
+         ],
+		"psyker": ""
     },
     {
         "name": "Monolith",
@@ -412,7 +417,8 @@
                 "name": "Explodes",
                 "detail": "If this model is reduced to 0 wounds, roll a D6 before removing it from the battlefield. On a 6 it explodes, and each unit withing 6\" suffers D6 mortal wounds."
             }
-         ]
+         ],
+		"psyker": ""
     },
     {
         "name": "Triarch Stalker",
@@ -520,8 +526,66 @@
                 "name": "Quantum Shielding",
                 "detail": "Each time this model suffers damage from an unsaved wound. roll a D6. If the result is less than the damage inflicted by the attack, the damage is ignored. (eg. if this model suffers 4 damage, if you then roll a 3 or less the damage is ignored)."
             }
-        ]
+        ],
+		"psyker": ""
 
+    },
+	{
+        "name": "Broodlord",
+        "role": "HQ",
+        "powerRating": 8,
+        "profiles": [
+            {
+                "name": "Broodlord",
+                "move": "8\"",
+                "weaponSkill": "2+",
+                "ballisticSkill": "-",
+                "strength": "5",
+                "thoughness": "5",
+                "wounds": "6",
+                "attacks": "6",
+                "leadership": "10",
+                "save": "4+"
+            }
+        ],
+        "unitComp": "A Broodlord is a single model armed with monstrous rending claws.",
+        "weapons": [
+            {
+                "name": "Monstrous rending claws",
+                "multiProfileComment": "",
+                "profiles":[
+                    {
+                        "name": "Monstrous rending claws",
+                        "range": "Melee",
+                        "type": "Melee",
+                        "strength": "User",
+                        "ap": "-3",
+                        "damage": "D3",
+                        "abilities": "You can re-roll failed wound rolls when attacking with this weapon. In addition, each time you make a wound roll of 6+, that hit is resolved with an AP of -6 and Damage of 3."
+                    }
+                ]
+            }
+        ],
+        "wargear": [],
+        "abilities": [
+			{
+				"name": "Synapse, Shadow in the Warp",
+				"detail": "(pg 85)"
+			},			
+            {
+                "name": "Lightning Reflexes",
+                "detail": "This model has a 5+ invulnerable save."
+            },
+            {
+                "name": "Swift and Deadly",
+                "detail": "This model can charge even if it Advanced during its turn."
+            },
+			{
+				"name": "Brood Telepathy",
+				"detail": "You can add 1 to hit rolls in the Fight phase for <HIVE FLEET> Genestealer units within 6\" of any friendly <HIVE FLEET> Broodlords."
+			}
+        ],
+		"psyker": "A Broodlord can attempt to manifest one psychic power in each friendly Psychic phase, and attempt to deny one psychic power in each enemy Psychic phase. It knows the Smite psychic power and one psychic power from the Hive Mind discipline (pg 85)."
     },
 	{
         "name": "Genestealers",
@@ -591,6 +655,7 @@
                 "name": "Swift and Deadly",
                 "detail": "Genestealers can charge even if they Advanced during their turn."
             }
-        ]
+        ],
+		"psyker": ""
     }
 ]
