@@ -163,7 +163,7 @@
         ]
     },
     {
-        "name": "Necron Warrior",
+        "name": "Necron Warriors",
         "role": "Troop",
         "powerRating": 6,
         "profiles": [
@@ -180,14 +180,14 @@
                 "save": "4+"
             }
         ],
-        "unitComp": "This unit contains 10 Necron Warriors. It may include up to 10 additional Necron Warriors (Power Rating +6). Each model is equipped with a guass flayer.",
+        "unitComp": "This unit contains 10 Necron Warriors. It may include up to 10 additional Necron Warriors (Power Rating +6). Each model is equipped with a gauss flayer.",
         "weapons": [
             {
-                "name": "Guass flayer",
+                "name": "Gauss flayer",
                 "multiProfileComment": "",
                 "profiles":[
                     {
-                        "name": "Guass flayer",
+                        "name": "Gauss flayer",
                         "range": "24\"",
                         "type": "Rapid Fire 1",
                         "strength": "4",
@@ -207,7 +207,7 @@
          ]
     },
     {
-        "name": "Canoptek Scarab",
+        "name": "Canoptek Scarabs",
         "role": "FastAttack",
         "powerRating": 2,
         "profiles": [
@@ -246,7 +246,7 @@
         "abilities": []
     },
     {
-        "name": "Tomb Blade",
+        "name": "Tomb Blades",
         "role": "FastAttack",
         "powerRating": 5,
         "profiles": [
@@ -266,11 +266,11 @@
         "unitComp": "This unit contains 3 Tomb Blades. It can include up to 3 additional Tomb Blades (Power Rating +5) or up to 6 additional Tomb Blades (Power Rating +10). Each model is equipped with two gauss blasters.",
         "weapons": [
             {
-                "name": "Guass blaster",
+                "name": "Gauss blaster",
                 "multiProfileComment": "",
                 "profiles":[
                     {
-                        "name": "Guass blaster",
+                        "name": "Gauss blaster",
                         "range": "24\"",
                         "type": "Rapid Fire 1",
                         "strength": "5",
@@ -356,11 +356,11 @@
         "unitComp": "A Monolith is a single model equipped with four gauss flux arcs and a particle whip.",
         "weapons": [
             {
-                "name": "Guass flux arc",
+                "name": "Gauss flux arc",
                 "multiProfileComment": "",
                 "profiles":[
                     {
-                        "name":"Guass flux arc",
+                        "name":"Gauss flux arc",
                         "range": "24\"",
                         "type": "Heavy 3",
                         "strength": "5",
@@ -505,7 +505,7 @@
             }
         ],
         "wargear": [
-            "This model may replace its heat ray with a particle shredder or a twin guass cannon."
+            "This model may replace its heat ray with a particle shredder or a twin gauss cannon."
         ],
         "abilities": [
             {
@@ -522,5 +522,75 @@
             }
         ]
 
+    },
+	{
+        "name": "Genestealers",
+        "role": "Troop",
+        "powerRating": 4,
+        "profiles": [
+            {
+                "name": "Genestealer",
+                "move": "8\"",
+                "weaponSkill": "3+",
+                "ballisticSkill": "-",
+                "strength": "4",
+                "thoughness": "4",
+                "wounds": "1",
+                "attacks": "3",
+                "leadership": "9",
+                "save": "5+"
+            }
+        ],
+        "unitComp": "This unit contains 5 Genestealers. It can include up to 5 additional Genestealers (Power Rating +4), up to 10 additional Genestealers (Power Rating +8), or up to 15 additional Genestealers (Power Rating +12). Each model is armed with rending claws.",
+        "weapons": [
+            {
+                "name": "Rending claws",
+                "multiProfileComment": "",
+                "profiles":[
+                    {
+                        "name": "Rending claws",
+                        "range": "Melee",
+                        "type": "Melee",
+                        "strength": "User",
+                        "ap": "-1",
+                        "damage": "1",
+                        "abilities": "Each time you make a wound roll of 6+ for this weapon, that hit is resolved with an AP of -4."
+                    }
+                ]
+            },
+			{
+                "name": "Scything talons",
+                "multiProfileComment": "",
+                "profiles":[
+                    {
+                        "name": "Scything talons",
+                        "range": "Melee",
+                        "type": "Melee",
+                        "strength": "User",
+                        "ap": "0",
+                        "damage": "1",
+                        "abilities": "You can re-roll hit rolls of 1 when attacking with this weapon."
+                    }
+                ]
+            }
+        ],
+        "wargear": [
+            "Any model may also have a pair of scything talons.",
+            "All models in the unit may have toxin sacs."
+        ],
+        "abilities": [
+            {
+                "name": "Flurry of Claws",
+                "detail": "Genestealers have 4 Attacks instead of 3 while their unit has 10 or more models."
+            },
+            {
+                "name": "Lightning Reflexes",
+                "detail": "Genestealers have a 5+ invulnerable save."
+            },
+            {
+                "name": "Swift and Deadly",
+                "detail": "Genestealers can charge even if they Advanced during their turn."
+            }
+        ]
     }
 ]
