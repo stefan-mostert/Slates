@@ -91,8 +91,7 @@
                 "name": "Undying",
                 "detail": "Imotekh the Stormlord regains D3 lost wounds at the beginning of your turn, rather than 1, from his Living Metal ability."
             }
-        ],
-		"psyker": ""
+        ]
 
     },
     {
@@ -161,8 +160,7 @@
                 "name": "Technomancer",
                 "detail": "Add 1 to all Reanimation Protocol rolls for models from friendly SAUTEKH units withing 3\" of any friendly SAUTEKH CRYPTEKS."
             }
-        ],
-		"psyker": ""
+        ]
     },
     {
         "name": "Necron Warriors",
@@ -206,8 +204,7 @@
                 "name": "Reanimation Protocols",
                 "detail": "(pg 84)"
             }
-         ],
-		"psyker": ""
+         ]
     },
     {
         "name": "Canoptek Scarabs",
@@ -246,8 +243,7 @@
             }
         ],
         "wargear": [],
-        "abilities": [],
-		"psyker": ""
+        "abilities": []
     },
     {
         "name": "Tomb Blades",
@@ -337,8 +333,7 @@
                 "name": "Shiledvanes",
                 "detail": "A model with shieldvanes has a Save characteristic of 3+."
             }
-         ],
-		"psyker": ""
+         ]
     },
     {
         "name": "Monolith",
@@ -417,8 +412,7 @@
                 "name": "Explodes",
                 "detail": "If this model is reduced to 0 wounds, roll a D6 before removing it from the battlefield. On a 6 it explodes, and each unit withing 6\" suffers D6 mortal wounds."
             }
-         ],
-		"psyker": ""
+         ]
     },
     {
         "name": "Triarch Stalker",
@@ -526,8 +520,7 @@
                 "name": "Quantum Shielding",
                 "detail": "Each time this model suffers damage from an unsaved wound. roll a D6. If the result is less than the damage inflicted by the attack, the damage is ignored. (eg. if this model suffers 4 damage, if you then roll a 3 or less the damage is ignored)."
             }
-        ],
-		"psyker": ""
+        ]
 
     },
 	{
@@ -655,7 +648,6 @@
                 "name": "Swift and Deadly",
                 "detail": "Genestealers can charge even if they Advanced during their turn."
             }
-        ],
-		"psyker": ""
+        ]
     }
 ]
