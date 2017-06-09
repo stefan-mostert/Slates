@@ -1,0 +1,155 @@
+@import "./../../../assets/scss/typography.scss";
+
+.slate {
+    border: solid 2px black;
+    border-radius: 5px;
+
+    .lastItem {
+        border-bottom: solid 1px black;
+    }
+
+    .minor-title {
+        @include oswald-bold(16px);
+    }
+
+    .title {
+        background-color: black;
+        padding-top: 5px;
+        padding-bottom: 5px;
+
+        
+        .battlefield-role {
+            
+            background-size: 50px 50px;
+            background-repeat: no-repeat;
+            height: 50px;
+
+            &.hq {
+                background-image: url("./../../../assets/images/hq.png");
+            }
+            &.troop {
+                background-image: url("./../../../assets/images/troop.png");
+            }
+            &.fastAttack {
+                background-image: url("./../../../assets/images/fastAttack.png");
+            }
+            &.elite {
+                background-image: url("./../../../assets/images/elite.png");
+            }
+            &.heavySupport {
+                background-image: url("./../../../assets/images/heavySupport.png");
+            }
+            &.flyer {
+                background-image: url("./../../../assets/images/flyer.png");
+            }
+            &.dedicatedTransport {
+                background-image: url("./../../../assets/images/dedicatedTransport.png");
+            }
+            &.fortification {
+                background-image: url("./../../../assets/images/lordOfWar.png"); //TODO - get image
+            }
+            &.lordOfWar {
+                background-image: url("./../../../assets/images/lordOfWar.png");
+            }
+        }
+
+        .name {
+            @include noto-bold(24px);
+            color: white;
+        }
+
+        .power {
+            position: relative;
+
+            .power-block {
+                background-image: url("./../../../assets/images/power.png");
+                background-size: 50px 50px;
+                background-repeat: no-repeat;
+                height: 50px;
+            }
+
+            .power-number {
+                font-size: 28px;
+                font-weight: 700;
+                color: #c7c9cc;
+                position: absolute;
+                top: 0px;
+                left: 33px;
+            }
+
+             .double-digits {
+                left: 24px;
+            }   
+
+        }
+    }
+
+    .statline {
+
+        border-bottom: solid 2px black;
+
+        .statline-heading {
+            background-color: #b8b8ba;
+            color: black;
+            @include oswald-bold(16px);
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+        .statline-profile {
+            background-color: #ededef;
+            color: black;
+            @include noto(14px);
+            line-height: 26px;
+
+            &.odd {
+                background-color: #e3e3e5;
+            }
+
+        }
+    }
+    
+    .unitcomp {
+        background-color: #e3e3e5;;
+        color: black;
+        @include noto(14px);
+        line-height: 24px;
+    }
+
+    .weapon-heading {
+        background-color: #b8b8ba;
+        color: black;
+        @include oswald-bold(16px);
+        border-bottom: solid 1px black;
+    }
+
+    .oddweapon {
+        .row {
+            background-color: #e3e3e5;
+        }
+    }
+    .weapon-profile {
+            background-color: #ededef;
+            color: black;
+            @include noto(14px);
+            // line-height: 24px;
+            padding-top: 2px;
+            padding-bottom: 2px;
+
+            .no-right-padding {
+                padding-right: 0px;
+            }
+    }
+
+    .wargear {
+        background-color: #e3e3e5;
+        @include noto(14px);
+        border-bottom: solid 1px black;
+       
+
+        .wargear-options {
+            margin-top: 2px;
+            margin-bottom: 2px;
+        }
+    }
+}

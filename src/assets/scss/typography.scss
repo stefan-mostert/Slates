@@ -1,0 +1,31 @@
+$oswald: 'Oswald', sans-serif;
+$noto: 'Noto Serif', serif;
+
+@mixin oswald($font-size)
+{
+    font-family: 'Oswald', sans-serif;
+    font-weight: $font-weight;
+    font-size: $font-size;
+}
+
+@mixin oswald-bold($font-size)
+{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: $font-size;
+    letter-spacing: -1px;
+}
+
+@mixin noto($font-size)
+{
+    font-family:'Noto Serif', serif;
+    font-weight: 400;
+    font-size: $font-size;
+}
+
+@mixin noto-bold($font-size)
+{
+    font-family:'Noto Serif', serif;
+    font-weight: 700;
+    font-size: $font-size;
+}

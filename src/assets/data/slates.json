@@ -1,0 +1,377 @@
+[
+    {
+        "name": "Imotekh the Stormlord",
+        "role": "HQ",
+        "powerRating": 12,
+        "profiles": [
+            {
+                "name": "Imotekh the Stormlord",
+                "move": "5\"",
+                "weaponSkill": "2+",
+                "ballisticSkill": "2+",
+                "strength": "5",
+                "thoughness": "5",
+                "wounds": "6",
+                "attacks": "3",
+                "leadership": "9",
+                "save": "2+"
+            }
+        ],
+        "unitComp": "Imotekh the Stormlord is a single model armed with the Staff of the Destoyer and a gauntlet of fire. Only one of this model may be included in your army.",
+        "weapons": [
+            {
+                "name": "Gauntlet of fire",
+                "multiProfileComment": "",
+                "profiles":[
+                    {
+                        "name": "Gauntlet of fire",
+                        "range": "8\"",
+                        "type": "Assault D6",
+                        "strength": "4",
+                        "ap": "0",
+                        "damage": "1",
+                        "abilities": "This weapon automatically hits its target."
+                    }
+                ]
+            },
+            {
+                "name": "Staff of the Destroyer (shooting)",
+                "multiProfileComment": "",
+                "profiles":[
+                    {
+                        "name": "Staff of the Destroyer (shooting)",
+                        "range": "18\"",
+                        "type": "Assault 3",
+                        "strength": "6",
+                        "ap": "-3",
+                        "damage": "2",
+                        "abilities": "-"
+                    }
+                ]
+            },
+            {
+                "name": "Staff of the Destroyer (melee)",
+                "multiProfileComment": "",
+                "profiles":[
+                    {
+                        "name": "Staff of the Destroyer (melee)",
+                        "range": "Melee",
+                        "type": "Melee",
+                        "strength": "User",
+                        "ap": "-3",
+                        "damage": "2",
+                        "abilities": "-"
+                    }
+                ]
+            }
+        ],
+        "wargear": []
+    },
+    {
+        "name": "Orikan the Diviner",
+        "role": "HQ",
+        "powerRating": 8,
+        "profiles": [
+            {
+                "name": "Orikan the Diviner",
+                "move": "5\"",
+                "weaponSkill": "3+",
+                "ballisticSkill": "3+",
+                "strength": "4",
+                "thoughness": "4",
+                "wounds": "5",
+                "attacks": "2",
+                "leadership": "10",
+                "save": "4+"
+            },
+            {
+                "name": "Orikan Empowered",
+                "move": "5\"",
+                "weaponSkill": "2+",
+                "ballisticSkill": "2+",
+                "strength": "7",
+                "thoughness": "7",
+                "wounds": "7",
+                "attacks": "4",
+                "leadership": "10",
+                "save": "4+"
+            }
+        ],
+        "unitComp": "Orikan the Diviner is a single model armed with the Staff of Tomorrow. Only one of this model may be included in your army.",
+        "weapons": [
+            {
+                "name": "Staff of Tomorrow",
+                "multiProfileComment": "",
+                "profiles":[
+                    {
+                        "name": "Staff of Tomorrow",
+                        "range": "Melee",
+                        "type": "Melee",
+                        "strength": "User",
+                        "ap": "-3",
+                        "damage": "D3",
+                        "abilities": "You can re-roll failed hit rolls for this weapon."
+                    }
+                ]
+            }
+        ],
+        "wargear": []
+    },
+    {
+        "name": "Necron Warrior",
+        "role": "Troop",
+        "powerRating": 6,
+        "profiles": [
+            {
+                "name": "Necron Warrior",
+                "move": "5\"",
+                "weaponSkill": "3+",
+                "ballisticSkill": "3+",
+                "strength": "4",
+                "thoughness": "4",
+                "wounds": "1",
+                "attacks": "1",
+                "leadership": "10",
+                "save": "4+"
+            }
+        ],
+        "unitComp": "This unit contains 10 Necron Warriors. It may include up to 10 additional Necron Warriors (Power Rating +6). Each model is equipped with a guass flayer.",
+        "weapons": [
+            {
+                "name": "Guass flayer",
+                "multiProfileComment": "",
+                "profiles":[
+                    {
+                        "name": "Guass flayer",
+                        "range": "24\"",
+                        "type": "Rapid Fire 1",
+                        "strength": "4",
+                        "ap": "-1",
+                        "damage": "1",
+                        "abilities": "-"
+                    }
+                ]
+            }
+        ],
+        "wargear": []
+    },
+    {
+        "name": "Tomb Blade",
+        "role": "FastAttack",
+        "powerRating": 5,
+        "profiles": [
+            {
+                "name": "Tomb Blade",
+                "move": "14\"",
+                "weaponSkill": "3+",
+                "ballisticSkill": "3+",
+                "strength": "4",
+                "thoughness": "5",
+                "wounds": "2",
+                "attacks": "1",
+                "leadership": "10",
+                "save": "4+"
+            }
+        ],
+        "unitComp": "This unit contains 3 Tomb Blades. It can include up to 3 additional Tomb Blades (Power Rating +5) or up to 6 additional Tomb Blades (Power Rating +10). Each model is equipped with two gauss blasters.",
+        "weapons": [
+            {
+                "name": "Guass blaster",
+                "multiProfileComment": "",
+                "profiles":[
+                    {
+                        "name": "Guass blaster",
+                        "range": "24\"",
+                        "type": "Rapid Fire 1",
+                        "strength": "5",
+                        "ap": "-2",
+                        "damage": "1",
+                        "abilities": "-"
+                    }
+                ]
+            },
+            {
+                "name": "Particle beamer",
+                "multiProfileComment": "",
+                "profiles":[
+                    {
+                        "name":"Particle beamer",
+                        "range": "24\"",
+                        "type": "Assault 3",
+                        "strength": "6",
+                        "ap": "0",
+                        "damage": "1",
+                        "abilities": "-"
+                    }
+                ]
+            },
+            {
+                "name": "Tesla carbine",
+                "multiProfileComment": "",
+                "profiles":[
+                    {
+                        "name":"Tesla carbine",
+                        "range": "24\"",
+                        "type": "Assault 2",
+                        "strength": "5",
+                        "ap": "0",
+                        "damage": "1",
+                        "abilities": "Each hit roll of 6+ with this weapon causes 3 hits instead of 1."
+                    }
+                ]
+            }
+        ],
+        "wargear": [
+            "Any model may replace its two gauss blasters with two tesla carbines or a particle caster.",
+            "Any model may take shieldvanes.",
+            "Any model may take a nebuloscope or a shadowloom."
+        ]
+    },
+    {
+        "name": "Monolith",
+        "role": "HeavySupport",
+        "powerRating": 19,
+        "profiles": [
+            {
+                "name": "Monolith",
+                "move": "*",
+                "weaponSkill": "6+",
+                "ballisticSkill": "*",
+                "strength": "8",
+                "thoughness": "8",
+                "wounds": "20",
+                "attacks": "3",
+                "leadership": "10",
+                "save": "3+"
+            }
+        ],
+        "unitComp": "A Monolith is a single model equipped with four gauss flux arcs and a particle whip.",
+        "weapons": [
+            {
+                "name": "Guass flux arc",
+                "multiProfileComment": "",
+                "profiles":[
+                    {
+                        "name":"Guass flux arc",
+                        "range": "24\"",
+                        "type": "Heavy 3",
+                        "strength": "5",
+                        "ap": "-2",
+                        "damage": "1",
+                        "abilities": "-"
+                    }
+                ]
+            },
+            {
+                "name": "Particle whip",
+                "multiProfileComment": "",
+                "profiles":[
+                    {
+                        "name":"Particle whip",
+                        "range": "24\"",
+                        "type": "Heavy 6",
+                        "strength": "8",
+                        "ap": "-2",
+                        "damage": "D3",
+                        "abilities": "-"
+                    }
+                ]
+            }
+        ],
+        "wargear": []
+    },
+    {
+        "name": "Triarch Stalker",
+        "role": "Elite",
+        "powerRating": 8,
+        "profiles": [
+            {
+                "name": "Triarch Stalker",
+                "move": "*",
+                "weaponSkill": "*",
+                "ballisticSkill": "*",
+                "strength": "7",
+                "thoughness": "6",
+                "wounds": "10",
+                "attacks": "3",
+                "leadership": "10",
+                "save": "3+"
+            }
+        ],
+        "unitComp": "A Triarch Stalker is a single model equiped with a heat ray and massive forelimbs.",
+        "weapons": [
+            {
+                "name": "Heat ray",
+                "multiProfileComment": "When attacking with this weapon, choose one of the profiles below.",
+                "profiles":[
+                    {
+                        "name":"- Dispersed",
+                        "range": "8\"",
+                        "type": "Heavy D6",
+                        "strength": "5",
+                        "ap": "-1",
+                        "damage": "1",
+                        "abilities": "When you use this profile, this weapon automatically hits its target."
+                    },
+                    {
+                        "name":"- Focused",
+                        "range": "24\"",
+                        "type": "Heavy 2",
+                        "strength": "8",
+                        "ap": "-4",
+                        "damage": "D6",
+                        "abilities": "When you use this profile, if the target is within half range, roll two dice when inflicting damage with it and discard the lowest result."
+                    }
+                ]
+            },
+            {
+                "name": "Particle shredder",
+                "multiProfileComment": "",
+                "profiles":[
+                    {
+                        "name": "Particle shredder",
+                        "range": "24\"",
+                        "type": "Heavy 6",
+                        "strength": "7",
+                        "ap": "-1",
+                        "damage": "D3",
+                        "abilities": "-"
+                    }
+                ]
+            },
+            {
+                "name": "Twin heavy gauss cannon",
+                "multiProfileComment": "",
+                "profiles":[
+                    {
+                        "name": "Twin heavy gauss cannon",
+                        "range": "36\"",
+                        "type": "Heavy 2",
+                        "strength": "9",
+                        "ap": "-4",
+                        "damage": "D6",
+                        "abilities": "-"
+                    }
+                ]
+            },
+            {
+                "name": "Massive forelimbs",
+                "multiProfileComment": "",
+                "profiles":[
+                    {
+                        "name": "Massive forelimbs",
+                        "range": "Melee",
+                        "type": "Melee",
+                        "strength": "User",
+                        "ap": "-1",
+                        "damage": "D3",
+                        "abilities": "-"
+                    }
+                ]
+            }
+        ],
+        "wargear": [
+            "This model may replace its heat ray with a particle shredder or a twin guass cannon."
+        ]
+    }
+]

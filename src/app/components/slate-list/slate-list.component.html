@@ -1,0 +1,6 @@
+<div *ngIf="isLoading">
+  loading...
+</div>
+<div *ngIf="!isLoading">
+  <p class="slate-list-item" *ngFor="let slate of slates" (click)="selectSlate(slate.name)">{{slate.name}}</p>
+</div>

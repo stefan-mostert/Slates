@@ -1,0 +1,21 @@
+<div class="main-container">
+  <div class="row title">
+    <div class="col-xs-12">
+        
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-4">
+        <app-slate-list
+          [isLoading]="isSlatesLoading$ | async"
+          [slates]="slates$ | async"
+          (selectedChanged)="selectedSlate($event)">
+        </app-slate-list>
+    </div>
+    <div class="col-xs-8">
+        <app-slate-main
+          [slate]="selectedSlate$ | async">
+        </app-slate-main>
+    </div>
+  </div>
+</div>
