@@ -65,7 +65,34 @@
                 ]
             }
         ],
-        "wargear": []
+        "wargear": [],
+        "abilities": [
+            {
+                "name": "Living Metal",
+                "detail": "sdadadadadadadsasd"
+            },
+            {
+                "name": "Living Metal",
+                "detail": "sdadadadadadadsasd"
+            },
+            {
+                "name": "Living Metal",
+                "detail": "sdadadadadadadsasd"
+            },
+            {
+                "name": "Living Metal",
+                "detail": "sdadadadadadadsasd"
+            },
+            {
+                "name": "Living Metal",
+                "detail": "sdadadadadadadsasd"
+            },
+            {
+                "name": "Living Metal",
+                "detail": "sdadadadadadadsasd"
+            }
+        ]
+
     },
     {
         "name": "Orikan the Diviner",
