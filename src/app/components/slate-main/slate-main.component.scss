@@ -152,4 +152,18 @@
             margin-bottom: 2px;
         }
     }
+
+    .abilities {
+        background-color: #e3e3e5;
+        @include noto(14px);
+        border-bottom: solid 1px black;
+
+        .ability {
+            padding-bottom: 5px;
+        }
+       
+       .ability-name {
+           @include noto-bold(14px);
+       }
+    }
 }

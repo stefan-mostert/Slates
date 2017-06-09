@@ -165,14 +165,14 @@
         </ul>
       </div>
     </div>
-    <div class="row abilities">
+    <div class="row abilities" *ngIf="slate.abilities.length > 0">
       <div class="col-xs-2 start-xs minor-title">
         ABILITIES
       </div>
       <div class="col-xs-10 start-xs">
         <div class="row">
-          <div class="col-xs-6" *ngFor="let ability of slate.abilities">
-            <span class="ability-name">{{ability.name}}: </span><span>{{ability.detail}}</span>
+          <div class="col-xs-6 ability" *ngFor="let ability of slate.abilities; let odd=odd">
+           <span  class="ability-name">{{ability.name}}: </span><span>{{ability.detail}}</span>
           </div>
         </div>
       </div>

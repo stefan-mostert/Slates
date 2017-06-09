@@ -69,27 +69,27 @@
         "abilities": [
             {
                 "name": "Living Metal",
-                "detail": "sdadadadadadadsasd"
+                "detail": "(pg 84)"
             },
             {
-                "name": "Living Metal",
-                "detail": "sdadadadadadadsasd"
+                "name": "Phase Shifter",
+                "detail": "Imotekh the Stormlord has a 4+ invulnerable save."
             },
             {
-                "name": "Living Metal",
-                "detail": "sdadadadadadadsasd"
+                "name": "My Will Be Done",
+                "detail": "At the beginning of each of your turns, choose a friendly NECRON INFANTRY unit within 6\" of Imotekh the Stormlord. You can add 1 to the Advance, charge and hit rolls of that  unit until the beginning og your next turn. A unit can only be affected by this ability once in each turn."
             },
             {
-                "name": "Living Metal",
-                "detail": "sdadadadadadadsasd"
+                "name": "Lord of the Storm",
+                "detail": "Once per battle in your Shooting phase, Imotekh can call the storm: when he does so pick an enemy unit withing 48\" of Imotekh, other that a CHARACTER, and roll a D6. On a 1 nothing happens, but on a 2+ that unit suffers that many mortal wounds. Then roll a D6 for each enemy unit within 6\" of that unit. On a roll of 6, that unit suffers D3 mortal wounds."
             },
             {
-                "name": "Living Metal",
-                "detail": "sdadadadadadadsasd"
-            },
+                "name": "Bloodswarm Necroscarabs",
+                "detail": "You can re-roll hit rolls of 1 for friendly units of SAUTEKH Flayed Ones that are withing 12\" of Immotekh the Stormlord."
+            }, 
             {
-                "name": "Living Metal",
-                "detail": "sdadadadadadadsasd"
+                "name": "Undying",
+                "detail": "Imotekh the Stormlord regains D3 lost wounds at the beginning of your turn, rather than 1, from his Living Metal ability."
             }
         ]
 
@@ -142,7 +142,25 @@
                 ]
             }
         ],
-        "wargear": []
+        "wargear": [],
+        "abilities": [
+            {
+                "name": "Living Metal",
+                "detail": "(pg 84)"
+            },
+            {
+                "name": "Master Chronomancer",
+                "detail": "Friendly SAUTEKH INFANTRY units within 6\" of Orikan the Diviner has a 5+ invulnerable save."
+            },
+            {
+                "name": "The Stars Are Right",
+                "detail": "Roll a D6 at the start of each of your turns. If the result is less than the current battle round number, Orikan uses the Orikan Empowered profile for the rest of the game (though any damage he has sustained is carried over)."
+            },
+            {
+                "name": "Technomancer",
+                "detail": "Add 1 to all Reanimation Protocol rolls for models from friendly SAUTEKH units withing 3\" of any friendly SAUTEKH CRYPTEKS."
+            }
+        ]
     },
     {
         "name": "Necron Warrior",
@@ -180,7 +198,52 @@
                 ]
             }
         ],
-        "wargear": []
+        "wargear": [],
+         "abilities": [
+            {
+                "name": "Reanimation Protocols",
+                "detail": "(pg 84)"
+            }
+         ]
+    },
+    {
+        "name": "Canoptek Scarab",
+        "role": "FastAttack",
+        "powerRating": 2,
+        "profiles": [
+            {
+                "name": "Canoptek Scarab",
+                "move": "10\"",
+                "weaponSkill": "3+",
+                "ballisticSkill": "3+",
+                "strength": "3",
+                "thoughness": "3",
+                "wounds": "3",
+                "attacks": "4",
+                "leadership": "10",
+                "save": "6+"
+            }
+        ],
+        "unitComp": "This unit contains 3 Canoptek Scarab Swarms. It may include up to 3 additional Canoptek Scarabs (Power Rating +2) or up to 6 additional Canoptek Scarab Swarms (Power Rating +4). Each swarm is equipped with feeder mandibles.",
+        "weapons": [
+            {
+                "name": "Feeder mandibles",
+                "multiProfileComment": "",
+                "profiles":[
+                    {
+                        "name": "Feeder mandibles",
+                        "range": "Melee",
+                        "type": "Melee",
+                        "strength": "User",
+                        "ap": "0",
+                        "damage": "1",
+                        "abilities": "If the target's Toughness is higher than this attack's Strength, this weapon always wounds the target on a wound roll of 5+."
+                    }
+                ]
+            }
+        ],
+        "wargear": [],
+        "abilities": []
     },
     {
         "name": "Tomb Blade",
@@ -252,7 +315,25 @@
             "Any model may replace its two gauss blasters with two tesla carbines or a particle caster.",
             "Any model may take shieldvanes.",
             "Any model may take a nebuloscope or a shadowloom."
-        ]
+        ],
+        "abilities": [
+            {
+                "name": "Reanimation Protocols",
+                "detail": "(pg 84)"
+            },
+            {
+                "name": "Shadowloom",
+                "detail": "A model with a shadowloom has a 5+ invulnerable save."
+            },
+            {
+                "name": "Nebuloscope",
+                "detail": "Enemies attacked by a model with a nebuloscope do not receive a bonus to their save from being in cover."
+            },
+            {
+                "name": "Shiledvanes",
+                "detail": "A model with shieldvanes has a Save characteristic of 3+."
+            }
+         ]
     },
     {
         "name": "Monolith",
@@ -305,7 +386,33 @@
                 ]
             }
         ],
-        "wargear": []
+        "wargear": [],
+        "abilities": [
+            {
+                "name": "Living Metal",
+                "detail": "(pg 84)"
+            },
+            {
+                "name": "Floating Fortress",
+                "detail": "This model can move and fire Heavy weapons without suffering the penalty to its hit rolls."
+            },
+            {
+                "name": "Death Descending",
+                "detail": "During deployment, you can set up a Monolith in the upper atmosphere instead of placing it on the battlefield. At the end of any of your Movement phases the Monolith can plummet to the battlefield - set it up anywhere on the battlefield that is more than 12\" from any enemy models."
+            },
+            {
+                "name": "Eternity Gate",
+                "detail": "When you set up this model, at the same time you can also set up any number of <DYNASTY> INFANTRY units on their tomb world rather than setting them up on the battlefield. Before the Monolith moves in each of your Movement phases, a single unit that was set up on their tomb world can be transported onto the battlefield by the Monolith. To do so, set up the unit so that it is wholly within 3\" of the Monolith and more than 1\" from the enemy. If all friendly Night Scythes and Monoliths are destroyed, any units still on the tomb world are considered to be slain."
+            },
+            {
+                "name": "Portal of Exile",
+                "detail": "When an enemy unit (other than a MONSTER or VEHICLE) charges this model, its portal of exile may activiate. Roll a D6 and compare it to the value required on the damage table above. If the roll is successfull, the charging unit suffers D6 mortal wounds."
+            },
+            {
+                "name": "Explodes",
+                "detail": "If this model is reduced to 0 wounds, roll a D6 before removing it from the battlefield. On a 6 it explodes, and each unit withing 6\" suffers D6 mortal wounds."
+            }
+         ]
     },
     {
         "name": "Triarch Stalker",
@@ -399,6 +506,21 @@
         ],
         "wargear": [
             "This model may replace its heat ray with a particle shredder or a twin guass cannon."
+        ],
+        "abilities": [
+            {
+                "name": "Living Metal",
+                "detail": "(pg 84)"
+            },
+            {
+                "name": "Targeting Relay",
+                "detail": "You can re-roll hit rolls of 1 for any friendly NECRON unit that makes a shooting attack against a unit that has already been attacked by any Triarch Stalker in this phase."
+            },
+            {
+                "name": "Quantum Shielding",
+                "detail": "Each time this model suffers damage from an unsaved wound. roll a D6. If the result is less than the damage inflicted by the attack, the damage is ignored. (eg. if this model suffers 4 damage, if you then roll a 3 or less the damage is ignored)."
+            }
         ]
+
     }
 ]
