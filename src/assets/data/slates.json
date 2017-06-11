@@ -77,15 +77,15 @@
             },
             {
                 "name": "My Will Be Done",
-                "detail": "At the beginning of each of your turns, choose a friendly NECRON INFANTRY unit within 6\" of Imotekh the Stormlord. You can add 1 to the Advance, charge and hit rolls of that  unit until the beginning og your next turn. A unit can only be affected by this ability once in each turn."
+                "detail": "At the beginning of each of your turns, choose a friendly NECRON INFANTRY unit within 6\" of Imotekh the Stormlord. You can add 1 to the Advance, charge and hit rolls of that  unit until the beginning of your next turn. A unit can only be affected by this ability once in each turn."
             },
             {
                 "name": "Lord of the Storm",
-                "detail": "Once per battle in your Shooting phase, Imotekh can call the storm: when he does so pick an enemy unit withing 48\" of Imotekh, other that a CHARACTER, and roll a D6. On a 1 nothing happens, but on a 2+ that unit suffers that many mortal wounds. Then roll a D6 for each enemy unit within 6\" of that unit. On a roll of 6, that unit suffers D3 mortal wounds."
+                "detail": "Once per battle in your Shooting phase, Imotekh can call the storm: when he does so pick an enemy unit within 48\" of Imotekh, other than a CHARACTER, and roll a D6. On a 1 nothing happens, but on a 2+ that unit suffers that many mortal wounds. Then roll a D6 for each enemy unit within 6\" of that unit. On a roll of 6, that unit suffers D3 mortal wounds."
             },
             {
                 "name": "Bloodswarm Necroscarabs",
-                "detail": "You can re-roll hit rolls of 1 for friendly units of SAUTEKH Flayed Ones that are withing 12\" of Immotekh the Stormlord."
+                "detail": "You can re-roll hit rolls of 1 for friendly units of SAUTEKH Flayed Ones that are within 12\" of Imotekh the Stormlord."
             }, 
             {
                 "name": "Undying",
@@ -227,7 +227,7 @@
             },
             {
                 "name": "Master Chronomancer",
-                "detail": "Friendly SAUTEKH INFANTRY units within 6\" of Orikan the Diviner has a 5+ invulnerable save."
+                "detail": "Friendly SAUTEKH INFANTRY units within 6\" of Orikan the Diviner have a 5+ invulnerable save."
             },
             {
                 "name": "The Stars Are Right",
@@ -235,7 +235,7 @@
             },
             {
                 "name": "Technomancer",
-                "detail": "Add 1 to all Reanimation Protocol rolls for models from friendly SAUTEKH units withing 3\" of any friendly SAUTEKH CRYPTEKS."
+                "detail": "Add 1 to all Reanimation Protocol rolls for models from friendly SAUTEKH units within 3\" of any friendly SAUTEKH CRYPTEKS."
             }
         ],
         "factionKeywords": ["Necrons","Sautekh"],
@@ -523,7 +523,7 @@
                 "detail": "Enemies attacked by a model with a nebuloscope do not receive a bonus to their save from being in cover."
             },
             {
-                "name": "Shiledvanes",
+                "name": "Shieldvanes",
                 "detail": "A model with shieldvanes has a Save characteristic of 3+."
             }
         ],
@@ -601,17 +601,74 @@
             },
             {
                 "name": "Portal of Exile",
-                "detail": "When an enemy unit (other than a MONSTER or VEHICLE) charges this model, its portal of exile may activiate. Roll a D6 and compare it to the value required on the damage table above. If the roll is successfull, the charging unit suffers D6 mortal wounds."
+                "detail": "When an enemy unit (other than a MONSTER or VEHICLE) charges this model, its portal of exile may activate. Roll a D6 and compare it to the value required on the damage table above. If the roll is successful, the charging unit suffers D6 mortal wounds."
             },
             {
                 "name": "Explodes",
-                "detail": "If this model is reduced to 0 wounds, roll a D6 before removing it from the battlefield. On a 6 it explodes, and each unit withing 6\" suffers D6 mortal wounds."
+                "detail": "If this model is reduced to 0 wounds, roll a D6 before removing it from the battlefield. On a 6 it explodes, and each unit within 6\" suffers D6 mortal wounds."
             }
         ],
         "factionKeywords": ["Necrons","<DYNASTY>"],
         "keywords": ["Vehicle","Titanic","Fly", "Monolith"]
     },
     
+	{
+        "name": "Broodlord",
+        "role": "HQ",
+        "powerRating": 8,
+        "profiles": [
+            {
+                "name": "Broodlord",
+                "move": "8\"",
+                "weaponSkill": "2+",
+                "ballisticSkill": "-",
+                "strength": "5",
+                "thoughness": "5",
+                "wounds": "6",
+                "attacks": "6",
+                "leadership": "10",
+                "save": "4+"
+            }
+        ],
+        "unitComp": "A Broodlord is a single model armed with monstrous rending claws.",
+        "weapons": [
+            {
+                "name": "Monstrous rending claws",
+                "multiProfileComment": "",
+                "profiles":[
+                    {
+                        "name": "Monstrous rending claws",
+                        "range": "Melee",
+                        "type": "Melee",
+                        "strength": "User",
+                        "ap": "-3",
+                        "damage": "D3",
+                        "abilities": "You can re-roll failed wound rolls when attacking with this weapon. In addition, each time you make a wound roll of 6+, that hit is resolved with an AP of -6 and Damage of 3."
+                    }
+                ]
+            }
+        ],
+        "wargear": [],
+        "abilities": [
+			{
+				"name": "Synapse, Shadow in the Warp",
+				"detail": "(pg 85)"
+			},			
+            {
+                "name": "Lightning Reflexes",
+                "detail": "This model has a 5+ invulnerable save."
+            },
+            {
+                "name": "Swift and Deadly",
+                "detail": "This model can charge even if it Advanced during its turn."
+            },
+			{
+				"name": "Brood Telepathy",
+				"detail": "You can add 1 to hit rolls in the Fight phase for <HIVE FLEET> Genestealer units within 6\" of any friendly <HIVE FLEET> Broodlords."
+			}
+        ],
+		"psyker": "A Broodlord can attempt to manifest one psychic power in each friendly Psychic phase, and attempt to deny one psychic power in each enemy Psychic phase. It knows the Smite psychic power and one psychic power from the Hive Mind discipline (pg 85)."
+    },
 	{
         "name": "Genestealers",
         "role": "Troop",
