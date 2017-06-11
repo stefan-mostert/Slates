@@ -177,19 +177,25 @@
         </div>
       </div>
     </div>
-    <div class="row psyker">
+    <div class="row psyker" *ngIf="slate.psyker">
       <div class="col-xs-2 start-xs minor-title">
         PSYKER
       </div>
     </div>
-    <div class="row faction-keywords">
+    <div class="row keywords">
       <div class="col-xs-2 start-xs minor-title">
         FACTION KEYWORDS
+      </div>
+      <div class="col-xs-10 start-xs keyword-list">
+        {{slate.factionKeywords.join()}}
       </div>
     </div>
     <div class="row keywords">
       <div class="col-xs-2 start-xs minor-title">
         KEYWORDS
+      </div>
+      <div class="col-xs-10 start-xs keyword-list">
+        {{slate.keywords.join()}}
       </div>
     </div>
   </div>

@@ -7,6 +7,7 @@ export class Slate {
     wargear: string[];
     abilities: Ability[];
     weapons: Weapon[];
+    factionKeywords: string[];
     keywords: string[];
 }
 
