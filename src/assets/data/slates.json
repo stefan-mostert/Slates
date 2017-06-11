@@ -91,8 +91,85 @@
                 "name": "Undying",
                 "detail": "Imotekh the Stormlord regains D3 lost wounds at the beginning of your turn, rather than 1, from his Living Metal ability."
             }
-        ]
-
+        ],
+        "factionKeywords": ["Necrons","Sautekh"],
+        "keywords": ["Charcter","Infantry","Overlord","Imotekh the Stormlord"]
+    },
+    {
+        "name": "Overlord",
+        "role": "HQ",
+        "powerRating": 7,
+        "profiles": [
+            {
+                "name": "Overlord",
+                "move": "5\"",
+                "weaponSkill": "2+",
+                "ballisticSkill": "2+",
+                "strength": "5",
+                "thoughness": "5",
+                "wounds": "5",
+                "attacks": "3",
+                "leadership": "10",
+                "save": "3+"
+            }
+        ],
+        "unitComp": "An Overlord is a single model armed with a staff of light.",
+        "weapons": [
+            {
+                "name": "Staff of Light (shooting)",
+                "multiProfileComment": "",
+                "profiles":[
+                    {
+                        "name": "Staff of Light (shooting)",
+                        "range": "12\"",
+                        "type": "Assault 3",
+                        "strength": "5",
+                        "ap": "-2",
+                        "damage": "1",
+                        "abilities": "-"
+                    }
+                ]
+            },
+            {
+                "name": "Staff of Light (melee)",
+                "multiProfileComment": "",
+                "profiles":[
+                    {
+                        "name": "Staff of Light (melee)",
+                        "range": "Melee",
+                        "type": "Melee",
+                        "strength": "User",
+                        "ap": "-2",
+                        "damage": "1",
+                        "abilities": "-"
+                    }
+                ]
+            }
+        ],
+        "wargear": [
+            "This model may replace its staff of light with an item from the Melee Weapons List.",
+            "This model may take a ressurection orb."
+        ],
+        "abilities": [
+            {
+                "name": "Living Metal",
+                "detail": "(pg 84)"
+            },
+            {
+                "name": "Phase Shifter",
+                "detail": "Imotekh the Stormlord has a 4+ invulnerable save."
+            },
+            {
+                "name": "My Will Be Done",
+                "detail": "At the beginning of each of your turns, choose a friendly <DYNASTY> INFANTRY unit within 6\" of this model. You can add 1 to the Advance, charge and hit rolls of that  unit until the beginning og your next turn. A unit can only be affected by this ability once in each turn."
+            },
+            {
+                "name": "Ressurection Orb",
+                "detail": "If this model has a ressurection orb, once per battle, immediatly after you have made your Reanimation Protocols rolls, you can make Reanimation Protocol rolls for models from a friendly <DYNASTY> INFANTRY unit within 3\" of this model."
+            }
+        ],
+        "factionKeywords": ["Necrons","<DYNASTY>"],
+        "keywords": ["Charcter","Infantry","Overlord"]
     },
     {
         "name": "Orikan the Diviner",
@@ -160,7 +237,9 @@
                 "name": "Technomancer",
                 "detail": "Add 1 to all Reanimation Protocol rolls for models from friendly SAUTEKH units within 3\" of any friendly SAUTEKH CRYPTEKS."
             }
-        ]
+        ],
+        "factionKeywords": ["Necrons","Sautekh"],
+        "keywords": ["Charcter","Infantry","Cryptek","Orikan the Diviner"]
     },
     {
         "name": "Necron Warriors",
@@ -204,215 +283,9 @@
                 "name": "Reanimation Protocols",
                 "detail": "(pg 84)"
             }
-         ]
-    },
-    {
-        "name": "Canoptek Scarabs",
-        "role": "FastAttack",
-        "powerRating": 2,
-        "profiles": [
-            {
-                "name": "Canoptek Scarab",
-                "move": "10\"",
-                "weaponSkill": "3+",
-                "ballisticSkill": "3+",
-                "strength": "3",
-                "thoughness": "3",
-                "wounds": "3",
-                "attacks": "4",
-                "leadership": "10",
-                "save": "6+"
-            }
-        ],
-        "unitComp": "This unit contains 3 Canoptek Scarab Swarms. It may include up to 3 additional Canoptek Scarabs (Power Rating +2) or up to 6 additional Canoptek Scarab Swarms (Power Rating +4). Each swarm is equipped with feeder mandibles.",
-        "weapons": [
-            {
-                "name": "Feeder mandibles",
-                "multiProfileComment": "",
-                "profiles":[
-                    {
-                        "name": "Feeder mandibles",
-                        "range": "Melee",
-                        "type": "Melee",
-                        "strength": "User",
-                        "ap": "0",
-                        "damage": "1",
-                        "abilities": "If the target's Toughness is higher than this attack's Strength, this weapon always wounds the target on a wound roll of 5+."
-                    }
-                ]
-            }
-        ],
-        "wargear": [],
-        "abilities": []
-    },
-    {
-        "name": "Tomb Blades",
-        "role": "FastAttack",
-        "powerRating": 5,
-        "profiles": [
-            {
-                "name": "Tomb Blade",
-                "move": "14\"",
-                "weaponSkill": "3+",
-                "ballisticSkill": "3+",
-                "strength": "4",
-                "thoughness": "5",
-                "wounds": "2",
-                "attacks": "1",
-                "leadership": "10",
-                "save": "4+"
-            }
-        ],
-        "unitComp": "This unit contains 3 Tomb Blades. It can include up to 3 additional Tomb Blades (Power Rating +5) or up to 6 additional Tomb Blades (Power Rating +10). Each model is equipped with two gauss blasters.",
-        "weapons": [
-            {
-                "name": "Gauss blaster",
-                "multiProfileComment": "",
-                "profiles":[
-                    {
-                        "name": "Gauss blaster",
-                        "range": "24\"",
-                        "type": "Rapid Fire 1",
-                        "strength": "5",
-                        "ap": "-2",
-                        "damage": "1",
-                        "abilities": "-"
-                    }
-                ]
-            },
-            {
-                "name": "Particle beamer",
-                "multiProfileComment": "",
-                "profiles":[
-                    {
-                        "name":"Particle beamer",
-                        "range": "24\"",
-                        "type": "Assault 3",
-                        "strength": "6",
-                        "ap": "0",
-                        "damage": "1",
-                        "abilities": "-"
-                    }
-                ]
-            },
-            {
-                "name": "Tesla carbine",
-                "multiProfileComment": "",
-                "profiles":[
-                    {
-                        "name":"Tesla carbine",
-                        "range": "24\"",
-                        "type": "Assault 2",
-                        "strength": "5",
-                        "ap": "0",
-                        "damage": "1",
-                        "abilities": "Each hit roll of 6+ with this weapon causes 3 hits instead of 1."
-                    }
-                ]
-            }
-        ],
-        "wargear": [
-            "Any model may replace its two gauss blasters with two tesla carbines or a particle caster.",
-            "Any model may take shieldvanes.",
-            "Any model may take a nebuloscope or a shadowloom."
-        ],
-        "abilities": [
-            {
-                "name": "Reanimation Protocols",
-                "detail": "(pg 84)"
-            },
-            {
-                "name": "Shadowloom",
-                "detail": "A model with a shadowloom has a 5+ invulnerable save."
-            },
-            {
-                "name": "Nebuloscope",
-                "detail": "Enemies attacked by a model with a nebuloscope do not receive a bonus to their save from being in cover."
-            },
-            {
-                "name": "Shieldvanes",
-                "detail": "A model with shieldvanes has a Save characteristic of 3+."
-            }
-         ]
-    },
-    {
-        "name": "Monolith",
-        "role": "HeavySupport",
-        "powerRating": 19,
-        "profiles": [
-            {
-                "name": "Monolith",
-                "move": "*",
-                "weaponSkill": "6+",
-                "ballisticSkill": "*",
-                "strength": "8",
-                "thoughness": "8",
-                "wounds": "20",
-                "attacks": "3",
-                "leadership": "10",
-                "save": "3+"
-            }
-        ],
-        "unitComp": "A Monolith is a single model equipped with four gauss flux arcs and a particle whip.",
-        "weapons": [
-            {
-                "name": "Gauss flux arc",
-                "multiProfileComment": "",
-                "profiles":[
-                    {
-                        "name":"Gauss flux arc",
-                        "range": "24\"",
-                        "type": "Heavy 3",
-                        "strength": "5",
-                        "ap": "-2",
-                        "damage": "1",
-                        "abilities": "-"
-                    }
-                ]
-            },
-            {
-                "name": "Particle whip",
-                "multiProfileComment": "",
-                "profiles":[
-                    {
-                        "name":"Particle whip",
-                        "range": "24\"",
-                        "type": "Heavy 6",
-                        "strength": "8",
-                        "ap": "-2",
-                        "damage": "D3",
-                        "abilities": "-"
-                    }
-                ]
-            }
-        ],
-        "wargear": [],
-        "abilities": [
-            {
-                "name": "Living Metal",
-                "detail": "(pg 84)"
-            },
-            {
-                "name": "Floating Fortress",
-                "detail": "This model can move and fire Heavy weapons without suffering the penalty to its hit rolls."
-            },
-            {
-                "name": "Death Descending",
-                "detail": "During deployment, you can set up a Monolith in the upper atmosphere instead of placing it on the battlefield. At the end of any of your Movement phases the Monolith can plummet to the battlefield - set it up anywhere on the battlefield that is more than 12\" from any enemy models."
-            },
-            {
-                "name": "Eternity Gate",
-                "detail": "When you set up this model, at the same time you can also set up any number of <DYNASTY> INFANTRY units on their tomb world rather than setting them up on the battlefield. Before the Monolith moves in each of your Movement phases, a single unit that was set up on their tomb world can be transported onto the battlefield by the Monolith. To do so, set up the unit so that it is wholly within 3\" of the Monolith and more than 1\" from the enemy. If all friendly Night Scythes and Monoliths are destroyed, any units still on the tomb world are considered to be slain."
-            },
-            {
-                "name": "Portal of Exile",
-                "detail": "When an enemy unit (other than a MONSTER or VEHICLE) charges this model, its portal of exile may activate. Roll a D6 and compare it to the value required on the damage table above. If the roll is successful, the charging unit suffers D6 mortal wounds."
-            },
-            {
-                "name": "Explodes",
-                "detail": "If this model is reduced to 0 wounds, roll a D6 before removing it from the battlefield. On a 6 it explodes, and each unit within 6\" suffers D6 mortal wounds."
-            }
-         ]
+         ],
+        "factionKeywords": ["Necrons","<DYNASTY>"],
+        "keywords": ["Infantry","Warrior"]
     },
     {
         "name": "Triarch Stalker",
@@ -520,9 +393,225 @@
                 "name": "Quantum Shielding",
                 "detail": "Each time this model suffers damage from an unsaved wound. roll a D6. If the result is less than the damage inflicted by the attack, the damage is ignored. (eg. if this model suffers 4 damage, if you then roll a 3 or less the damage is ignored)."
             }
-        ]
-
+        ],
+        "factionKeywords": ["Necrons"],
+        "keywords": ["Vehicle","Triarch Stalker"]
     },
+    {
+        "name": "Canoptek Scarabs",
+        "role": "FastAttack",
+        "powerRating": 2,
+        "profiles": [
+            {
+                "name": "Canoptek Scarab",
+                "move": "10\"",
+                "weaponSkill": "3+",
+                "ballisticSkill": "3+",
+                "strength": "3",
+                "thoughness": "3",
+                "wounds": "3",
+                "attacks": "4",
+                "leadership": "10",
+                "save": "6+"
+            }
+        ],
+        "unitComp": "This unit contains 3 Canoptek Scarab Swarms. It may include up to 3 additional Canoptek Scarabs (Power Rating +2) or up to 6 additional Canoptek Scarab Swarms (Power Rating +4). Each swarm is equipped with feeder mandibles.",
+        "weapons": [
+            {
+                "name": "Feeder mandibles",
+                "multiProfileComment": "",
+                "profiles":[
+                    {
+                        "name": "Feeder mandibles",
+                        "range": "Melee",
+                        "type": "Melee",
+                        "strength": "User",
+                        "ap": "0",
+                        "damage": "1",
+                        "abilities": "If the target's Toughness is higher than this attack's Strength, this weapon always wounds the target on a wound roll of 5+."
+                    }
+                ]
+            }
+        ],
+        "wargear": [],
+        "abilities": [],
+        "factionKeywords": ["Necrons","<DYNASTY>"],
+        "keywords": ["Swarm","Cynoptek Scarans"]
+    },
+    {
+        "name": "Tomb Blades",
+        "role": "FastAttack",
+        "powerRating": 5,
+        "profiles": [
+            {
+                "name": "Tomb Blade",
+                "move": "14\"",
+                "weaponSkill": "3+",
+                "ballisticSkill": "3+",
+                "strength": "4",
+                "thoughness": "5",
+                "wounds": "2",
+                "attacks": "1",
+                "leadership": "10",
+                "save": "4+"
+            }
+        ],
+        "unitComp": "This unit contains 3 Tomb Blades. It can include up to 3 additional Tomb Blades (Power Rating +5) or up to 6 additional Tomb Blades (Power Rating +10). Each model is equipped with two gauss blasters.",
+        "weapons": [
+            {
+                "name": "Gauss blaster",
+                "multiProfileComment": "",
+                "profiles":[
+                    {
+                        "name": "Gauss blaster",
+                        "range": "24\"",
+                        "type": "Rapid Fire 1",
+                        "strength": "5",
+                        "ap": "-2",
+                        "damage": "1",
+                        "abilities": "-"
+                    }
+                ]
+            },
+            {
+                "name": "Particle beamer",
+                "multiProfileComment": "",
+                "profiles":[
+                    {
+                        "name":"Particle beamer",
+                        "range": "24\"",
+                        "type": "Assault 3",
+                        "strength": "6",
+                        "ap": "0",
+                        "damage": "1",
+                        "abilities": "-"
+                    }
+                ]
+            },
+            {
+                "name": "Tesla carbine",
+                "multiProfileComment": "",
+                "profiles":[
+                    {
+                        "name":"Tesla carbine",
+                        "range": "24\"",
+                        "type": "Assault 2",
+                        "strength": "5",
+                        "ap": "0",
+                        "damage": "1",
+                        "abilities": "Each hit roll of 6+ with this weapon causes 3 hits instead of 1."
+                    }
+                ]
+            }
+        ],
+        "wargear": [
+            "Any model may replace its two gauss blasters with two tesla carbines or a particle caster.",
+            "Any model may take shieldvanes.",
+            "Any model may take a nebuloscope or a shadowloom."
+        ],
+        "abilities": [
+            {
+                "name": "Reanimation Protocols",
+                "detail": "(pg 84)"
+            },
+            {
+                "name": "Shadowloom",
+                "detail": "A model with a shadowloom has a 5+ invulnerable save."
+            },
+            {
+                "name": "Nebuloscope",
+                "detail": "Enemies attacked by a model with a nebuloscope do not receive a bonus to their save from being in cover."
+            },
+            {
+                "name": "Shieldvanes",
+                "detail": "A model with shieldvanes has a Save characteristic of 3+."
+            }
+        ],
+        "factionKeywords": ["Necrons","<DYNASTY>"],
+        "keywords": ["Biker","Fly","Tomb Blades"]
+    },
+    {
+        "name": "Monolith",
+        "role": "HeavySupport",
+        "powerRating": 19,
+        "profiles": [
+            {
+                "name": "Monolith",
+                "move": "*",
+                "weaponSkill": "6+",
+                "ballisticSkill": "*",
+                "strength": "8",
+                "thoughness": "8",
+                "wounds": "20",
+                "attacks": "3",
+                "leadership": "10",
+                "save": "3+"
+            }
+        ],
+        "unitComp": "A Monolith is a single model equipped with four gauss flux arcs and a particle whip.",
+        "weapons": [
+            {
+                "name": "Gauss flux arc",
+                "multiProfileComment": "",
+                "profiles":[
+                    {
+                        "name":"Gauss flux arc",
+                        "range": "24\"",
+                        "type": "Heavy 3",
+                        "strength": "5",
+                        "ap": "-2",
+                        "damage": "1",
+                        "abilities": "-"
+                    }
+                ]
+            },
+            {
+                "name": "Particle whip",
+                "multiProfileComment": "",
+                "profiles":[
+                    {
+                        "name":"Particle whip",
+                        "range": "24\"",
+                        "type": "Heavy 6",
+                        "strength": "8",
+                        "ap": "-2",
+                        "damage": "D3",
+                        "abilities": "-"
+                    }
+                ]
+            }
+        ],
+        "wargear": [],
+        "abilities": [
+            {
+                "name": "Living Metal",
+                "detail": "(pg 84)"
+            },
+            {
+                "name": "Floating Fortress",
+                "detail": "This model can move and fire Heavy weapons without suffering the penalty to its hit rolls."
+            },
+            {
+                "name": "Death Descending",
+                "detail": "During deployment, you can set up a Monolith in the upper atmosphere instead of placing it on the battlefield. At the end of any of your Movement phases the Monolith can plummet to the battlefield - set it up anywhere on the battlefield that is more than 12\" from any enemy models."
+            },
+            {
+                "name": "Eternity Gate",
+                "detail": "When you set up this model, at the same time you can also set up any number of <DYNASTY> INFANTRY units on their tomb world rather than setting them up on the battlefield. Before the Monolith moves in each of your Movement phases, a single unit that was set up on their tomb world can be transported onto the battlefield by the Monolith. To do so, set up the unit so that it is wholly within 3\" of the Monolith and more than 1\" from the enemy. If all friendly Night Scythes and Monoliths are destroyed, any units still on the tomb world are considered to be slain."
+            },
+            {
+                "name": "Portal of Exile",
+                "detail": "When an enemy unit (other than a MONSTER or VEHICLE) charges this model, its portal of exile may activate. Roll a D6 and compare it to the value required on the damage table above. If the roll is successful, the charging unit suffers D6 mortal wounds."
+            },
+            {
+                "name": "Explodes",
+                "detail": "If this model is reduced to 0 wounds, roll a D6 before removing it from the battlefield. On a 6 it explodes, and each unit within 6\" suffers D6 mortal wounds."
+            }
+        ],
+        "factionKeywords": ["Necrons","<DYNASTY>"],
+        "keywords": ["Vehicle","Titanic","Fly", "Monolith"]
+    },
+    
 	{
         "name": "Broodlord",
         "role": "HQ",

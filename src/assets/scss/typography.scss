@@ -4,7 +4,7 @@ $noto: 'Noto Serif', serif;
 @mixin oswald($font-size)
 {
     font-family: 'Oswald', sans-serif;
-    font-weight: $font-weight;
+    font-weight: 400;
     font-size: $font-size;
 }
 

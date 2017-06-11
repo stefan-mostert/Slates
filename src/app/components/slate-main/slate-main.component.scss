@@ -167,9 +167,20 @@
        }
     }
 
+
     .psyker {
         background-color: #e3e3e5;
         @include noto(14px);
         border-bottom: solid 1px black;
+
+    .keywords {
+        background-color: #e3e3e5;
+        @include noto(14px);
+        border-bottom: solid 1px black;
+
+        .keyword-list {
+            @include noto(16px);
+            text-transform: uppercase;
+        }
     }
 }

@@ -8,6 +8,7 @@ export class Slate {
     abilities: Ability[];
     weapons: Weapon[];
     psyker: string;
+    factionKeywords: string[];
     keywords: string[];
 }
 
