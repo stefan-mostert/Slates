@@ -667,7 +667,9 @@
 				"detail": "You can add 1 to hit rolls in the Fight phase for <HIVE FLEET> Genestealer units within 6\" of any friendly <HIVE FLEET> Broodlords."
 			}
         ],
-		"psyker": "A Broodlord can attempt to manifest one psychic power in each friendly Psychic phase, and attempt to deny one psychic power in each enemy Psychic phase. It knows the Smite psychic power and one psychic power from the Hive Mind discipline (pg 85)."
+		"psyker": "A Broodlord can attempt to manifest one psychic power in each friendly Psychic phase, and attempt to deny one psychic power in each enemy Psychic phase. It knows the Smite psychic power and one psychic power from the Hive Mind discipline (pg 85).",
+        "factionKeywords": ["Tyranids","<Hive Fleet>"],
+        "keywords": ["Character","Infantry", "Genestealer", "Psyket", "Broodlord"]
     },
 	{
         "name": "Genestealers",
@@ -737,6 +739,8 @@
                 "name": "Swift and Deadly",
                 "detail": "Genestealers can charge even if they Advanced during their turn."
             }
-        ]
+        ],
+        "factionKeywords": ["Tyranids","<Hive Fleet>"],
+        "keywords": ["Infantry", "Genestealers"]
     }
 ]
