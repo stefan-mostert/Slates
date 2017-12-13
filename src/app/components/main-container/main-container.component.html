@@ -5,17 +5,20 @@
     </div>
   </div>
   <div class="row">
-    <div class="col-xs-4">
+    <div class="col-xs-3">
         <app-slate-list
           [isLoading]="isSlatesLoading$ | async"
           [slates]="slates$ | async"
           (selectedChanged)="selectedSlate($event)">
         </app-slate-list>
     </div>
-    <div class="col-xs-8">
+    <div class="col-xs-6">
         <app-slate-main
           [slate]="selectedSlate$ | async">
         </app-slate-main>
+    </div>
+    <div class="col-xs-3">
+      
     </div>
   </div>
 </div>

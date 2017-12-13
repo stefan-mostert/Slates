@@ -1,0 +1,29 @@
+<!-- <div class="col-xs-12"> -->
+        <!-- <div class="row center-xs middle-xs title"> -->
+        <!-- <div class="col-xs-1 start-xs">
+                <div class="battlefield-role"
+                  [class.hq]="slate.role === 'HQ'"
+                  [class.troop]="slate.role === 'Troop'"
+                  [class.fastAttack]="slate.role === 'FastAttack'"
+                  [class.elite]="slate.role === 'Elite'"
+                  [class.heavySupport]="slate.role === 'HeavySupport'"
+                  [class.dedicatedTransport]="slate.role === 'DedicatedTransport'"
+                  [class.fortification]="slate.role === 'Fortification'"
+                  [class.lordOfWar]="slate.role === 'LordOfWar'"
+                ></div>
+              </div> -->
+        <!-- <div class="col-xs-1 start-xs power">
+                <div class="power-block"></div>
+                <div [class.double-digits]="isDoubleDigits" class="power-number">{{slate.powerRating}}</div>
+              </div> -->
+        <!-- <div class="col-xs-12 name">
+                {{slate.name}}
+              </div> -->
+        <!-- </div> -->
+              </div> -->
+        <!--  -->
+        <!--  -->
+        <!-- 
+        <!--  -->
+        <!--  -->
+        <!-- </div> -->
