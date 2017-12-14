@@ -78,7 +78,7 @@
             </div>
           </div>
         </div>
-        <div class="row start-xs unitcomp">
+        <!-- <div class="row start-xs unitcomp">
           {{slate.unitComp}}
         </div>
         <div class="row middle-xs weapon-heading">
@@ -148,7 +148,7 @@
           </div>
         </div>
         <div class="row psyker" *ngIf="slate.psyker">
-          <div class="col-xs-12 start-xs only-left-pad minor-title">
+          <div class="col-xs-12 psyker-heading  start-xs only-left-pad minor-title">
             PSYKER
           </div>
           <div class="col-xs-6 start-xs only-left-pad">
@@ -160,13 +160,13 @@
           <div class="col-xs-12 start-xs only-left-pad">
               <span>Knows:</span> {{slate.psyker.knows}}
           </div>
-        </div>
+        </div> -->
         <div class="row keywords">
           <div class="col-xs-12 start-xs only-left-pad keyword-list">
             {{slate.factionKeywords.join()}}
           </div>
         </div> 
-        <div class="row keywords">
+        <div class="row bottom-xs keywords">
           <div class="col-xs-12 start-xs only-left-pad keyword-list">
             {{slate.keywords.join(', ')}}
           </div>

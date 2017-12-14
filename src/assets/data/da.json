@@ -17,7 +17,7 @@
                 "save": "2+"
             }
         ],
-        "unitComp": "Single model armed the Sword of Secrets, the Lions Wrath, bolt pistol, frag and krak grenades. Unique.",
+        "unitComp": "Single model armed with the Sword of Secrets, the Lions Wrath, bolt pistol, frag and krak grenades. Unique.",
         "weapons": [
             {
                 "name": "Bolt pistol",
@@ -116,7 +116,11 @@
             },
             {
                 "name": "Supreme Tactician",
-                "detail": "If Battle-forged you receive 1 additional CP if Azreal is warlorf"
+                "detail": "If your army is Battle-forged you receive 1 additional CP if Azreal is warlord."
+            },
+            {
+                "name": "Lion Helm",
+                "detail": "All friendly DARK ANGELS models withing 6\" of Azreal have a 4+ invulnerable save."
             },
             {
                 "name": "*1",
@@ -175,7 +179,38 @@
                         "abilities": "*1"
                     }
                 ]
+            },
+            {
+                "name": "Lightning claw",
+                "multiProfileComment": "",
+                "profiles":[
+                    {
+                        "name":"Lightning Claw",
+                        "range": "M",
+                        "type": "M",
+                        "strength": "U",
+                        "ap": "-2",
+                        "damage": "1",
+                        "abilities": "*2"
+                    }
+                ]
+            },
+            {
+                "name": "Thunder hammer",
+                "multiProfileComment": "",
+                "profiles":[
+                    {
+                        "name":"Thunder hammer",
+                        "range": "M",
+                        "type": "M",
+                        "strength": "x2",
+                        "ap": "-3",
+                        "damage": "3",
+                        "abilities": "-1 to Hit"
+                    }
+                ]
             }
+
         ],
         "wargear": [
             "May replace his storm bolter and the Sword of Silence with two lightning claws or a thunder hammer and storm shield."
@@ -187,14 +222,138 @@
             },
             {
                 "name": "Rites of Battle",
-                "detail": ""
+                "detail": "Can re-roll hit rolls of 1 for DARK ANGELS units within 6\"."
             },
             {
                 "name": "Grand Master of the Deathwing",
-                "detail": ""
+                "detail": "Can re-roll failed hit rolls for friendly DEATHWING units within 6\"."
+            },
+            {
+                "name": "Storm Shield",
+                "detail": "A model equipped with a stormshielkd has a 3+ invulnerable save."
+            },
+            {
+                "name": "Parrying Blade",
+                "detail": "If armed with the Sword of Silence, your opponent must subtract 1 from hit rolls for attacks that target Belial in the Fight phase."
+            },
+            {
+                "name": "Iron Halo",
+                "detail": "Belial has a 4+ invulnerable save."
+            },
+            {
+                "name": "Teleport Strike",
+                "detail": "*deepstrike"
+            },
+            {
+                "name": "*1",
+                "detail": "Always wounds on a 2+, unless target is a VEHICLE."
+            },
+            {
+                "name": "*2",
+                "detail": "re-roll failed wound rolls, +1 attack."
             }
         ],
         "factionKeywords": ["Imperium","Adeptus astartes","Dark Angels","Deathwing"],
         "keywords": ["Charcter","Infantry","Grand Master","Terminator","Belial"]
-    }   
+    },
+    {
+        "name": "Primarus Librarian",
+        "role": "HQ",
+        "powerRating": 7,
+        "profiles": [
+            {
+                "name": "Primarus Librarian",
+                "move": "6\"",
+                "weaponSkill": "3+",
+                "ballisticSkill": "3+",
+                "strength": "4",
+                "thoughness": "4",
+                "wounds": "5",
+                "attacks": "4",
+                "leadership": "9",
+                "save": "3+"
+            }
+        ],
+        "unitComp": "Single model armed with a force sword, a bolt pistol, frag and krak grenades.",
+        "weapons": [
+            {
+                "name": "Bolt pistol",
+                "multiProfileComment": "",
+                "profiles":[
+                    {
+                        "name": "Bolt pistol",
+                        "range": "12\"",
+                        "type": "P-1",
+                        "strength": "4",
+                        "ap": "0",
+                        "damage": "1",
+                        "abilities": "-"
+                    }
+                ]
+            },
+            {
+                "name": "Force sword",
+                "multiProfileComment": "",
+                "profiles":[
+                    {
+                        "name":"Force sword",
+                        "range": "M",
+                        "type": "M",
+                        "strength": "U",
+                        "ap": "-3",
+                        "damage": "D3",
+                        "abilities": "-"
+                    }
+                ]
+            },
+            {
+                "name": "Frag grenade",
+                "multiProfileComment": "",
+                "profiles":[
+                    {
+                        "name": "Frag grenade",
+                        "range": "6\"",
+                        "type": "G-D6",
+                        "strength": "3",
+                        "ap": "0",
+                        "damage": "1",
+                        "abilities": "-"
+                    }
+                ]
+            },
+            {
+                "name": "Krak grenade",
+                "multiProfileComment": "",
+                "profiles":[
+                    {
+                        "name": "Krak grenade",
+                        "range": "6\"",
+                        "type": "G-1",
+                        "strength": "6",
+                        "ap": "-1",
+                        "damage": "D3",
+                        "abilities": "-"
+                    }
+                ]
+            }
+        ],
+        "wargear": [],
+        "abilities": [
+            {
+                "name": "And they Shall Know No Fear",
+                "detail": "(pg 131)"
+            },
+            {
+                "name": "Psychic Hood",
+                "detail": "You can add 1 to Deny the Witch tests you take for this model against enemy PSYKERS within 12\"."
+            }
+        ],
+        "psyker": {
+            "manifest": 2,
+            "deny": 1,
+            "knows": "Smite, 2 Interomancy"
+        },
+        "factionKeywords": ["Imperium","Adeptus astartes","Dark Angels"],
+        "keywords": ["Charcter","Infantry","Primaris","psyker","Librarian"]
+    }    
 ]

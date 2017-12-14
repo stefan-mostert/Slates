@@ -10,11 +10,17 @@
     background-repeat: no-repeat;
     background-size: contain;
 
-    padding: 12px;
+    padding-left:3mm;
+    padding-right:3mm;
+    
+
+    
 
     .slate-content {
+        height: 82mm;
         border: solid 2px black;
         border-radius: 5px;
+        margin-top: 3mm;
 
         .no-pad {
             padding-left: 0;
@@ -24,6 +30,10 @@
         .only-left-pad {
             padding-left: 3px;
             padding-right: 0;
+        }
+
+        .lastItem {
+            border-bottom: solid 1px black;
         }
 
         .minor-title {
@@ -98,6 +108,12 @@
         }
 
         .psyker {
+
+            .psyker-heading {
+                @include oswald-bold(10px);
+                border-bottom: solid 2px black;
+            }
+
             @include noto(10px);
             border-bottom: solid 1px black;
             span {
@@ -110,7 +126,7 @@
             border-bottom: solid 1px black;
     
             .keyword-list {
-                @include noto(9px);
+                @include noto-bold(9px);
                 text-transform: uppercase;
             }
         }
@@ -144,6 +160,12 @@
 
             .weapon-heading {
                 background-color: $sm-heading-background-colour;
+            }
+
+            .psyker {
+                .psyker-heading {
+                    background-color: $sm-heading-background-colour;
+                }
             }
 
             .oddweapon {
