@@ -1,0 +1,149 @@
+[
+	{
+        "name": "Broodlord",
+        "role": "HQ",
+        "powerRating": 8,
+        "profiles": [
+            {
+                "name": "Broodlord",
+                "move": "8\"",
+                "weaponSkill": "2+",
+                "ballisticSkill": "-",
+                "strength": "5",
+                "thoughness": "5",
+                "wounds": "6",
+                "attacks": "6",
+                "leadership": "10",
+                "save": "4+"
+            }
+        ],
+        "unitComp": "Single model armed with monstrous rending claws.",
+        "weapons": [
+            {
+                "name": "Monstrous rending claws",
+                "multiProfileComment": "",
+                "profiles":[
+                    {
+                        "name": "Monstrous rending claws",
+                        "range": "M",
+                        "type": "M",
+                        "strength": "U",
+                        "ap": "-3",
+                        "damage": "D3",
+                        "abilities": "*1"
+                    }
+                ]
+            }
+        ],
+        "wargear": [],
+        "abilities": [
+			{
+				"name": "Synapse, Shadow in the Warp",
+				"detail": "(pg 85)"
+			},			
+            {
+                "name": "Lightning Reflexes",
+                "detail": "This model has a 5+ invulnerable save."
+            },
+            {
+                "name": "Swift and Deadly",
+                "detail": "This model can charge even if it Advanced during its turn."
+            },
+			{
+				"name": "Brood Telepathy",
+				"detail": "You can add 1 to hit rolls in the Fight phase for <HIVE FLEET> Genestealer units within 6\" of any friendly <HIVE FLEET> Broodlords."
+            },
+            {
+				"name": "*1",
+				"detail": "You can re-roll failed wound rolls when attacking with this weapon. In addition, each time you make a wound roll of 6+, that hit is resolved with an AP of -6 and Damage of 3."
+			}
+        ],
+		"psyker": {
+            "manifest": 1,
+            "deny": 1,
+            "knows": "Smite, 1 Hive Mind discipline"
+        },
+        "factionKeywords": ["Tyranids","<Hive Fleet>"],
+        "keywords": ["Character","Infantry", "Genestealer", "Psyket", "Broodlord"]
+    },
+	{
+        "name": "Genestealers",
+        "role": "Troop",
+        "powerRating": 4,
+        "profiles": [
+            {
+                "name": "Genestealer",
+                "move": "8\"",
+                "weaponSkill": "3+",
+                "ballisticSkill": "-",
+                "strength": "4",
+                "thoughness": "4",
+                "wounds": "1",
+                "attacks": "3",
+                "leadership": "9",
+                "save": "5+"
+            }
+        ],
+        "unitComp": "Unit of 5-20. Each model is armed with rending claws.",
+        "weapons": [
+            {
+                "name": "Rending claws",
+                "multiProfileComment": "",
+                "profiles":[
+                    {
+                        "name": "Rending claws",
+                        "range": "M",
+                        "type": "M",
+                        "strength": "U",
+                        "ap": "-1",
+                        "damage": "1",
+                        "abilities": "*1"
+                    }
+                ]
+            },
+			{
+                "name": "Scything talons",
+                "multiProfileComment": "",
+                "profiles":[
+                    {
+                        "name": "Scything talons",
+                        "range": "M",
+                        "type": "M",
+                        "strength": "U",
+                        "ap": "0",
+                        "damage": "1",
+                        "abilities": "*2"
+                    }
+                ]
+            }
+        ],
+        "wargear": [
+            "Any model may also have a pair of scything talons.",
+            "All models in the unit may have toxin sacs."
+        ],
+        "abilities": [
+            {
+                "name": "Flurry of Claws",
+                "detail": "Genestealers have 4 Attacks instead of 3 while their unit has 10 or more models."
+            },
+            {
+                "name": "Lightning Reflexes",
+                "detail": "Genestealers have a 5+ invulnerable save."
+            },
+            {
+                "name": "Swift and Deadly",
+                "detail": "Genestealers can charge even if they Advanced during their turn."
+            },
+            {
+                "name": "*1",
+                "detail": "Each time you make a wound roll of 6+ for this weapon, that hit is resolved with an AP of -4."
+            },
+            {
+                "name": "*2",
+                "detail": "You can re-roll hit rolls of 1 when attacking with this weapon."
+            }
+        ],
+        "factionKeywords": ["Tyranids","<Hive Fleet>"],
+        "keywords": ["Infantry", "Genestealers"]
+    }
+]

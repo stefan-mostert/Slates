@@ -2,3 +2,34 @@
     margin-top: 30px;
     margin-bottom: 20px;
 }
+
+.factions {
+
+    .faction {
+        width: 100px;
+        height: 68px;
+        cursor: pointer;
+        opacity: .5;
+        transition: opacity 1s;
+
+        &.active {
+            opacity: 1;
+        }
+    }
+
+    .da-select {
+        background-image: url("./../../../assets/images/faction-da.png");
+        background-size: contain;
+    }
+
+    .necron-select {
+        background-image: url("./../../../assets/images/faction-necron.png");
+        background-size: contain;
+    }
+
+    .tyranid-select {
+        background-image: url("./../../../assets/images/faction-tyranid.png");
+        background-size: contain;
+    }
+
+}

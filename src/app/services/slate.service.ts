@@ -10,8 +10,8 @@ export class SlateService {
 
   constructor(private http: Http) { }
 
-  getSlates(): Observable<Slate[]> {
-    return this.http.get('./assets/data/slates.json')
+  getSlates(filename: string): Observable<Slate[]> {
+    return this.http.get('./assets/data/' + filename + '.json')
                     .map(this.extractData)
                     .catch(this.handleError);
   }

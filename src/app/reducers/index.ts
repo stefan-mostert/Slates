@@ -83,4 +83,5 @@ export function getSlateState(state$: Observable<State>) {
 
 export const getSlates = compose(fromSlate.getSlates, getSlateState);
 export const getIsSlatesLoading = compose(fromSlate.getIsSlatesLoading, getSlateState);
+export const getSelectedFaction = compose(fromSlate.getSelectedFaction, getSlateState);
 export const getSelectedSlate = compose(fromSlate.getSelectedSlate, getSlateState);

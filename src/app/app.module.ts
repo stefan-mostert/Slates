@@ -16,6 +16,7 @@ import { SlateMainComponent } from './components/slate-main/slate-main.component
 
 import { reducer } from './reducers';
 import { EffectsModule } from "@ngrx/effects";
+import {DropdownModule} from 'primeng/primeng';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { EffectsModule } from "@ngrx/effects";
     BrowserModule,
     FormsModule,
     HttpModule,
+    DropdownModule,
     StoreModule.provideStore(reducer),
     StoreDevtoolsModule.instrumentOnlyWithExtension(),
     EffectsModule.run(SlateEffects),

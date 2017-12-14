@@ -1,24 +1,23 @@
 <div class="main-container">
   <div class="row title">
     <div class="col-xs-12">
-        
+
     </div>
   </div>
   <div class="row">
-    <div class="col-xs-3">
-        <app-slate-list
-          [isLoading]="isSlatesLoading$ | async"
-          [slates]="slates$ | async"
-          (selectedChanged)="selectedSlate($event)">
-        </app-slate-list>
+    <div class="col-xs-1 factions">
+        <div class="faction da-select" [ngClass]="{ 'active' : (selectedFaction$ | async) === 'da'}" (click)="changeFaction('da')"></div>
+        <div class="faction necron-select" [ngClass]="{ 'active' : (selectedFaction$ | async) === 'necrons'}"  (click)="changeFaction('necrons')"></div>
+        <div class="faction tyranid-select" [ngClass]="{ 'active' : (selectedFaction$ | async) === 'tyranids'}" (click)="changeFaction('tyranids')"></div>
+    </div>
+    <div class="col-xs-2">
+      <app-slate-list [isLoading]="isSlatesLoading$ | async" [slates]="slates$ | async" (selectedChanged)="selectedSlate($event)">
+      </app-slate-list>
     </div>
     <div class="col-xs-6">
-        <app-slate-main
-          [slate]="selectedSlate$ | async">
-        </app-slate-main>
+      <app-slate-main [slate]="selectedSlate$ | async">
+      </app-slate-main>
     </div>
-    <div class="col-xs-3">
-      
-    </div>
+
   </div>
 </div>

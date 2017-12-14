@@ -23,8 +23,7 @@ export class SlateEffects {
         .ofType(slateActions.ActionTypes.SLATES_LOADING)
         .map((action: slateActions.SlatesLoading) => action)
         .switchMap(action => {
-            console.log('[SLATE EFFECT] calling getSlates');
-            return this.slateService.getSlates()
+            return this.slateService.getSlates(action.payload)
             .map(response => {
               return new slateActions.SlatesLoaded(response);
             });

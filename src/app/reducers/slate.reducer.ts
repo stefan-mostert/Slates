@@ -5,32 +5,25 @@ import * as slateActions from './../actions/slate.actions';
 
 export interface SlateState {
   isSlatesLoading: boolean;
+  selectedFaction: string;
   slates: Slate[];
   selectedSlate: Slate;
 }
 
 const initialState: SlateState = {
   isSlatesLoading: true,
+  selectedFaction: '',
   slates: [],
   selectedSlate: null
 };
 
 export function reducer(state = initialState, action: slateActions.Actions): SlateState {
   switch (action.type) {
-    // case slate.ActionTypes.SLATE_ADDED:
-    //   return Object.assign({}, state, {
-    //     slates: [...state.slates, action.payload]
-    //   });
-
-    // case slate.ActionTypes.SLATE_REMOVED:
-    //   const newSlates = state.slates.filter(s => s.name !== action.payload);
-    //     return Object.assign({}, state, {
-    //       slates: newSlates
-    //     });
 
     case slateActions.ActionTypes.SLATES_LOADING:
         return Object.assign({}, state, {
           isSlatesLoading: true,
+          selectedFaction: action.payload,
           slates: [],
           selectedSlate: null
         });
@@ -55,6 +48,10 @@ export function reducer(state = initialState, action: slateActions.Actions): Sla
 
 export function getSlates(state$: Observable<SlateState>) {
   return state$.select(state => state.slates);
+}
+
+export function getSelectedFaction(state$: Observable<SlateState>) {
+  return state$.select(state => state.selectedFaction);
 }
 
 export function getIsSlatesLoading(state$: Observable<SlateState>) {

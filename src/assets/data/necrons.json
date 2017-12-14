@@ -17,7 +17,7 @@
                 "save": "2+"
             }
         ],
-        "unitComp": "Imotekh the Stormlord is a single model armed with the Staff of the Destoyer and a gauntlet of fire. Only one of this model may be included in your army.",
+        "unitComp": "Single model armed with the Staff of the Destoyer and a gauntlet of fire. Unique.",
         "weapons": [
             {
                 "name": "Gauntlet of fire",
@@ -26,11 +26,11 @@
                     {
                         "name": "Gauntlet of fire",
                         "range": "8\"",
-                        "type": "Assault D6",
+                        "type": "A-D6",
                         "strength": "4",
                         "ap": "0",
                         "damage": "1",
-                        "abilities": "This weapon automatically hits its target."
+                        "abilities": "*flamer"
                     }
                 ]
             },
@@ -41,7 +41,7 @@
                     {
                         "name": "Staff of the Destroyer (shooting)",
                         "range": "18\"",
-                        "type": "Assault 3",
+                        "type": "A-3",
                         "strength": "6",
                         "ap": "-3",
                         "damage": "2",
@@ -55,9 +55,9 @@
                 "profiles":[
                     {
                         "name": "Staff of the Destroyer (melee)",
-                        "range": "Melee",
-                        "type": "Melee",
-                        "strength": "User",
+                        "range": "M",
+                        "type": "M",
+                        "strength": "U",
                         "ap": "-3",
                         "damage": "2",
                         "abilities": "-"
@@ -90,6 +90,10 @@
             {
                 "name": "Undying",
                 "detail": "Imotekh the Stormlord regains D3 lost wounds at the beginning of your turn, rather than 1, from his Living Metal ability."
+            },
+            {
+                "name": "*flamer",
+                "detail": "This weapon automatically hits its target."
             }
         ],
         "factionKeywords": ["Necrons","Sautekh"],
@@ -113,7 +117,7 @@
                 "save": "3+"
             }
         ],
-        "unitComp": "An Overlord is a single model armed with a staff of light.",
+        "unitComp": "Single model armed with a staff of light.",
         "weapons": [
             {
                 "name": "Staff of Light (shooting)",
@@ -122,7 +126,7 @@
                     {
                         "name": "Staff of Light (shooting)",
                         "range": "12\"",
-                        "type": "Assault 3",
+                        "type": "A-3",
                         "strength": "5",
                         "ap": "-2",
                         "damage": "1",
@@ -136,9 +140,9 @@
                 "profiles":[
                     {
                         "name": "Staff of Light (melee)",
-                        "range": "Melee",
-                        "type": "Melee",
-                        "strength": "User",
+                        "range": "M",
+                        "type": "M",
+                        "strength": "U",
                         "ap": "-2",
                         "damage": "1",
                         "abilities": "-"
@@ -147,8 +151,8 @@
             }
         ],
         "wargear": [
-            "This model may replace its staff of light with an item from the Melee Weapons List.",
-            "This model may take a ressurection orb."
+            "Model may replace its staff of light with an item from the Melee Weapons List.",
+            "Model may take a ressurection orb."
         ],
         "abilities": [
             {
@@ -201,7 +205,7 @@
                 "save": "4+"
             }
         ],
-        "unitComp": "Orikan the Diviner is a single model armed with the Staff of Tomorrow. Only one of this model may be included in your army.",
+        "unitComp": "Single model armed with the Staff of Tomorrow. Unique.",
         "weapons": [
             {
                 "name": "Staff of Tomorrow",
@@ -209,12 +213,12 @@
                 "profiles":[
                     {
                         "name": "Staff of Tomorrow",
-                        "range": "Melee",
-                        "type": "Melee",
-                        "strength": "User",
+                        "range": "M",
+                        "type": "M",
+                        "strength": "U",
                         "ap": "-3",
                         "damage": "D3",
-                        "abilities": "You can re-roll failed hit rolls for this weapon."
+                        "abilities": "*1"
                     }
                 ]
             }
@@ -236,6 +240,10 @@
             {
                 "name": "Technomancer",
                 "detail": "Add 1 to all Reanimation Protocol rolls for models from friendly SAUTEKH units within 3\" of any friendly SAUTEKH CRYPTEKS."
+            },
+            {
+                "name": "*1",
+                "detail": "You can re-roll failed hits for this weapon"
             }
         ],
         "factionKeywords": ["Necrons","Sautekh"],
@@ -259,7 +267,7 @@
                 "save": "4+"
             }
         ],
-        "unitComp": "This unit contains 10 Necron Warriors. It may include up to 10 additional Necron Warriors (Power Rating +6). Each model is equipped with a gauss flayer.",
+        "unitComp": "Unit of 10-20. Each model is equipped with a gauss flayer.",
         "weapons": [
             {
                 "name": "Gauss flayer",
@@ -268,7 +276,7 @@
                     {
                         "name": "Gauss flayer",
                         "range": "24\"",
-                        "type": "Rapid Fire 1",
+                        "type": "RF-1",
                         "strength": "4",
                         "ap": "-1",
                         "damage": "1",
@@ -305,29 +313,29 @@
                 "save": "3+"
             }
         ],
-        "unitComp": "A Triarch Stalker is a single model equiped with a heat ray and massive forelimbs.",
+        "unitComp": "Single model equiped with a heat ray and massive forelimbs.",
         "weapons": [
             {
                 "name": "Heat ray",
-                "multiProfileComment": "When attacking with this weapon, choose one of the profiles below.",
+                "multiProfileComment": "Choose one profile.",
                 "profiles":[
                     {
                         "name":"- Dispersed",
                         "range": "8\"",
-                        "type": "Heavy D6",
+                        "type": "H-D6",
                         "strength": "5",
                         "ap": "-1",
                         "damage": "1",
-                        "abilities": "When you use this profile, this weapon automatically hits its target."
+                        "abilities": "*flamer"
                     },
                     {
                         "name":"- Focused",
                         "range": "24\"",
-                        "type": "Heavy 2",
+                        "type": "H-2",
                         "strength": "8",
                         "ap": "-4",
                         "damage": "D6",
-                        "abilities": "When you use this profile, if the target is within half range, roll two dice when inflicting damage with it and discard the lowest result."
+                        "abilities": "*melta"
                     }
                 ]
             },
@@ -338,7 +346,7 @@
                     {
                         "name": "Particle shredder",
                         "range": "24\"",
-                        "type": "Heavy 6",
+                        "type": "H-6",
                         "strength": "7",
                         "ap": "-1",
                         "damage": "D3",
@@ -353,7 +361,7 @@
                     {
                         "name": "Twin heavy gauss cannon",
                         "range": "36\"",
-                        "type": "Heavy 2",
+                        "type": "H-2",
                         "strength": "9",
                         "ap": "-4",
                         "damage": "D6",
@@ -367,9 +375,9 @@
                 "profiles":[
                     {
                         "name": "Massive forelimbs",
-                        "range": "Melee",
-                        "type": "Melee",
-                        "strength": "User",
+                        "range": "M",
+                        "type": "M",
+                        "strength": "U",
                         "ap": "-1",
                         "damage": "D3",
                         "abilities": "-"
@@ -378,7 +386,7 @@
             }
         ],
         "wargear": [
-            "This model may replace its heat ray with a particle shredder or a twin gauss cannon."
+            "Model may replace its heat ray with a particle shredder or a twin gauss cannon."
         ],
         "abilities": [
             {
@@ -392,6 +400,14 @@
             {
                 "name": "Quantum Shielding",
                 "detail": "Each time this model suffers damage from an unsaved wound. roll a D6. If the result is less than the damage inflicted by the attack, the damage is ignored. (eg. if this model suffers 4 damage, if you then roll a 3 or less the damage is ignored)."
+            },
+            {
+                "name": "*flamer",
+                "detail": "When using this profile, this weapon automatically hits its target."
+            },
+            {
+                "name": "*melta",
+                "detail": "When you use this profile, if the target is within half range, roll two dice when inflicting damage with it and discard the lowest result."
             }
         ],
         "factionKeywords": ["Necrons"],
@@ -415,7 +431,7 @@
                 "save": "6+"
             }
         ],
-        "unitComp": "This unit contains 3 Canoptek Scarab Swarms. It may include up to 3 additional Canoptek Scarabs (Power Rating +2) or up to 6 additional Canoptek Scarab Swarms (Power Rating +4). Each swarm is equipped with feeder mandibles.",
+        "unitComp": "Unit of 3-9. Each swarm is equipped with feeder mandibles.",
         "weapons": [
             {
                 "name": "Feeder mandibles",
@@ -423,18 +439,23 @@
                 "profiles":[
                     {
                         "name": "Feeder mandibles",
-                        "range": "Melee",
-                        "type": "Melee",
-                        "strength": "User",
+                        "range": "M",
+                        "type": "M",
+                        "strength": "U",
                         "ap": "0",
                         "damage": "1",
-                        "abilities": "If the target's Toughness is higher than this attack's Strength, this weapon always wounds the target on a wound roll of 5+."
+                        "abilities": "*1"
                     }
                 ]
             }
         ],
         "wargear": [],
-        "abilities": [],
+        "abilities": [
+            {
+                "name": "*1",
+                "detail": "If the target's Toughness is higher than this attack's Strength, this weapon always wounds the target on a wound roll of 5+."
+            }
+        ],
         "factionKeywords": ["Necrons","<DYNASTY>"],
         "keywords": ["Swarm","Cynoptek Scarans"]
     },
@@ -456,7 +477,7 @@
                 "save": "4+"
             }
         ],
-        "unitComp": "This unit contains 3 Tomb Blades. It can include up to 3 additional Tomb Blades (Power Rating +5) or up to 6 additional Tomb Blades (Power Rating +10). Each model is equipped with two gauss blasters.",
+        "unitComp": "Unit of 3-9. Each model is equipped with two gauss blasters.",
         "weapons": [
             {
                 "name": "Gauss blaster",
@@ -465,7 +486,7 @@
                     {
                         "name": "Gauss blaster",
                         "range": "24\"",
-                        "type": "Rapid Fire 1",
+                        "type": "RF-1",
                         "strength": "5",
                         "ap": "-2",
                         "damage": "1",
@@ -480,7 +501,7 @@
                     {
                         "name":"Particle beamer",
                         "range": "24\"",
-                        "type": "Assault 3",
+                        "type": "A-3",
                         "strength": "6",
                         "ap": "0",
                         "damage": "1",
@@ -495,11 +516,11 @@
                     {
                         "name":"Tesla carbine",
                         "range": "24\"",
-                        "type": "Assault 2",
+                        "type": "A-2",
                         "strength": "5",
                         "ap": "0",
                         "damage": "1",
-                        "abilities": "Each hit roll of 6+ with this weapon causes 3 hits instead of 1."
+                        "abilities": "*tesla"
                     }
                 ]
             }
@@ -525,6 +546,10 @@
             {
                 "name": "Shieldvanes",
                 "detail": "A model with shieldvanes has a Save characteristic of 3+."
+            },
+            {
+                "name": "*tesla",
+                "detail": "Each hit roll of 6+ with this weapon causes 3 hits instead of 1."
             }
         ],
         "factionKeywords": ["Necrons","<DYNASTY>"],
@@ -548,7 +573,7 @@
                 "save": "3+"
             }
         ],
-        "unitComp": "A Monolith is a single model equipped with four gauss flux arcs and a particle whip.",
+        "unitComp": "Single model equipped with four gauss flux arcs and a particle whip.",
         "weapons": [
             {
                 "name": "Gauss flux arc",
@@ -557,7 +582,7 @@
                     {
                         "name":"Gauss flux arc",
                         "range": "24\"",
-                        "type": "Heavy 3",
+                        "type": "H-3",
                         "strength": "5",
                         "ap": "-2",
                         "damage": "1",
@@ -572,7 +597,7 @@
                     {
                         "name":"Particle whip",
                         "range": "24\"",
-                        "type": "Heavy 6",
+                        "type": "H-6",
                         "strength": "8",
                         "ap": "-2",
                         "damage": "D3",
@@ -610,137 +635,5 @@
         ],
         "factionKeywords": ["Necrons","<DYNASTY>"],
         "keywords": ["Vehicle","Titanic","Fly", "Monolith"]
-    },
-    
-	{
-        "name": "Broodlord",
-        "role": "HQ",
-        "powerRating": 8,
-        "profiles": [
-            {
-                "name": "Broodlord",
-                "move": "8\"",
-                "weaponSkill": "2+",
-                "ballisticSkill": "-",
-                "strength": "5",
-                "thoughness": "5",
-                "wounds": "6",
-                "attacks": "6",
-                "leadership": "10",
-                "save": "4+"
-            }
-        ],
-        "unitComp": "A Broodlord is a single model armed with monstrous rending claws.",
-        "weapons": [
-            {
-                "name": "Monstrous rending claws",
-                "multiProfileComment": "",
-                "profiles":[
-                    {
-                        "name": "Monstrous rending claws",
-                        "range": "Melee",
-                        "type": "Melee",
-                        "strength": "User",
-                        "ap": "-3",
-                        "damage": "D3",
-                        "abilities": "You can re-roll failed wound rolls when attacking with this weapon. In addition, each time you make a wound roll of 6+, that hit is resolved with an AP of -6 and Damage of 3."
-                    }
-                ]
-            }
-        ],
-        "wargear": [],
-        "abilities": [
-			{
-				"name": "Synapse, Shadow in the Warp",
-				"detail": "(pg 85)"
-			},			
-            {
-                "name": "Lightning Reflexes",
-                "detail": "This model has a 5+ invulnerable save."
-            },
-            {
-                "name": "Swift and Deadly",
-                "detail": "This model can charge even if it Advanced during its turn."
-            },
-			{
-				"name": "Brood Telepathy",
-				"detail": "You can add 1 to hit rolls in the Fight phase for <HIVE FLEET> Genestealer units within 6\" of any friendly <HIVE FLEET> Broodlords."
-			}
-        ],
-		"psyker": "A Broodlord can attempt to manifest one psychic power in each friendly Psychic phase, and attempt to deny one psychic power in each enemy Psychic phase. It knows the Smite psychic power and one psychic power from the Hive Mind discipline (pg 85).",
-        "factionKeywords": ["Tyranids","<Hive Fleet>"],
-        "keywords": ["Character","Infantry", "Genestealer", "Psyket", "Broodlord"]
-    },
-	{
-        "name": "Genestealers",
-        "role": "Troop",
-        "powerRating": 4,
-        "profiles": [
-            {
-                "name": "Genestealer",
-                "move": "8\"",
-                "weaponSkill": "3+",
-                "ballisticSkill": "-",
-                "strength": "4",
-                "thoughness": "4",
-                "wounds": "1",
-                "attacks": "3",
-                "leadership": "9",
-                "save": "5+"
-            }
-        ],
-        "unitComp": "This unit contains 5 Genestealers. It can include up to 5 additional Genestealers (Power Rating +4), up to 10 additional Genestealers (Power Rating +8), or up to 15 additional Genestealers (Power Rating +12). Each model is armed with rending claws.",
-        "weapons": [
-            {
-                "name": "Rending claws",
-                "multiProfileComment": "",
-                "profiles":[
-                    {
-                        "name": "Rending claws",
-                        "range": "Melee",
-                        "type": "Melee",
-                        "strength": "User",
-                        "ap": "-1",
-                        "damage": "1",
-                        "abilities": "Each time you make a wound roll of 6+ for this weapon, that hit is resolved with an AP of -4."
-                    }
-                ]
-            },
-			{
-                "name": "Scything talons",
-                "multiProfileComment": "",
-                "profiles":[
-                    {
-                        "name": "Scything talons",
-                        "range": "Melee",
-                        "type": "Melee",
-                        "strength": "User",
-                        "ap": "0",
-                        "damage": "1",
-                        "abilities": "You can re-roll hit rolls of 1 when attacking with this weapon."
-                    }
-                ]
-            }
-        ],
-        "wargear": [
-            "Any model may also have a pair of scything talons.",
-            "All models in the unit may have toxin sacs."
-        ],
-        "abilities": [
-            {
-                "name": "Flurry of Claws",
-                "detail": "Genestealers have 4 Attacks instead of 3 while their unit has 10 or more models."
-            },
-            {
-                "name": "Lightning Reflexes",
-                "detail": "Genestealers have a 5+ invulnerable save."
-            },
-            {
-                "name": "Swift and Deadly",
-                "detail": "Genestealers can charge even if they Advanced during their turn."
-            }
-        ],
-        "factionKeywords": ["Tyranids","<Hive Fleet>"],
-        "keywords": ["Infantry", "Genestealers"]
     }
 ]
