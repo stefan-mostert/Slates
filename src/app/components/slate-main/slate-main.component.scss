@@ -8,7 +8,7 @@
     height: 88mm;
 
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 
     padding-left:3mm;
     padding-right:3mm;
@@ -17,10 +17,11 @@
     
 
     .slate-content {
-        height: 82mm;
+        //height: 82mm;
         border: solid 2px black;
         border-radius: 5px;
         margin-top: 3mm;
+        margin-bottom: 3mm;
 
         .no-pad {
             padding-left: 0;
@@ -32,7 +33,7 @@
             padding-right: 0;
         }
 
-        .lastItem {
+        .spacer {
             border-bottom: solid 1px black;
         }
 
@@ -41,6 +42,7 @@
         }
 
         .name {
+            height: fit-content;
             padding-top: 2px;
             padding-bottom: 2px;
             @include noto-bold(12px);
@@ -50,6 +52,7 @@
         }
 
         .statline {
+            height: fit-content;
             border-bottom: solid 2px black;
 
             .statline-heading {
@@ -68,9 +71,10 @@
         }
 
         .unitcomp {
-            @include noto(10px);
+            @include noto(8px);
             padding-left: 3px;
             padding-right: 3px;
+            padding-bottom: 2px;
         }
 
         .weapon-heading {
@@ -85,7 +89,7 @@
         }
 
         .wargear {
-            @include noto(10px);
+            @include noto(8px);
             border-bottom: solid 1px black;
            
             .wargear-options {
@@ -96,14 +100,14 @@
         }
 
         .abilities {
-            @include noto(9px);
+            @include noto(8px);
     
             .ability {
                 padding-bottom: 5px;
             }
            
            .ability-name {
-               @include noto-bold(9px);
+               @include noto-bold(8px);
            }
         }
 
@@ -114,21 +118,17 @@
                 border-bottom: solid 2px black;
             }
 
-            @include noto(10px);
+            @include noto(8px);
             border-bottom: solid 1px black;
             span {
-                @include noto-bold(10px);
+                @include noto-bold(8px);
             }
         }
 
         .keywords {
-            @include noto(10px);
+            @include noto-bold(8px);
+            text-transform: uppercase;
             border-bottom: solid 1px black;
-    
-            .keyword-list {
-                @include noto-bold(9px);
-                text-transform: uppercase;
-            }
         }
     }
     
