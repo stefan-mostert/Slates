@@ -17,7 +17,7 @@ export class MainContainerComponent implements OnInit {
 
   isSlatesLoading$: Observable<boolean>;
   slates$: Observable<Slate[]>;
-  selectedSlate$: Observable<Slate>;
+  selectedSlates$: Observable<Slate[]>;
   selectedFaction$: Observable<string>;
 
   constructor(private store: Store<fromRoot.State>) {}
@@ -26,7 +26,7 @@ export class MainContainerComponent implements OnInit {
     this.slates$ = this.store.let(fromRoot.getSlates);
     this.isSlatesLoading$ = this.store.let(fromRoot.getIsSlatesLoading);
     this.selectedFaction$ = this.store.let(fromRoot.getSelectedFaction);
-    this.selectedSlate$ = this.store.let(fromRoot.getSelectedSlate);
+    this.selectedSlates$ = this.store.let(fromRoot.getSelectedSlates);
     this.store.dispatch(new slateActions.SlatesLoading('da'));
   }
 
@@ -36,5 +36,9 @@ export class MainContainerComponent implements OnInit {
 
   changeFaction(factionname) {
     this.store.dispatch(new slateActions.SlatesLoading(factionname));
+  }
+
+  slateClosed(slateIndex) {
+   this.store.dispatch(new slateActions.SlateRemoved(slateIndex));
   }
 }

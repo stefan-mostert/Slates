@@ -1,3 +1,25 @@
+@import "./../../../assets/scss/typography.scss";
+@import "./../../../assets/scss/themes.scss";
+
+.slate-list {
+    list-style-type: none;
+    padding-right: 20px;
+}
+
 .slate-list-item {
+    background-image: $site-slate-name-image;
+    color: black;
+    min-height: 30px;
+    margin: 10px;
     cursor: pointer;
+    border: 1px solid white;
+    border-radius: 3px;
+
+    &:hover {
+        border-color: black;
+    }
+
+    .name2 {
+        @include noto(12px);
+    }
 }

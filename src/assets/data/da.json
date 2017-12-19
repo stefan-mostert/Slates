@@ -5,7 +5,7 @@
         "powerRating": 9,
         "profiles": [
             {
-                "name": "Azreal",
+                "name": "",
                 "move": "6\"",
                 "weaponSkill": "2+",
                 "ballisticSkill": "2+",
@@ -39,7 +39,7 @@
                 "multiProfileComment": "Chose one or both. If both -1 to hit",
                 "profiles":[
                     {
-                        "name":"- Master-crafted boltgun",
+                        "name":"- MC boltgun",
                         "range": "24\"",
                         "type": "RF-1",
                         "strength": "4",
@@ -107,8 +107,8 @@
         "wargear": [],
         "abilities": [
             {
-                "name": "Unforgiven",
-                "detail": "(pg 107)"
+                "name": "Inner Circle",
+                "detail": "This unit automatically passes Morale tests. Can re-roll failed hits in the fight phase for attacks that target FALLEN units."
             },
             {
                 "name": "Chapter Master",
@@ -120,7 +120,7 @@
             },
             {
                 "name": "Lion Helm",
-                "detail": "All friendly DARK ANGELS models withing 6\" of Azreal have a 4+ invulnerable save."
+                "detail": "All friendly DARK ANGELS INFANTRY and DARK ANGELS BIKERS models within 6\" of Azreal have a 4+ invulnerable save."
             },
             {
                 "name": "*1",
@@ -136,7 +136,7 @@
         "powerRating": 8,
         "profiles": [
             {
-                "name": "Belial",
+                "name": "",
                 "move": "5\"",
                 "weaponSkill": "2+",
                 "ballisticSkill": "2+",
@@ -179,62 +179,25 @@
                         "abilities": "*1"
                     }
                 ]
-            },
-            {
-                "name": "Lightning claw",
-                "multiProfileComment": "",
-                "profiles":[
-                    {
-                        "name":"Lightning Claw",
-                        "range": "M",
-                        "type": "M",
-                        "strength": "U",
-                        "ap": "-2",
-                        "damage": "1",
-                        "abilities": "*2"
-                    }
-                ]
-            },
-            {
-                "name": "Thunder hammer",
-                "multiProfileComment": "",
-                "profiles":[
-                    {
-                        "name":"Thunder hammer",
-                        "range": "M",
-                        "type": "M",
-                        "strength": "x2",
-                        "ap": "-3",
-                        "damage": "3",
-                        "abilities": "-1 to Hit"
-                    }
-                ]
             }
-
         ],
-        "wargear": [
-            "May replace his storm bolter and the Sword of Silence with two lightning claws or a thunder hammer and storm shield."
-        ],
+        "wargear": [         ],
         "abilities": [
             {
-                "name": "Unforgiven",
-                "detail": "(pg 107)"
+                "name": "Inner Circle",
+                "detail": "This unit automatically passes Morale tests. Can re-roll failed hits in the fight phase for attacks that target FALLEN."
             },
             {
                 "name": "Rites of Battle",
-                "detail": "Can re-roll hit rolls of 1 for DARK ANGELS units within 6\"."
+                "detail": "Can re-roll hit rolls of 1 for freindly DARK ANGELS units within 6\"."
             },
             {
                 "name": "Grand Master of the Deathwing",
                 "detail": "Can re-roll failed hit rolls for friendly DEATHWING units within 6\"."
             },
             {
-                "name": "Storm Shield",
-                "detail": "A model equipped with a stormshielkd has a 3+ invulnerable save."
-            },
-            {
                 "name": "Parrying Blade",
-                "detail": "If armed with the Sword of Silence, your opponent must subtract 1 from hit rolls for attacks that target Belial in the Fight phase."
+                "detail": "Your opponent must subtract 1 from hit rolls for attacks that target Belial in the Fight phase."
             },
             {
                 "name": "Iron Halo",
@@ -247,10 +210,6 @@
             {
                 "name": "*1",
                 "detail": "Always wounds on a 2+, unless target is a VEHICLE."
-            },
-            {
-                "name": "*2",
-                "detail": "re-roll failed wound rolls, +1 attack."
             }
         ],
         "factionKeywords": ["Imperium","Adeptus astartes","Dark Angels","Deathwing"],
@@ -262,7 +221,7 @@
         "powerRating": 7,
         "profiles": [
             {
-                "name": "Primarus Librarian",
+                "name": "",
                 "move": "6\"",
                 "weaponSkill": "3+",
                 "ballisticSkill": "3+",
@@ -340,8 +299,8 @@
         "wargear": [],
         "abilities": [
             {
-                "name": "And they Shall Know No Fear",
-                "detail": "(pg 131)"
+                "name": "Inner Circle",
+                "detail": "This unit automatically passes Morale tests. Can re-roll failed hits in the fight phase for attacks that target FALLEN."
             },
             {
                 "name": "Psychic Hood",
@@ -351,18 +310,19 @@
         "psyker": {
             "manifest": 2,
             "deny": 1,
-            "knows": "Smite, 2 Interomancy"
+            "knows": "Smite, 2 Interromancy"
         },
-        "factionKeywords": ["Imperium","Adeptus astartes","Dark Angels"],
+        "factionKeywords": ["Imperium","Adeptus astartes","Dark Angels", "Deathwing"],
         "keywords": ["Charcter","Infantry","Primaris","psyker","Librarian"]
     },
     {
-        "name": "Librarian in Terminator Armor",
+        "name": "Librarian",
+        "name2": "in Terminator Armor",
         "role": "HQ",
         "powerRating": 9,
         "profiles": [
             {
-                "name": "Librarian",
+                "name": "",
                 "move": "5\"",
                 "weaponSkill": "3+",
                 "ballisticSkill": "3+",
@@ -428,8 +388,8 @@
         ],
         "abilities": [
             {
-                "name": "And they Shall Know No Fear",
-                "detail": "(pg 131)"
+                "name": "Inner Circle",
+                "detail": "This unit automatically passes Morale tests. Can re-roll failed hits in the fight phase for attacks that target FALLEN."
             },
             {
                 "name": "Crux Terminatus",
@@ -449,8 +409,107 @@
             "deny": 1,
             "knows": "Smite, 2 Interomancy"
         },
-        "factionKeywords": ["Imperium","Adeptus astartes","Dark Angels"],
+        "factionKeywords": ["Imperium","Adeptus astartes","Dark Angels", "Deathwing"],
         "keywords": ["Charcter","Infantry","Terminator","psyker","Librarian"]
+    },
+    {
+        "name": "Primaris Lieutenants",
+        "role": "HQ",
+        "powerRating": 5,
+        "profiles": [
+            {
+                "name": "",
+                "move": "6\"",
+                "weaponSkill": "2+",
+                "ballisticSkill": "3+",
+                "strength": "4",
+                "thoughness": "4",
+                "wounds": "5",
+                "attacks": "4",
+                "leadership": "8",
+                "save": "3+"
+            }
+        ],
+        "unitComp": "1 - 2 models each armed with chainsword, bolt pistol, master-crafted boltgun, frag and krak grenades.",
+        "weapons": [
+            {
+                "name": "Bolt pistol",
+                "multiProfileComment": "",
+                "profiles":[
+                    {
+                        "name": "Bolt pistol",
+                        "range": "12\"",
+                        "type": "P-1",
+                        "strength": "4",
+                        "ap": "0",
+                        "damage": "1",
+                        "abilities": "-"
+                    }
+                ]
+            },
+            {
+                "name": "Power Sword",
+                "multiProfileComment": "",
+                "profiles":[
+                    {
+                        "name": "Power sword",
+                        "range": "M",
+                        "type": "M",
+                        "strength": "U",
+                        "ap": "-3",
+                        "damage": "1",
+                        "abilities": "-"
+                    }
+                ]
+            },
+            {
+                "name": "Frag grenade",
+                "multiProfileComment": "",
+                "profiles":[
+                    {
+                        "name": "Frag grenade",
+                        "range": "6\"",
+                        "type": "G-D6",
+                        "strength": "3",
+                        "ap": "0",
+                        "damage": "1",
+                        "abilities": "-"
+                    }
+                ]
+            },
+            {
+                "name": "Krak grenade",
+                "multiProfileComment": "",
+                "profiles":[
+                    {
+                        "name": "Krak grenade",
+                        "range": "6\"",
+                        "type": "G-1",
+                        "strength": "6",
+                        "ap": "-1",
+                        "damage": "D3",
+                        "abilities": "-"
+                    }
+                ]
+            }
+        ],
+        "wargear": [],
+        "abilities": [
+            {
+                "name": "And they shall know no fear",
+                "detail": "Can re-roll failed morale tests for this unit."
+            },
+            {
+                "name": "Company Heroes",
+                "detail": "During deployment, all models in this unit must be set up at the same time. However once the battle has vegin, each operates independently and is treated as a sperate unit for all rules purposes."
+            },
+            {
+                "name": "Tactical Precision",
+                "detail": "Can re-roll wound rolls of 1 for friendly DARK ANGELS units withing 6\""
+            }
+        ],
+        "factionKeywords": ["Imperium","Adeptus astartes","Dark Angels"],
+        "keywords": ["Charcter","Infantry","Primaris","Lieutenants"]
     },
     {
         "name": "Tactical Squad",
@@ -515,6 +574,30 @@
                 ]
             },
             {
+                "name": "Plasma Cannon",
+                "multiProfileComment": "Choose one of the profiles",
+                "profiles":[
+                    {
+                        "name": "Standard",
+                        "range": "36\"",
+                        "type": "H-D3",
+                        "strength": "7",
+                        "ap": "-3",
+                        "damage": "1",
+                        "abilities": "*plasma"
+                    },
+                    {
+                        "name": "Supercharge",
+                        "range": "36\"",
+                        "type": "H-D3",
+                        "strength": "8",
+                        "ap": "-3",
+                        "damage": "2",
+                        "abilities": "*plasma"
+                    }
+                ]
+            },
+            {
                 "name": "Frag grenade",
                 "multiProfileComment": "",
                 "profiles":[
@@ -545,35 +628,401 @@
                 ]
             }
         ],
-        "wargear": [
-            "The sergeant may replace his bolt pistol and bolgun with items from the Sergeant Equiment list.",
-            "If unit size < 10 then one Space Marine may replace his bolgun with an item from teh Special Weapons or Heavy Weapons list.",
-            "If unit size = 10 then one Space Marine may replace his bolgun with an item from teh Special Weapons and another may replace his with an item from the Heavy Weapons list."
-        ],
+        "wargear": [],
         "abilities": [
             {
                 "name": "And they Shall Know No Fear",
                 "detail": "(pg 131)"
             },
             {
+                "name": "Combat Squads",
+                "detail": "Before any models are deployed at the start of the game, a squad containing 10 models may be split into two units, each containing 5 models."
+            }
+        ],
+        "factionKeywords": ["Imperium","Adeptus astartes","Dark Angels"],
+        "keywords": ["Infantry","Tactical Squad"]
+    },
+    {
+        "name": "Intercessor Squad",
+        "role": "Troop",
+        "powerRating": 5,
+        "profiles": [
+            {
+                "name": "Intercessor",
+                "move": "6\"",
+                "weaponSkill": "3+",
+                "ballisticSkill": "3+",
+                "strength": "4",
+                "thoughness": "4",
+                "wounds": "2",
+                "attacks": "2",
+                "leadership": "7",
+                "save": "3+"
+            },
+            {
+                "name": "Sergeant",
+                "move": "6\"",
+                "weaponSkill": "3+",
+                "ballisticSkill": "3+",
+                "strength": "4",
+                "thoughness": "4",
+                "wounds": "2",
+                "attacks": "3",
+                "leadership": "8",
+                "save": "3+"
+            }
+        ],
+        "unitComp": "Unit contains 1 Intercessor Sergeant and 4-9 Intercessors. Each armed with a bolt rifle, bolt pistol, frag and krak grenades.",
+        "weapons": [
+            {
+                "name": "Bolt pistol",
+                "multiProfileComment": "",
+                "profiles":[
+                    {
+                        "name": "Bolt pistol",
+                        "range": "12\"",
+                        "type": "P-1",
+                        "strength": "4",
+                        "ap": "0",
+                        "damage": "1",
+                        "abilities": "-"
+                    }
+                ]
+            },
+            {
+                "name": "Bolt rifle",
+                "multiProfileComment": "",
+                "profiles":[
+                    {
+                        "name": "Bolt rifle",
+                        "range": "30\"",
+                        "type": "RF-1",
+                        "strength": "4",
+                        "ap": "-1",
+                        "damage": "1",
+                        "abilities": "-"
+                    }
+                ]
+            },
+            {
+                "name": "Frag grenade",
+                "multiProfileComment": "",
+                "profiles":[
+                    {
+                        "name": "Frag grenade",
+                        "range": "6\"",
+                        "type": "G-D6",
+                        "strength": "3",
+                        "ap": "0",
+                        "damage": "1",
+                        "abilities": "-"
+                    }
+                ]
+            },
+            {
+                "name": "Krak grenade",
+                "multiProfileComment": "",
+                "profiles":[
+                    {
+                        "name": "Krak grenade",
+                        "range": "6\"",
+                        "type": "G-1",
+                        "strength": "6",
+                        "ap": "-1",
+                        "damage": "D3",
+                        "abilities": "-"
+                    }
+                ]
+            }
+        ],
+        "wargear": [],
+        "abilities": [
+            {
+                "name": "And they Shall Know No Fear",
+                "detail": "(pg 131)"
+            },
+            {
+                "name": "Auxiliary Grenade Launcher",
+                "detail": "If a model is armed with an auxiliary grenade launcher, increase the range of any grenade weapons they have to 30\""
+            },
+            {
+                "name": "Combat Squads",
+                "detail": "Before any models are deployed at the start of the game, a squad containing 10 models may be split into two units, each containing 5 models."
+            }
+        ],
+        "factionKeywords": ["Imperium","Adeptus astartes","Dark Angels"],
+        "keywords": ["Infantry","Primaris","Intercessor Squad"]
+    },
+    {
+        "name": "Deathwing Terminators",
+        "role": "Elite",
+        "powerRating": 13,
+        "profiles": [
+            {
+                "name": "Terminator",
+                "move": "5\"",
+                "weaponSkill": "3+",
+                "ballisticSkill": "3+",
+                "strength": "4",
+                "thoughness": "4",
+                "wounds": "2",
+                "attacks": "2",
+                "leadership": "8",
+                "save": "2+"
+            },
+            {
+                "name": "Sergeant",
+                "move": "5\"",
+                "weaponSkill": "3+",
+                "ballisticSkill": "3+",
+                "strength": "4",
+                "thoughness": "4",
+                "wounds": "2",
+                "attacks": "3",
+                "leadership": "9",
+                "save": "2+"
+            }
+        ],
+        "unitComp": "Unit contains 1 Deathwing Sergeant and 4-9 Intercessors. Each armed with a powerfist and storm bolter. The Seargeant is armed with a power sword and storm bolter.",
+        "weapons": [
+            {
+                "name": "Cyclone missle launcher",
+                "multiProfileComment": "Choose one profile",
+                "profiles":[
+                    {
+                        "name": "Frag",
+                        "range": "36\"",
+                        "type": "H-2D3",
+                        "strength": "4",
+                        "ap": "0",
+                        "damage": "1",
+                        "abilities": "-"
+                    },
+                    {
+                        "name": "Krak",
+                        "range": "36\"",
+                        "type": "H-2",
+                        "strength": "8",
+                        "ap": "-2",
+                        "damage": "D6",
+                        "abilities": "-"
+                    }
+                ]
+            },
+            {
+                "name": "Heavy Flamer",
+                "multiProfileComment": "",
+                "profiles":[
+                    {
+                        "name": "Heavy flamer",
+                        "range": "8\"",
+                        "type": "H-D6",
+                        "strength": "5",
+                        "ap": "-1",
+                        "damage": "1",
+                        "abilities": "*flamer"
+                    }
+                ]
+            },
+            {
+                "name": "Storm bolter",
+                "multiProfileComment": "",
+                "profiles":[
+                    {
+                        "name": "Storm bolter",
+                        "range": "24\"",
+                        "type": "RF-2",
+                        "strength": "4",
+                        "ap": "0",
+                        "damage": "1",
+                        "abilities": "-"
+                    }
+                ]
+            },
+            {
+                "name": "Chain Fist",
+                "multiProfileComment": "",
+                "profiles":[
+                    {
+                        "name": "Chain fist",
+                        "range": "M",
+                        "type": "M",
+                        "strength": "x2",
+                        "ap": "-4",
+                        "damage": "2",
+                        "abilities": "-1 to Hit"
+                    }
+                ]
+            },
+            {
+                "name": "Power Fist",
+                "multiProfileComment": "",
+                "profiles":[
+                    {
+                        "name": "Power fist",
+                        "range": "M",
+                        "type": "M",
+                        "strength": "x2",
+                        "ap": "-3",
+                        "damage": "D3",
+                        "abilities": "-1 to Hit"
+                    }
+                ]
+            },
+            {
+                "name": "Power Sword",
+                "multiProfileComment": "",
+                "profiles":[
+                    {
+                        "name": "Power sword",
+                        "range": "M",
+                        "type": "M",
+                        "strength": "U",
+                        "ap": "-3",
+                        "damage": "1",
+                        "abilities": "-"
+                    }
+                ]
+            },
+            {
+                "name": "Thunder hammer",
+                "multiProfileComment": "",
+                "profiles":[
+                    {
+                        "name": "Thunder hammer",
+                        "range": "M",
+                        "type": "M",
+                        "strength": "x2",
+                        "ap": "-3",
+                        "damage": "3",
+                        "abilities": "-1 to Hit"
+                    }
+                ]
+            }
+        ],
+        "wargear": [],
+        "abilities": [
+            {
+                "name": "Inner Circle",
+                "detail": "This unit automatically passes Morale tests. Can re-roll failed hits in the fight phase for attacks that target FALLEN."
+            },
+            {
                 "name": "Crux Terminatus",
                 "detail": "This model has a 5+ invulnerable save."
             },
+            
             {
-                "name": "Psychic Hood",
-                "detail": "You can add 1 to Deny the Witch tests you take for this model against enemy PSYKERS within 12\"."
+                "name": "Teleport Strike",
+                "detail": "*deepstrike"
+            },
+            {
+                "name": "Combat Squads",
+                "detail": "Before any models are deployed at the start of the game, a squad containing 10 models may be split into two units, each containing 5 models."
+            },
+            {
+                "name": "Storm Shield",
+                "detail": "A model with a storm shield has a 3+ invulnerable save."
+            },
+            {
+                "name": "Watcher in the Dark",
+                "detail": "Once per game, if an enemy psychic power affects a Deathwing Terminator Squad accompanied by a Watcher in the Dark, roll a dice. On a 3+ the power has no effect on this unit."
+            }
+        ],
+        "factionKeywords": ["Imperium","Adeptus astartes","Dark Angels", "Deathwing"],
+        "keywords": ["Infantry","Terminator","Deathwing Terminator Squad"]
+    },
+    {
+        "name": "Deathwing Knights",
+        "role": "Elite",
+        "powerRating": 12,
+        "profiles": [
+            {
+                "name": "Knights",
+                "move": "5\"",
+                "weaponSkill": "3+",
+                "ballisticSkill": "3+",
+                "strength": "4",
+                "thoughness": "4",
+                "wounds": "2",
+                "attacks": "2",
+                "leadership": "8",
+                "save": "2+"
+            },
+            {
+                "name": "Master",
+                "move": "5\"",
+                "weaponSkill": "3+",
+                "ballisticSkill": "3+",
+                "strength": "4",
+                "thoughness": "4",
+                "wounds": "2",
+                "attacks": "3",
+                "leadership": "9",
+                "save": "2+"
+            }
+        ],
+        "unitComp": "",
+        "weapons": [
+            {
+                "name": "Flail of the Unforgiven",
+                "multiProfileComment": "",
+                "profiles":[
+                    {
+                        "name": "Flail of the Unforgiven",
+                        "range": "M",
+                        "type": "M",
+                        "strength": "+2",
+                        "ap": "-3",
+                        "damage": "2",
+                        "abilities": "*1"
+                    }
+                ]
+            },
+            {
+                "name": "Mace of Absolution",
+                "multiProfileComment": "",
+                "profiles":[
+                    {
+                        "name": "Mace of Absolution",
+                        "range": "M",
+                        "type": "M",
+                        "strength": "x2",
+                        "ap": "-2",
+                        "damage": "3",
+                        "abilities": "-"
+                    }
+                ]
+            }
+        ],
+        "wargear": [],
+        "abilities": [
+            {
+                "name": "Inner Circle",
+                "detail": "This unit automatically passes Morale tests. Can re-roll failed hits in the fight phase for attacks that target FALLEN."
             },
             {
                 "name": "Teleport Strike",
                 "detail": "*deepstrike"
+            },
+            
+            {
+                "name": "Storm Shield",
+                "detail": "3+ invulnerable save."
+            },
+            {
+                "name": "Watcher in the Dark",
+                "detail": "Once per game, if an enemy psychic power affects a Deathwing Knights unit accompanied by a Watcher in the Dark, roll a dice. On a 3+ the power has no effect on this unit."
+            },
+            {
+                "name": "Combat Squads",
+                "detail": "(see rules)"
+            },
+            {
+                "name": "*1",
+                "detail": "Excess damage from this weapon is not lost; instead, keep allocating damage to another model in the target unit until either all the damage has been allocated or the target unit is destroyed."
             }
         ],
-        "psyker": {
-            "manifest": 2,
-            "deny": 1,
-            "knows": "Smite, 2 Interomancy"
-        },
-        "factionKeywords": ["Imperium","Adeptus astartes","Dark Angels"],
-        "keywords": ["Charcter","Infantry","Terminator","psyker","Librarian"]
-    }          
+        "factionKeywords": ["Imperium","Adeptus astartes","Dark Angels", "Deathwing"],
+        "keywords": ["Infantry","Terminator","Deathwing Knights"]
+    }               
 ]

@@ -7,14 +7,14 @@ export interface SlateState {
   isSlatesLoading: boolean;
   selectedFaction: string;
   slates: Slate[];
-  selectedSlate: Slate;
+  selectedSlates: Slate[];
 }
 
 const initialState: SlateState = {
   isSlatesLoading: true,
   selectedFaction: '',
   slates: [],
-  selectedSlate: null
+  selectedSlates: []
 };
 
 export function reducer(state = initialState, action: slateActions.Actions): SlateState {
@@ -25,21 +25,30 @@ export function reducer(state = initialState, action: slateActions.Actions): Sla
           isSlatesLoading: true,
           selectedFaction: action.payload,
           slates: [],
-          selectedSlate: null
+          selectedSlates: []
         });
 
     case slateActions.ActionTypes.SLATES_LOADED:
         return Object.assign({}, state, {
           isSlatesLoading: false,
           slates: action.payload,
-          selectedSlate: null
+          selectedSlates: []
         });
 
     case slateActions.ActionTypes.SLATE_SELECTED:
-        const foundSlate = state.slates.find(s => s.name === action.payload);
-        return Object.assign({}, state, {
-          selectedSlate: foundSlate
-        });
+      const foundSlate = state.slates.find(s => s.name === action.payload);
+      return Object.assign({}, state, {
+        isSlatesLoading: false,
+        selectedSlates: [...state.selectedSlates, foundSlate]
+      });
+
+    case slateActions.ActionTypes.SLATE_REMOVED:
+      var slates = [...state.selectedSlates];
+      slates.splice(Number(action.payload) , 1);
+      return Object.assign({}, state, {
+        isSlatesLoading: false,
+        selectedSlates: slates
+      });
 
     default:
       return state;
@@ -58,7 +67,7 @@ export function getIsSlatesLoading(state$: Observable<SlateState>) {
   return state$.select(state => state.isSlatesLoading);
 }
 
-export function getSelectedSlate(state$: Observable<SlateState>) {
-  return state$.select(state => state.selectedSlate);
+export function getSelectedSlates(state$: Observable<SlateState>) {
+  return state$.select(state => state.selectedSlates);
 }
 

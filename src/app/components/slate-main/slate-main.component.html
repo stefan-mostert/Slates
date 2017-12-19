@@ -1,13 +1,23 @@
 <div *ngIf="!slate">
   No Selection
 </div>
+<div class="row end-xs no-print" *ngIf="slate">
+  <div class="col-xs-12">
+    <i class="fa fa-close clickable" (click)="closeClicked()"></i>
+  </div>
+</div>
 <div class="row" *ngIf="slate">
   <div class="col-xs-6">
     <div class="row slate theme-sm front">
       <div class="col-xs-12">
         <div class="row slate-content">
           <div class="col-xs-12 name">
-            {{slate.name}}
+            <div>
+              {{slate.name}}
+            </div>
+            <div class="name2">
+              {{slate.name2}}
+            </div>
           </div>
           <div class="col-xs-12 statline">
             <div class="row middle-xs statline-heading">
@@ -75,9 +85,9 @@
               </div>
             </div>
           </div>
-          <div class="col-xs-12 start-xs unitcomp">
+          <!-- <div class="col-xs-12 start-xs unitcomp">
             {{slate.unitComp}}
-          </div>
+          </div> -->
           <div class="col-xs-12">
             <div class="row middle-xs weapon-heading">
               <div class="col-xs-4 only-left-pad start-xs">

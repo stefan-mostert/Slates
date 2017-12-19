@@ -1,6 +1,10 @@
 @import "./../../../assets/scss/typography.scss";
 @import "./../../../assets/scss/themes.scss";
 
+.clickable {
+    cursor: pointer;
+}
+
 .slate {
     border: solid 1px grey;
     border-radius: 5px;
@@ -13,8 +17,8 @@
     padding-left:3mm;
     padding-right:3mm;
     
-
-    
+    margin-bottom: 10px;
+    margin-right: 5px;
 
     .slate-content {
         //height: 82mm;
@@ -49,6 +53,10 @@
             color: white;
             background-repeat: no-repeat;
             background-size: cover;
+
+            .name2 {
+                @include noto-bold(9px);
+            }
         }
 
         .statline {
@@ -100,14 +108,14 @@
         }
 
         .abilities {
-            @include noto(8px);
+            @include noto(9px);
     
             .ability {
                 padding-bottom: 5px;
             }
            
            .ability-name {
-               @include noto-bold(8px);
+               @include noto-bold(9px);
            }
         }
 
@@ -181,5 +189,11 @@
             
         }
 
+    }
+}
+
+@media print {
+    .no-print {
+        display: none !important;
     }
 }

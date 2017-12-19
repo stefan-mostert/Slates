@@ -21,7 +21,7 @@ export class SlateSelected implements Action {
 
 export class SlateRemoved implements Action {
   readonly type = ActionTypes.SLATE_REMOVED;
-  constructor(public payload: string) { }
+  constructor(public payload: number) { }
 }
 
 export class SlatesLoading implements Action {

@@ -4,3 +4,9 @@ body {
     background-color: #d1cfce;
     color: black;
 }
+
+@media print {
+    body {
+        background-color: white !important;
+    }
+}
