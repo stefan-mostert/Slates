@@ -113,10 +113,10 @@
               </div>
             </div>
           </div>
-          <div class="col-xs-12">
+          <div class="col-xs-12" >
             <div class="row">
-              <div class="col-xs-12">
-                <div *ngFor="let weapon of slate.weapons;let odd=odd; let last=last" [ngClass]="{oddweapon: odd}">
+              <div class="col-xs-12 weapon-profiles" (click)="showWeaponOptions()">
+                <div *ngFor="let weapon of filterEquipedWeapons();let odd=odd; let last=last" [ngClass]="{oddweapon: odd}">
                   <div class="row middle-xs weapon-profile" *ngIf="weapon.profiles.length > 1">
                     <div class="col-xs-4 start-xs only-left-pad">
                       {{weapon.name}}
@@ -145,7 +145,7 @@
                       {{wprofile.damage}}
                     </div>
                     <div class="col-xs-2 no-pad">
-                      {{wprofile.abilities}}
+                      <span *ngIf="wprofile.abilityNumber > 0">{{wprofile.abilityNumber}}</span>
                     </div>
                   </div>
                 </div>
@@ -154,18 +154,7 @@
               </div>
             </div>
           </div>
-          <!-- <div class="col-xs-12">
-            <div class="row wargear" *ngIf="slate.wargear.length > 0">
-              <div class="col-xs-12 only-left-pad start-xs minor-title">
-                WARGEAR
-              </div>
-              <div class="col-xs-12 start-xs">
-                <ul class="wargear-options">
-                  <li *ngFor="let option of slate.wargear">{{option}}</li>
-                </ul>
-              </div>
-            </div>
-          </div> -->
+          
           <div class="col-xs-12">
             <div class="row psyker" *ngIf="slate.psyker">
               <div class="col-xs-12 psyker-heading  start-xs only-left-pad minor-title">
@@ -201,14 +190,50 @@
           </div>
           <div class="col-xs-12 start-xs">
             <div class="row">
-              <div class="col-xs-12 ability" *ngFor="let ability of slate.abilities; let odd=odd">
+              <div class="col-xs-12 ability" *ngFor="let ability of slate.abilities">
                 <span class="ability-name">{{ability.name}}: </span>
                 <span>{{ability.detail}}</span>
               </div>
             </div>
           </div>
+          <div class="col-xs-12 start-xs">
+              <div class="row">
+                <div class="col-xs-12 ability" *ngFor="let ability of slate.weaponAbilities">
+                  <span class="ability-name">{{ability.name}}: </span>
+                  <span>{{ability.detail}}</span>
+                </div>
+              </div>
+            </div>
         </div>
       </div>
     </div>
   </div>
 </div>
+<p-dialog class="weapon-option-modal" header="Weapon Options" [(visible)]="displayWeaponOptions" modal="modal">
+  <div class="row start-xs unit-comp">
+    <div class="col-xs-12">
+      <p>{{slate.unitComp}}</p>
+    </div>
+  </div>
+  <div class="row start-xs wargear-text" *ngIf="slate.wargear.wargearText.length > 0">
+    <div class="col-xs-12">
+      <ul>
+        <li *ngFor="let wargearText of slate.wargear.wargearText">{{wargearText}}</li>
+      </ul>
+    </div>
+  </div>
+  <div class="row start-xs include-options">
+    <div class="col-xs-12 include-heading">
+      Include following options
+    </div>
+    <div class="col-xs-6 inlcude-option start-xs" *ngFor="let wargearOption of slate.wargear.wargearOptions">
+        <p-checkbox name="groupname" value="{{wargearOption.name}}" label="{{wargearOption.name}}" [(ngModel)]="selectedValues"></p-checkbox>
+    </div>
+  </div>
+  <div class="row end-xs include-buttons">
+    <div class="col-xs-12">
+      <button type="button" pButton icon="fa-check" (click)="saveWeaponOptions()" label="Save">Save</button>
+      <button type="button" pButton icon="fa-close" (click)="displayWeaponOptions=false" label="Cancel">Cancel</button>
+    </div>
+  </div>
+</p-dialog>

@@ -11,7 +11,7 @@
         <div class="faction tyranid-select" [ngClass]="{ 'active' : (selectedFaction$ | async) === 'tyranids'}" (click)="changeFaction('tyranids')"></div>
     </div>
     <div class="col-xs-3 no-print">
-      <app-slate-list [isLoading]="isSlatesLoading$ | async" [slates]="slates$ | async" (selectedChanged)="selectedSlate($event)">
+      <app-slate-list [isLoading]="isSlatesLoading$ | async" [slates]="slates$ | async" (selected)="selectedSlate($event)">
       </app-slate-list>
     </div>
     <div class="col">

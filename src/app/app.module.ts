@@ -3,6 +3,7 @@ import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { RouterStoreModule } from '@ngrx/router-store';
 import { StoreModule } from '@ngrx/store';
 import { SlateService } from './services/slate.service';
+import { WeaponService } from './services/weapon.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -16,7 +17,7 @@ import { SlateMainComponent } from './components/slate-main/slate-main.component
 
 import { reducer } from './reducers';
 import { EffectsModule } from "@ngrx/effects";
-import {DropdownModule} from 'primeng/primeng';
+import {DropdownModule, DialogModule, CheckboxModule} from 'primeng/primeng';
 
 @NgModule({
   declarations: [
@@ -31,12 +32,15 @@ import {DropdownModule} from 'primeng/primeng';
     FormsModule,
     HttpModule,
     DropdownModule,
+    DialogModule,
+    CheckboxModule,
     StoreModule.provideStore(reducer),
     StoreDevtoolsModule.instrumentOnlyWithExtension(),
     EffectsModule.run(SlateEffects),
   ],
   providers: [
-    SlateService
+    SlateService,
+    WeaponService
   ],
   bootstrap: [AppComponent]
 })

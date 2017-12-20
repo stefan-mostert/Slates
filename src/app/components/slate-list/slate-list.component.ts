@@ -10,7 +10,7 @@ export class SlateListComponent implements OnInit {
 
   @Input() isLoading = true;
   @Input() slates: Slate[];
-  @Output() selectedChanged = new EventEmitter<string>();
+  @Output() selected = new EventEmitter<string>();
 
   constructor() { }
 
@@ -18,6 +18,6 @@ export class SlateListComponent implements OnInit {
   }
 
   selectSlate(name: string) {
-    this.selectedChanged.emit(name);
+    this.selected.emit(name);
   }
 }

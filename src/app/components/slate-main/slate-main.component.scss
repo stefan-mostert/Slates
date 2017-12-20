@@ -90,10 +90,19 @@
             border-bottom: solid 2px black;
         }
 
-        .weapon-profile {
-            @include noto(8px);
-            padding-top: 2px;
-            padding-bottom: 2px;
+        .weapon-profiles {
+            cursor: pointer;
+
+            .weapon-profile {
+                @include noto(8px);
+                padding-top: 2px;
+                padding-bottom: 2px;
+                
+            }
+
+            &:hover {
+                border: 1px solid red;
+            }
         }
 
         .wargear {
@@ -189,6 +198,37 @@
             
         }
 
+    }
+}
+
+.weapon-option-modal {
+    @include noto(14px);
+    .unit-comp {
+        @include noto-bold(14px);
+    }
+    .wargear-text {
+        
+    }
+    .include-options{
+        .include-heading {
+            @include noto-bold(14px);
+        }
+    }
+
+    .include-buttons {
+        margin-top: 20px;
+    }
+}
+
+
+/deep/ 
+.ui-dialog {
+    .ui-dialog-titlebar {
+        background-image: $sm-name-background-image;
+        color: white;
+    }
+    .ui-dialog-content {
+        background-color: $sm-grid-background-colour2;
     }
 }
 

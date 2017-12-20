@@ -1,0 +1,135 @@
+[
+    {
+        "name": "Bolt pistol",
+        "multiProfileComment": "",
+        "profiles":[
+            {
+                "name": "Bolt pistol",
+                "range": "12\"",
+                "type": "P-1",
+                "strength": "4",
+                "ap": "0",
+                "damage": "1",
+                "abilities": ""
+            }
+        ],
+        "groups": []
+    },
+    {
+        "name": "Frag grenade",
+        "multiProfileComment": "",
+        "profiles":[
+            {
+                "name": "Frag grenade",
+                "range": "6\"",
+                "type": "G-D6",
+                "strength": "3",
+                "ap": "0",
+                "damage": "1",
+                "abilities": ""
+            }
+        ],
+        "groups": []
+    },
+    {
+        "name": "Lion's Wrath",
+        "multiProfileComment": "Chose one or both. If both -1 to hit",
+        "profiles":[
+            {
+                "name":"- MC boltgun",
+                "range": "24\"",
+                "type": "RF-1",
+                "strength": "4",
+                "ap": "-1",
+                "damage": "2",
+                "abilities": ""
+            },
+            {
+                "name":"- Plasma gun",
+                "range": "24\"",
+                "type": "RF-1",
+                "strength": "7",
+                "ap": "-3",
+                "damage": "1",
+                "abilities": "*plasma"
+            }
+        ],
+        "groups": []
+    },
+    {
+        "name": "Krak grenade",
+        "multiProfileComment": "",
+        "profiles":[
+            {
+                "name": "Krak grenade",
+                "range": "6\"",
+                "type": "G-1",
+                "strength": "6",
+                "ap": "-1",
+                "damage": "D3",
+                "abilities": ""
+            }
+        ],
+        "groups": []
+    },
+    {
+        "name": "Force axe",
+        "multiProfileComment": "",
+        "profiles":[
+            {
+                "name": "Force axe",
+                "range": "M",
+                "type": "M",
+                "strength": "+1",
+                "ap": "-2",
+                "damage": "D3",
+                "abilities": ""
+            }
+        ]
+    },
+    {
+        "name": "Force stave",
+        "multiProfileComment": "",
+        "profiles":[
+            {
+                "name": "Force stave",
+                "range": "M",
+                "type": "M",
+                "strength": "+2",
+                "ap": "-1",
+                "damage": "D3",
+                "abilities": ""
+            }
+        ]
+    },
+    {
+        "name": "Force sword",
+        "multiProfileComment": "",
+        "profiles":[
+            {
+                "name": "Force sword",
+                "range": "M",
+                "type": "M",
+                "strength": "U",
+                "ap": "-3",
+                "damage": "D3",
+                "abilities": ""
+            }
+        ]
+    },
+    {
+        "name": "Sword of Secrets",
+        "multiProfileComment": "",
+        "profiles":[
+            {
+                "name": "Sword of Secrets",
+                "range": "M",
+                "type": "M",
+                "strength": "+2",
+                "ap": "-3",
+                "damage": "D3",
+                "abilities": "Each time you make a wound roll of a 6+ for this weapon, the target suffers a mortal wound in addition to any other damage."
+            }
+        ]
+    }
+]
