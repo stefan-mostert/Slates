@@ -145,7 +145,7 @@
                       {{wprofile.damage}}
                     </div>
                     <div class="col-xs-2 no-pad">
-                      <span *ngIf="wprofile.abilityNumber > 0">{{wprofile.abilityNumber}}</span>
+                      <span *ngIf="wprofile.abilityNumber > 0">*{{wprofile.abilityNumber}}</span>
                       <span *ngIf="!wprofile.abilityNumber">{{wprofile.abilities}}</span>
                     </div>
                   </div>
@@ -177,6 +177,9 @@
           </div>
           <div class="col-xs-12 start-xs only-left-pad keywords">
             {{slate.keywords.join(', ')}}
+          </div>
+          <div class="col-xs-12 start-xs only-left-pad wounds" *ngIf="slate.showWounds">
+            <span *ngFor="let wound of wounds" class="wounds"><i class="fa fa-circle-o"></i></span>
           </div>
         </div>
       </div>

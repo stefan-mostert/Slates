@@ -25,6 +25,11 @@
         "compact": "5++"
     },
     {
+        "name": "Explodes",
+        "detail": "If this model is reduced to 0 wounds, roll a D6 before removing it from the battlefield. On a 6 it explodes, and each unit within D6\" suffers D3 mortal wounds.",
+        "compact": "on 6, deals D3 mortal to units withing D6\"."
+    },
+    {
         "name": "Inner Circle",
         "detail": "This unit automatically passes Morale tests. In addition, you can re-roll failed hit rolls in the Fight phase for attacks by this unit that target a FALLEN unit.",
         "compact": "Immune Morale, re-roll hits in Fight phase vs FALLEN"

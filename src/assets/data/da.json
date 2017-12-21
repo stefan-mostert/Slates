@@ -57,7 +57,8 @@
         ],
         "weaponAbilities": [],
         "factionKeywords": ["Imperium","Adeptus astartes","Dark Angels","Deathwing"],
-        "keywords": ["Charcter","Infantry","Chapter Master","Azreal"]
+        "keywords": ["Charcter","Infantry","Chapter Master","Azreal"],
+        "showWounds": true
     },
     {
         "id" : "da-belial",
@@ -122,7 +123,8 @@
             }
         ],
         "factionKeywords": ["Imperium","Adeptus astartes","Dark Angels","Deathwing"],
-        "keywords": ["Charcter","Infantry","Grand Master","Terminator","Belial"]
+        "keywords": ["Charcter","Infantry","Grand Master","Terminator","Belial"],
+        "showWounds": true
     },
     {
         "id" : "da-intchap",
@@ -200,7 +202,8 @@
             }
         ],
         "factionKeywords": ["Imperium","Adeptus astartes","Dark Angels", "Deathwing"],
-        "keywords": ["Charcter","Infantry","Chaplain","Interrogator-chaplain"]
+        "keywords": ["Charcter","Infantry","Chaplain","Interrogator-chaplain"],
+        "showWounds": true
     },
     {
         "id" : "da-intchap-jump",
@@ -284,7 +287,8 @@
             }
         ],
         "factionKeywords": ["Imperium","Adeptus astartes","Dark Angels", "Deathwing"],
-        "keywords": ["Charcter","Infantry","Chaplain","Interrogator-chaplain", "Jump Pack", "Fly"]
+        "keywords": ["Charcter","Infantry","Chaplain","Interrogator-chaplain", "Jump Pack", "Fly"],
+        "showWounds": true
     },
     {
         "id": "da-prim-librarian",
@@ -336,7 +340,8 @@
             "knows": "Smite, 2 Interomancy"
         },
         "factionKeywords": ["Imperium","Adeptus astartes","Dark Angels", "Deathwing"],
-        "keywords": ["Charcter","Infantry","Primaris","psyker","Librarian"]
+        "keywords": ["Charcter","Infantry","Primaris","psyker","Librarian"],
+        "showWounds": true
     },
     {
         "name": "Librarian",
@@ -403,7 +408,8 @@
             "knows": "Smite, 2 Interomancy"
         },
         "factionKeywords": ["Imperium","Adeptus astartes","Dark Angels", "Deathwing"],
-        "keywords": ["Charcter","Infantry","Terminator","psyker","Librarian"]
+        "keywords": ["Charcter","Infantry","Terminator","psyker","Librarian"],
+        "showWounds": true
     },
     {
         "id": "da-prim-lieutenants",
@@ -460,7 +466,8 @@
             }
         ],
         "factionKeywords": ["Imperium","Adeptus astartes","Dark Angels"],
-        "keywords": ["Charcter","Infantry","Primaris","Lieutenants"]
+        "keywords": ["Charcter","Infantry","Primaris","Lieutenants"],
+        "showWounds": true
     },
     {
         "id": "da-tactical", 
@@ -546,7 +553,8 @@
             }
         ],
         "factionKeywords": ["Imperium","Adeptus astartes","Dark Angels"],
-        "keywords": ["Infantry","Tactical Squad"]
+        "keywords": ["Infantry","Tactical Squad"],
+        "showWounds": false
     },
     {
         "id": "da-intercessor",
@@ -615,7 +623,8 @@
             }
         ],
         "factionKeywords": ["Imperium","Adeptus astartes","Dark Angels"],
-        "keywords": ["Infantry","Primaris","Intercessor Squad"]
+        "keywords": ["Infantry","Primaris","Intercessor Squad"],
+        "showWounds": false
     },
     {
         "id": "da-deathwing-terminators",
@@ -704,7 +713,8 @@
             }
         ],
         "factionKeywords": ["Imperium","Adeptus astartes","Dark Angels", "Deathwing"],
-        "keywords": ["Infantry","Terminator","Deathwing Terminator Squad"]
+        "keywords": ["Infantry","Terminator","Deathwing Terminator Squad"],
+        "showWounds": false
     },
     {
         "id": "da-deathwing-knights",
@@ -776,8 +786,135 @@
             }
         ],
         "factionKeywords": ["Imperium","Adeptus astartes","Dark Angels", "Deathwing"],
-        "keywords": ["Infantry","Terminator","Deathwing Knights"]
+        "keywords": ["Infantry","Terminator","Deathwing Knights"],
+        "showWounds": false
     },
+    {
+        "id": "da-inceptor",
+        "name": "Inceptor Squad",
+        "role": "Fast Attack",
+        "powerRating": 10,
+        "profiles": [
+            {
+                "name": "Inceptor",
+                "move": "10\"",
+                "weaponSkill": "3+",
+                "ballisticSkill": "3+",
+                "strength": "4",
+                "thoughness": "5",
+                "wounds": "2",
+                "attacks": "2",
+                "leadership": "7",
+                "save": "3+"
+            },
+            {
+                "name": "Sergeant",
+                "move": "10\"",
+                "weaponSkill": "3+",
+                "ballisticSkill": "3+",
+                "strength": "4",
+                "thoughness": "5",
+                "wounds": "2",
+                "attacks": "3",
+                "leadership": "8",
+                "save": "3+"
+            }
+        ],
+        "unitComp": "This unit contains 1 Inceptor Sergeant and 2-5 Inceptors. Each model is equiped with two assault bolters.",
+        "weapons": [],
+        "wargear": {
+            "wargearText": [
+                "All models in this unit may replace their two assault bolters with two plasma exterminators."
+            ],
+            "wargearOptions": [
+                {"name": "Assault bolter", "equipedByDefault": true}, 
+                {"name": "Plasma exterminator", "equipedByDefault": false}
+            ]
+        },
+        "abilities": [
+            {
+                "name": "And they shall know no fear",
+                "lookup": true,
+                "displayFullText": true
+            },
+            {
+                "name": "Combat Squads",
+                "lookup": true,
+                "displayFullText": false
+            },
+            {
+                "name": "Meteoric Descent",
+                "detail": "During deployment, you can set it up in high orbit intead of placing it on the battlefield. At the end of any of your Movement phases this model can a meteoric descent - set it up anywhere on the battlefield that is more than 9\" away from any enemy models.",
+                "compact": "*Deepstrike",
+                "displayFullText": false
+            },
+            {
+                "name": "Crushing Charge",
+                "detail": "Roll a D6 each time a model from this unit finishes a charge move within 1\" of an enemy unit; on a 6, the enemy unit suffers a mortal wound.",
+                "compact": "(see codex)",
+                "displayFullText": true
+            }
+        ],
+        "factionKeywords": ["Imperium","Adeptus astartes","Dark Angels"],
+        "keywords": ["Infantry","Jump Pack","MK X Gravis", "Primaris", "Fly", "Inceptor Squad"],
+        "showWounds": false
+    },
+    {
+        "id": "da-ravenwing-attack-bike",
+        "name": "Ravenwing",
+        "name2": "Attack Bike Squad",
+        "role": "Fast Attack",
+        "powerRating": 3,
+        "profiles": [
+            {
+                "name": "",
+                "move": "14\"",
+                "weaponSkill": "3+",
+                "ballisticSkill": "3+",
+                "strength": "4",
+                "thoughness": "5",
+                "wounds": "4",
+                "attacks": "2",
+                "leadership": "7",
+                "save": "3+"
+            }
+        ],
+        "unitComp": "This unit contains 1-3 Ravenwing Attack Bikes. Each model is equipped with a twin boltgun and a heavy bolter, and its crewed by two Dark Angels armed with a bolt pistol, frag and krak grenades.",
+        "weapons": [],
+        "wargear": {
+            "wargearText": [
+                "Any model may replace its heavy bolter with multi-melta."
+            ],
+            "wargearOptions": [
+                {"name": "Bolt pistol", "equipedByDefault": true}, 
+                {"name": "Twin boltgun", "equipedByDefault": true},
+                {"name": "Heavy bolter", "equipedByDefault": true},
+                {"name": "Multi-melta", "equipedByDefault": false},
+                {"name": "Frag grenade", "equipedByDefault": true}, 
+                {"name": "Krak grenade", "equipedByDefault": true}
+            ]
+        },
+        "abilities": [
+            {
+                "name": "And they shall know no fear",
+                "lookup": true,
+                "displayFullText": true
+            },
+            {
+                "name": "Jink",
+                "lookup": true,
+                "displayFullText": true
+            },
+            {
+                "name": "Turbo Boost",
+                "lookup": true,
+                "displayFullText": true
+            }
+        ],
+        "factionKeywords": ["Imperium","Adeptus astartes","Dark Angels", "Ravenwing"],
+        "keywords": ["Biker","Ravenwing Attack Bike Squad"],
+        "showWounds": false
+    },   
     {
         "id": "da-ravenwing-bikes",
         "name": "Ravenwing Bike Squad",
@@ -839,6 +976,8 @@
                 {"name": "Grav-gun", "equipedByDefault": false},
                 {"name": "Meltagun", "equipedByDefault": false},
                 {"name": "Plasma gun", "equipedByDefault": false},
+                {"name": "Heavy bolter", "equipedByDefault": false},
+                {"name": "Multi-melta", "equipedByDefault": false},
                 {"name": "Chain sword", "equipedByDefault": true},
                 {"name": "Lightning claw", "equipedByDefault": false},
                 {"name": "Power axe", "equipedByDefault": false},
@@ -873,6 +1012,58 @@
             }
         ],
         "factionKeywords": ["Imperium","Adeptus astartes","Dark Angels", "Ravenwing"],
-        "keywords": ["Biker","Ravenwing Bike Squad"]
-    }     
+        "keywords": ["Biker","Ravenwing Bike Squad"],
+        "showWounds": false
+    },
+    {
+        "id": "da-ravenwing-darkshroud",
+        "name": "Ravenwing Darkshroud",
+        "role": "Fast Attack",
+        "powerRating": 7,
+        "profiles": [
+            {
+                "name": "",
+                "move": "12\"",
+                "weaponSkill": "3+",
+                "ballisticSkill": "3+",
+                "strength": "4",
+                "thoughness": "6",
+                "wounds": "9",
+                "attacks": "3",
+                "leadership": "8",
+                "save": "3+"
+            }
+        ],
+        "unitComp": "The Ravenwing Darkshroud is a single model equipped with a heavy bolter.",
+        "weapons": [],
+        "wargear": {
+            "wargearText": [
+                "This model may replace its heavy bolter with an assault cannon"
+            ],
+            "wargearOptions": [
+                {"name": "Heavy bolter", "equipedByDefault": false},
+                {"name": "Assault cannon", "equipedByDefault": false}
+            ]
+        },
+        "abilities": [
+            {
+                "name": "Jink",
+                "lookup": true,
+                "displayFullText": true
+            },
+            {
+                "name": "Icon of Old Caliban",
+                "detail": "Your opponent must subtract 1 from any hit rolls they make for shooting attacks that target DARK ANGELS units within 6\" of any friendly Ravenwing Darkshrouds.",
+                "displayFullText": true
+            },
+            {
+                "name": "Explodes",
+                "lookup": true,
+                "displayFullText": true
+            }
+        ],
+        "factionKeywords": ["Imperium","Adeptus astartes","Dark Angels", "Ravenwing"],
+        "keywords": ["Vehicle", "Land speeder","Fly","Ravenwing Darkshroud"],
+        "showWounds": true
+    }
 ]

@@ -18,12 +18,14 @@ export class SlateMainComponent implements OnInit {
   displayAbilityOptions = false;
   selectedValues: string[] = [];
   selectedAbilities: string[] = [];
+  wounds: number[];
 
   constructor() { }
 
   ngOnInit() {
     this.selectedValues = this.filterEquipedWeapons().map(weapon => weapon.name);
     this.selectedAbilities = this.filterFullTextAbilities().map(ability => ability.name);
+    this.wounds = Array(Number(this.slate.profiles[0].wounds)).fill(0); 
   }
 
   ngOnChanges(changes: SimpleChanges) {
