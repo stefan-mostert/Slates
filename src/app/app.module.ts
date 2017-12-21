@@ -4,6 +4,7 @@ import { RouterStoreModule } from '@ngrx/router-store';
 import { StoreModule } from '@ngrx/store';
 import { SlateService } from './services/slate.service';
 import { WeaponService } from './services/weapon.service';
+import { AbilityService } from './services/ability.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -40,7 +41,8 @@ import {DropdownModule, DialogModule, CheckboxModule} from 'primeng/primeng';
   ],
   providers: [
     SlateService,
-    WeaponService
+    WeaponService,
+    AbilityService
   ],
   bootstrap: [AppComponent]
 })

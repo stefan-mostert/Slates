@@ -17,7 +17,7 @@ export class SlateListComponent implements OnInit {
   ngOnInit() {
   }
 
-  selectSlate(name: string) {
-    this.selected.emit(name);
+  selectSlate(slateId: string) {
+    this.selected.emit(slateId);
   }
 }

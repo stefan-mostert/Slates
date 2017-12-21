@@ -146,6 +146,7 @@
                     </div>
                     <div class="col-xs-2 no-pad">
                       <span *ngIf="wprofile.abilityNumber > 0">{{wprofile.abilityNumber}}</span>
+                      <span *ngIf="!wprofile.abilityNumber">{{wprofile.abilities}}</span>
                     </div>
                   </div>
                 </div>
@@ -183,8 +184,8 @@
   </div>
   <div class="col-xs-6">
     <div class="row slate theme-sm back">
-      <div class="col-xs-12 slate-content">
-        <div class="row abilities" *ngIf="slate.abilities.length > 0">
+      <div class="col-xs-12 slate-content ability-edit" (click)="showAbilityOptions()">
+        <div class="row abilities" *ngIf="slate.abilities.length > 0" >
           <div class="col-xs-12 only-left-pad start-xs minor-title">
             ABILITIES
           </div>
@@ -192,7 +193,8 @@
             <div class="row">
               <div class="col-xs-12 ability" *ngFor="let ability of slate.abilities">
                 <span class="ability-name">{{ability.name}}: </span>
-                <span>{{ability.detail}}</span>
+                <span *ngIf="ability.displayFullText">{{ability.detail}}</span>
+                <span *ngIf="!ability.displayFullText">{{ability.compact}}</span>
               </div>
             </div>
           </div>
@@ -209,7 +211,8 @@
     </div>
   </div>
 </div>
-<p-dialog class="weapon-option-modal" header="Weapon Options" [(visible)]="displayWeaponOptions" modal="modal">
+
+<p-dialog class="weapon-option-modal" header="Weapon Options" [(visible)]="displayWeaponOptions" modal="modal" [width]="600">
   <div class="row start-xs unit-comp">
     <div class="col-xs-12">
       <p>{{slate.unitComp}}</p>
@@ -237,3 +240,20 @@
     </div>
   </div>
 </p-dialog>
+
+<p-dialog class="ability-option-modal" header="Abilities" [(visible)]="displayAbilityOptions" modal="modal" [width]="600">
+    <div class="row start-xs include-options">
+      <div class="col-xs-12 include-heading">
+        Include Full Text
+      </div>
+      <div class="col-xs-6 inlcude-option start-xs" *ngFor="let ability of slate.abilities">
+          <p-checkbox name="groupname" value="{{ability.name}}" label="{{ability.name}}" [(ngModel)]="selectedAbilities"></p-checkbox>
+      </div>
+    </div>
+    <div class="row end-xs include-buttons">
+      <div class="col-xs-12">
+        <button type="button" pButton icon="fa-check" (click)="saveAbilityOptions()" label="Save">Save</button>
+        <button type="button" pButton icon="fa-close" (click)="displayAbilityOptions=false" label="Cancel">Cancel</button>
+      </div>
+    </div>
+  </p-dialog>

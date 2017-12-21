@@ -1,4 +1,4 @@
-import { Slate, Weapon } from './../models/slate';
+import { Slate, Weapon, Ability } from './../models/slate';
 import { Action } from '@ngrx/store';
 
 export namespace ActionTypes {
@@ -9,6 +9,8 @@ export namespace ActionTypes {
   export const SLATES_LOADED = '[Unit] Slate Loaded';
   export const WEAPONS_LOADING = '[Unit] Weapon Loading';
   export const WEAPONS_LOADED = '[Unit] Weapon Loaded';
+  export const ABILITIES_LOADING = '[Unit] Abilities Loading';
+  export const ABILITIES_LOADED = '[Unit] Abilities Loaded';
 };
 
 export class SlateAdded implements Action {
@@ -46,6 +48,16 @@ export class WeaponsLoaded implements Action {
   constructor(public payload: Weapon[]) { }
 }
 
+export class AbilitiesLoading implements Action {
+  readonly type = ActionTypes.ABILITIES_LOADING;
+  constructor(public payload: string) { }
+}
+
+export class AbilitiesLoaded implements Action {
+  readonly type = ActionTypes.ABILITIES_LOADED;
+  constructor(public payload: Ability[]) { }
+}
+
 export type Actions
 = SlateAdded
 | SlateSelected
@@ -53,4 +65,6 @@ export type Actions
 | SlatesLoading
 | SlatesLoaded
 | WeaponsLoading
-| WeaponsLoaded;
+| WeaponsLoaded
+| AbilitiesLoading
+| AbilitiesLoaded;

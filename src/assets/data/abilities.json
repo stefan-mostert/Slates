@@ -1,0 +1,98 @@
+[
+    {
+        "name": "Aura of Dread",
+        "detail": "Units within 6\" of an enemy with this ability must subtract 1 from their Leadership characteristic.",
+        "compact": "-1 leadership within 6\""
+    },
+    {
+        "name": "Combat Squads",
+        "detail": "Before any models are deployed at the start of the game, a squad containing 10 models may be split into two units, each containing 5 models.",
+        "compact": "(see codex)"
+    },
+    {
+        "name": "Combat Squads (Bikes)",
+        "detail": "Before any models are deployed at the start of the game, a squad containing 6 models may be split into two units, each containing 3 models. A squad containing 9 models may be split into three units, each containing 3 models ",
+        "compact": "(see codex)"
+    },
+    {
+        "name": "Company Heroes",
+        "detail": "During deployment, all models in this unit must be set up at the same time. However once the battle has vegin, each operates independently and is treated as a sperate unit for all rules purposes.",
+        "compact": "(see codex)"
+    },
+    {
+        "name": "Crux Terminatus",
+        "detail": "Has a 5+ invulnerable save.",
+        "compact": "5++"
+    },
+    {
+        "name": "Inner Circle",
+        "detail": "This unit automatically passes Morale tests. In addition, you can re-roll failed hit rolls in the Fight phase for attacks by this unit that target a FALLEN unit.",
+        "compact": "Immune Morale, re-roll hits in Fight phase vs FALLEN"
+    },
+    {
+        "name": "Iron Halo",
+        "detail": "Has a 4+ invulnerable save.",
+        "compact": "4++"
+    },
+    {
+        "name": "Jink",
+        "detail": "If this unit Advances, it gains a 4+ invulnerable save agains shooting attacks untill the start of the next movement phase.",
+        "compact": "4++ if Advanced"
+    },
+    {
+        "name": "Jump Pack Assault",
+        "detail": "During deployment, if this model has a jump pack, you can set it up high in the skies intead of placing it on the battlefield. At the end of any of your Movement phases this model can assault from above - set it up anywhere on the battlefield that is more than 9\" away from any enemy models.",
+        "compact": "*Deepstrike"
+    },
+    {
+        "name": "Litanies of Hate",
+        "detail": "You can re-roll failed hit rolls in the Fight phase for friendly DARK ANGELS units within 6\" of this model.",
+        "compact": "re-roll hits in fight phase within 6\""
+    },
+    {
+        "name": "Psychic Hood",
+        "detail": "You can add 1 to Deny the Witch tests you take for this model against enemy PSYKERS within 12\".",
+        "compact": "+1 DtW within 12\""
+    },
+    {
+        "name": "Rites of Battle",
+        "detail": "You can re-roll hit rolls of 1 for freindly DARK ANGELS units within 6\".",
+        "compact": "re-reroll hits of 1 within 6\""
+    },
+    {
+        "name": "Rosarius",
+        "detail": "Has a 4+ invulnerable save.",
+        "compact": "4++"
+    },
+    {
+        "name": "Spiritual Leaders",
+        "detail": "All friendly DARK ANGELS units within 6\" of this model can use his leadership instead of their own.",
+        "compact": "can use leadership within 6\"."
+    },
+    {
+        "name": "Storm Shield",
+        "detail": "A model with a storm shield has a 3+ invulnerable save.",
+        "compact": "3++"
+    },
+    
+    {
+        "name": "And they shall know no fear",
+        "detail": "You can re-roll failed Morale tests for this unit.",
+        "compact": "re-roll failed Morale."
+    },
+    {
+        "name": "Teleport Strike",
+        "detail": "During deployment, you can set up this unit in a teleportarium chamber intead of placing them on the battlefield. At the end of any of your Movement phases they can teleport into battle - set them up anywhere on the battlefield that is more than 9\" from any enemy models.",
+        "compact": "*Deepstrike"
+    },
+    {
+        "name": "Turbo Boost",
+        "detail": "When this model advances, add 6\" to its Move characteristic for the Movement phase isntead of rolling a dice.",
+        "compact": "always advances 6\""
+    },
+    {
+        "name": "Watcher in the Dark",
+        "detail": "Once per game, if an enemy psychic power affects a Deathwing Terminator Squad accompanied by a Watcher in the Dark, roll a dice. On a 3+ the power has no effect on this unit.",
+        "compact": "(see codex)"
+    }
+]

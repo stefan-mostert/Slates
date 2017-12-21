@@ -1,5 +1,6 @@
 [
     {
+        "id" : "da-azreal",
         "name": "Azreal",
         "role": "HQ",
         "powerRating": 9,
@@ -38,22 +39,304 @@
             {
                 "name": "Chapter Master",
                 "detail": "You can re-roll failed hit rolls for friendly DARK ANGELS units within 6\".",
+                "compact": "re-roll hits within 6\"",
                 "displayFullText": true
             },
             {
                 "name": "Supreme Tactician",
-                "detail": "If your army is Battle-forged you receive 1 additional CP if Azreal is warlord.",
+                "detail": "If your army is Battle-forged you receive 1 additional Command Point if Azreal is your warlord.",
+                "compact": "+1 CP",
                 "displayFullText": true
             },
             {
                 "name": "Lion Helm",
-                "detail": "All friendly DARK ANGELS INFANTRY and DARK ANGELS BIKERS models within 6\" of Azreal have a 4+ invulnerable save.",
+                "detail": "All friendly DARK ANGELS INFANTRY and DARK ANGELS BIKER models within 6\" of Azreal have a 4+ invulnerable save.",
+                "compact": "(see codex)",
                 "displayFullText": true
             }
         ],
         "weaponAbilities": [],
         "factionKeywords": ["Imperium","Adeptus astartes","Dark Angels","Deathwing"],
         "keywords": ["Charcter","Infantry","Chapter Master","Azreal"]
+    },
+    {
+        "id" : "da-belial",
+        "name": "Belial",
+        "role": "HQ",
+        "powerRating": 8,
+        "profiles": [
+            {
+                "name": "",
+                "move": "5\"",
+                "weaponSkill": "2+",
+                "ballisticSkill": "2+",
+                "strength": "4",
+                "thoughness": "4",
+                "wounds": "6",
+                "attacks": "4",
+                "leadership": "9",
+                "save": "2+"
+            }
+        ],
+        "unitComp": "Belial is a single model armed the Sword of Silence and a storm bolter. Unique.",
+        "weapons": [],
+        "wargear": {
+            "wargearText": [],
+            "wargearOptions": [
+                {"name": "Storm bolter", "equipedByDefault": true}, 
+                {"name": "Sword of Silence", "equipedByDefault": true}
+            ]
+        },
+        "abilities": [
+            {
+                "name": "Inner Circle",
+                "lookup": true,
+                "displayFullText": true
+            },
+            {
+                "name": "Rites of Battle",
+                "lookup": true,
+                "displayFullText": true
+            },
+            {
+                "name": "Grand Master of the Deathwing",
+                "detail": "You can re-roll failed hit rolls for friendly DEATHWING units within 6\".",
+                "compact": "re-roll failed hits for DEATHWING within 6\"",
+                "displayFullText": true
+            },
+            {
+                "name": "Parrying Blade",
+                "detail": "Your opponent must subtract 1 from hit rolls for attacks that target Belial in the Fight phase.",
+                "compact": "-1 to hit in Fight phase.",
+                "displayFullText": true
+            },
+            {
+                "name": "Iron Halo",
+                "lookup": true,
+                "displayFullText": true
+            },
+            {
+                "name": "Teleport Strike",
+                "lookup": true,
+                "displayFullText": false
+            }
+        ],
+        "factionKeywords": ["Imperium","Adeptus astartes","Dark Angels","Deathwing"],
+        "keywords": ["Charcter","Infantry","Grand Master","Terminator","Belial"]
+    },
+    {
+        "id" : "da-intchap",
+        "name": "Interrogator-Chaplain",
+        "role": "HQ",
+        "powerRating": 5,
+        "profiles": [
+            {
+                "name": "",
+                "move": "6\"",
+                "weaponSkill": "2+",
+                "ballisticSkill": "3+",
+                "strength": "4",
+                "thoughness": "4",
+                "wounds": "5",
+                "attacks": "3",
+                "leadership": "9",
+                "save": "3+"
+            }
+        ],
+        "unitComp": "An Interrogator-Chaplain is a single model armed with a crozius arcanum, bolt pistol frag and krak grenades.",
+        "weapons": [],
+        "wargear": {
+            "wargearText": [
+                "This model may replace its bolt pistol with a boltgun, or an item from either the Pistols, Combi-weapons or Melee Weapons list",
+                "This model may take a power fist",
+                "This model may take a jump pack. If it does, its Movement characteristic is increased to 12\" and it gains the JUMP PACK and FLY keywords."
+            ],
+            "wargearOptions": [
+                {"name": "Bolt pistol", "equipedByDefault": true}, 
+                {"name": "Grav pistol", "equipedByDefault": false}, 
+                {"name": "Plasma pistol", "equipedByDefault": false}, 
+                {"name": "Boltgun", "equipedByDefault": false}, 
+                {"name": "Combi-flamer", "equipedByDefault": false}, 
+                {"name": "Combi-grav", "equipedByDefault": false}, 
+                {"name": "Combi-melta", "equipedByDefault": false}, 
+                {"name": "Combi-plasma", "equipedByDefault": false},
+                {"name": "Crozius arcanum", "equipedByDefault": true},
+                {"name": "Chain sword", "equipedByDefault": false},
+                {"name": "Lightning claw", "equipedByDefault": false},
+                {"name": "Power axe", "equipedByDefault": false},
+                {"name": "Power fist", "equipedByDefault": true},
+                {"name": "Power maul", "equipedByDefault": false},
+                {"name": "Power sword", "equipedByDefault": false},
+                {"name": "Thunder Hammer", "equipedByDefault": false},
+                {"name": "Frag grenade", "equipedByDefault": true}, 
+                {"name": "Krak grenade", "equipedByDefault": true}
+            ]
+        },
+        "abilities": [
+            {
+                "name": "Inner Circle",
+                "lookup": true,
+                "displayFullText": true
+            },
+            {
+                "name": "Rosarius",
+                "lookup": true,
+                "displayFullText": true
+            },
+            {
+                "name": "Spiritual Leaders",
+                "lookup": true,
+                "displayFullText": true
+            },
+            {
+                "name": "Litanies of Hate",
+                "lookup": true,
+                "displayFullText": true
+            },
+            {
+                "name": "Aura of Dread",
+                "lookup": true,
+                "displayFullText": true
+            }
+        ],
+        "factionKeywords": ["Imperium","Adeptus astartes","Dark Angels", "Deathwing"],
+        "keywords": ["Charcter","Infantry","Chaplain","Interrogator-chaplain"]
+    },
+    {
+        "id" : "da-intchap-jump",
+        "name": "Interrogator-Chaplain",
+        "name2":  "with Jump Pack",
+        "role": "HQ",
+        "powerRating": 5,
+        "profiles": [
+            {
+                "name": "",
+                "move": "12\"",
+                "weaponSkill": "2+",
+                "ballisticSkill": "3+",
+                "strength": "4",
+                "thoughness": "4",
+                "wounds": "5",
+                "attacks": "3",
+                "leadership": "9",
+                "save": "3+"
+            }
+        ],
+        "unitComp": "An Interrogator-Chaplain is a single model armed with a crozius arcanum, bolt pistol frag and krak grenades.",
+        "weapons": [],
+        "wargear": {
+            "wargearText": [
+                "This model may replace its bolt pistol with a boltgun, or an item from either the Pistols, Combi-weapons or Melee Weapons list",
+                "This model may take a power fist",
+                "This model may take a jump pack. If it does, its Movement characteristic is increased to 12\" and it gains the JUMP PACK and FLY keywords."
+            ],
+            "wargearOptions": [
+                {"name": "Bolt pistol", "equipedByDefault": true}, 
+                {"name": "Grav pistol", "equipedByDefault": false}, 
+                {"name": "Plasma pistol", "equipedByDefault": false}, 
+                {"name": "Boltgun", "equipedByDefault": false}, 
+                {"name": "Combi-flamer", "equipedByDefault": false}, 
+                {"name": "Combi-grav", "equipedByDefault": false}, 
+                {"name": "Combi-melta", "equipedByDefault": false}, 
+                {"name": "Combi-plasma", "equipedByDefault": false},
+                {"name": "Crozius arcanum", "equipedByDefault": true},
+                {"name": "Chain sword", "equipedByDefault": false},
+                {"name": "Lightning claw", "equipedByDefault": false},
+                {"name": "Power axe", "equipedByDefault": false},
+                {"name": "Power fist", "equipedByDefault": true},
+                {"name": "Power maul", "equipedByDefault": false},
+                {"name": "Power sword", "equipedByDefault": false},
+                {"name": "Thunder hammer", "equipedByDefault": false},
+                {"name": "Frag grenade", "equipedByDefault": true}, 
+                {"name": "Krak grenade", "equipedByDefault": true}
+            ]
+        },
+        "abilities": [
+            {
+                "name": "Inner Circle",
+                "lookup": true,
+                "displayFullText": true
+            },
+            {
+                "name": "Rosarius",
+                "lookup": true,
+                "displayFullText": true
+            },
+            {
+                "name": "Spiritual Leaders",
+                "lookup": true,
+                "displayFullText": true
+            },
+            {
+                "name": "Litanies of Hate",
+                "lookup": true,
+                "displayFullText": true
+            },
+            {
+                "name": "Aura of Dread",
+                "lookup": true,
+                "displayFullText": true
+            },
+            {
+                "name": "Jump Pack Assault",
+                "lookup": true,
+                "displayFullText": false
+            }
+        ],
+        "factionKeywords": ["Imperium","Adeptus astartes","Dark Angels", "Deathwing"],
+        "keywords": ["Charcter","Infantry","Chaplain","Interrogator-chaplain", "Jump Pack", "Fly"]
+    },
+    {
+        "id": "da-prim-librarian",
+        "name": "Primaris Librarian",
+        "role": "HQ",
+        "powerRating": 7,
+        "profiles": [
+            {
+                "name": "",
+                "move": "6\"",
+                "weaponSkill": "3+",
+                "ballisticSkill": "3+",
+                "strength": "4",
+                "thoughness": "4",
+                "wounds": "5",
+                "attacks": "4",
+                "leadership": "9",
+                "save": "3+"
+            }
+        ],
+        "unitComp": "A Primaris Librarian is a single model armed with a force sword, bolt pistol, frag and krak grenades.",
+        "weapons": [],
+        "wargear": {
+            "wargearText": [],
+            "wargearOptions": [
+                {"name": "Bolt pistol", "equipedByDefault": true}, 
+                {"name": "Power sword", "equipedByDefault": true},
+                {"name": "Frag grenade", "equipedByDefault": true}, 
+                {"name": "Krak grenade", "equipedByDefault": true}
+            ]
+        },
+        "abilities": [
+            {
+                "name": "Inner Circle",
+                "lookup": true,
+                "displayFullText": true
+            },
+            {
+                "name": "Psychic Hood",
+                "lookup": true,
+                "displayFullText": true
+            }
+           
+        ],
+        "weaponAbilities": [],
+        "psyker": {
+            "manifest": 2,
+            "deny": 1,
+            "knows": "Smite, 2 Interomancy"
+        },
+        "factionKeywords": ["Imperium","Adeptus astartes","Dark Angels", "Deathwing"],
+        "keywords": ["Charcter","Infantry","Primaris","psyker","Librarian"]
     },
     {
         "name": "Librarian",
@@ -84,25 +367,33 @@
             "wargearOptions": [
                 {"name": "Force axe", "equipedByDefault": false}, 
                 {"name": "Force stave", "equipedByDefault": true}, 
-                {"name": "Force sword", "equipedByDefault": false}
+                {"name": "Force sword", "equipedByDefault": false},
+                {"name": "Combi-flamer", "equipedByDefault": false}, 
+                {"name": "Combi-grav", "equipedByDefault": false}, 
+                {"name": "Combi-melta", "equipedByDefault": false}, 
+                {"name": "Storm bolter", "equipedByDefault": false}
             ]
         },
         "abilities": [
             {
                 "name": "Inner Circle",
-                "detail": "This unit automatically passes Morale tests. Can re-roll failed hits in the fight phase for attacks that target FALLEN."
+                "lookup": true,
+                "displayFullText": true
             },
             {
                 "name": "Crux Terminatus",
-                "detail": "This model has a 5+ invulnerable save."
+                "lookup": true,
+                "displayFullText": true
             },
             {
                 "name": "Psychic Hood",
-                "detail": "You can add 1 to Deny the Witch tests you take for this model against enemy PSYKERS within 12\"."
+                "lookup": true,
+                "displayFullText": true
             },
             {
                 "name": "Teleport Strike",
-                "detail": "*deepstrike"
+                "lookup": true,
+                "displayFullText": false
             }
         ],
         "weaponAbilities": [],
@@ -113,5 +404,475 @@
         },
         "factionKeywords": ["Imperium","Adeptus astartes","Dark Angels", "Deathwing"],
         "keywords": ["Charcter","Infantry","Terminator","psyker","Librarian"]
-    }
+    },
+    {
+        "id": "da-prim-lieutenants",
+        "name": "Primaris Lieutenants",
+        "role": "HQ",
+        "powerRating": 5,
+        "profiles": [
+            {
+                "name": "",
+                "move": "6\"",
+                "weaponSkill": "2+",
+                "ballisticSkill": "3+",
+                "strength": "4",
+                "thoughness": "4",
+                "wounds": "5",
+                "attacks": "4",
+                "leadership": "8",
+                "save": "3+"
+            }
+        ],
+        "unitComp": "This unit contains 1 - 2 Primaris Lieutenants. Each model master-crafted auto bolt rifle, bolt pistol, frag and krak grenades.",
+        "weapons": [],
+        "wargear": {
+            "wargearText": [
+                "Any model may replace its master-crafter auto bolt rifle with a power sword or a master-crafted stalker bolt rifle.",
+                "Any model may replace its bolt pistol with a plasma pistol or take a plasma pistol in addition to its other weapons."
+            ],
+            "wargearOptions": [
+                {"name": "Bolt pistol", "equipedByDefault": true}, 
+                {"name": "Plasma pistol", "equipedByDefault": false}, 
+                {"name": "MC auto bolt rifle", "equipedByDefault": true}, 
+                {"name": "MC stalker bolt rifle", "equipedByDefault": false}, 
+                {"name": "Power sword", "equipedByDefault": false},
+                {"name": "Frag grenade", "equipedByDefault": true}, 
+                {"name": "Krak grenade", "equipedByDefault": true}
+            ]
+        },
+        "abilities": [
+            {
+                "name": "And they shall know no fear",
+                "lookup": true,
+                "displayFullText": true
+            },
+            {
+                "name": "Company Heroes",
+                "lookup": true,
+                "displayFullText": true
+            },
+            {
+                "name": "Tactical Precision",
+                "detail": "You can re-roll wound rolls of 1 for friendly DARK ANGELS units withing 6\"",
+                "compact": "re-roll wound rolls of 1 withing 6\".",
+                "displayFullText": true
+            }
+        ],
+        "factionKeywords": ["Imperium","Adeptus astartes","Dark Angels"],
+        "keywords": ["Charcter","Infantry","Primaris","Lieutenants"]
+    },
+    {
+        "id": "da-tactical", 
+        "name": "Tactical Squad",
+        "role": "Troop",
+        "powerRating": 5,
+        "profiles": [
+            {
+                "name": "Marine",
+                "move": "6\"",
+                "weaponSkill": "3+",
+                "ballisticSkill": "3+",
+                "strength": "4",
+                "thoughness": "4",
+                "wounds": "1",
+                "attacks": "1",
+                "leadership": "7",
+                "save": "3+"
+            },
+            {
+                "name": "Sergeant",
+                "move": "6\"",
+                "weaponSkill": "3+",
+                "ballisticSkill": "3+",
+                "strength": "4",
+                "thoughness": "4",
+                "wounds": "1",
+                "attacks": "2",
+                "leadership": "8",
+                "save": "3+"
+            }
+        ],
+        "unitComp": "Unit contains 1 Space Marine Sergeant and 4-9 Space Marines. Each armed with a boltgun, bolt pistol, frag and krak grenades.",
+        "weapons": [],
+        "wargear": {
+            "wargearText": [
+                "The Space Marine Sergeant may replace his bolt pistol and boltgun with items from the Sergeant Equipment list.",
+                "The Space Marine Sergeant may take melta bombs.",
+                "If the unit contains fewer than ten models, one Space Marine may replace his boltgun with an item from the Special Weapons or Heavy Weapons list.",
+                "If the unit contains then models, one Space Marine may replace his boltgun with an item from the Special Weapons list and one other Space Marine may replace his boltgun with an item from the Heavy Weapons list."
+            ],
+            "wargearOptions": [
+                {"name": "Bolt pistol", "equipedByDefault": true}, 
+                {"name": "Grav pistol", "equipedByDefault": false}, 
+                {"name": "Plasma pistol", "equipedByDefault": false}, 
+                {"name": "Boltgun", "equipedByDefault": false}, 
+                {"name": "Combi-flamer", "equipedByDefault": false}, 
+                {"name": "Combi-grav", "equipedByDefault": false}, 
+                {"name": "Combi-melta", "equipedByDefault": false}, 
+                {"name": "Combi-plasma", "equipedByDefault": false},
+                {"name": "Flamer", "equipedByDefault": false},
+                {"name": "Grav-gun", "equipedByDefault": false},
+                {"name": "Meltagun", "equipedByDefault": false},
+                {"name": "Plasma gun", "equipedByDefault": false},
+                {"name": "Grav-cannon", "equipedByDefault": false},
+                {"name": "Heavy Bolter", "equipedByDefault": false},
+                {"name": "Lascannon", "equipedByDefault": false},
+                {"name": "Missle launcher", "equipedByDefault": false},
+                {"name": "Multi-melta", "equipedByDefault": false},
+                {"name": "Plasma Cannon", "equipedByDefault": false},
+                {"name": "Storm bolter", "equipedByDefault": false},
+                {"name": "Chain sword", "equipedByDefault": false},
+                {"name": "Lightning claw", "equipedByDefault": false},
+                {"name": "Power axe", "equipedByDefault": false},
+                {"name": "Power fist", "equipedByDefault": true},
+                {"name": "Power maul", "equipedByDefault": false},
+                {"name": "Power sword", "equipedByDefault": false},
+                {"name": "Thunder hammer", "equipedByDefault": false},
+                {"name": "Frag grenade", "equipedByDefault": true}, 
+                {"name": "Krak grenade", "equipedByDefault": true}
+            ]
+        },
+        "abilities": [
+            {
+                "name": "And they shall know no fear",
+                "lookup": true,
+                "displayFullText": true
+            },
+            {
+                "name": "Combat Squads",
+                "lookup": true,
+                "displayFullText": true
+            }
+        ],
+        "factionKeywords": ["Imperium","Adeptus astartes","Dark Angels"],
+        "keywords": ["Infantry","Tactical Squad"]
+    },
+    {
+        "id": "da-intercessor",
+        "name": "Intercessor Squad",
+        "role": "Troop",
+        "powerRating": 5,
+        "profiles": [
+            {
+                "name": "Intercessor",
+                "move": "6\"",
+                "weaponSkill": "3+",
+                "ballisticSkill": "3+",
+                "strength": "4",
+                "thoughness": "4",
+                "wounds": "2",
+                "attacks": "2",
+                "leadership": "7",
+                "save": "3+"
+            },
+            {
+                "name": "Sergeant",
+                "move": "6\"",
+                "weaponSkill": "3+",
+                "ballisticSkill": "3+",
+                "strength": "4",
+                "thoughness": "4",
+                "wounds": "2",
+                "attacks": "3",
+                "leadership": "8",
+                "save": "3+"
+            }
+        ],
+        "unitComp": "This unit contains 1 Intercessor Sergeant and 4-9 Intercessors. Each armed with a bolt rifle, bolt pistol, frag and krak grenades.",
+        "weapons": [],
+        "wargear": {
+            "wargearText": [
+                "All models in the unit may replace their bolt rifle with an auto bolt rifle or stalker bolt rifle.",
+                "For every 5 models in the unit, one may take an auxiliary grenade launcher.",
+                "The Intercessor Sergeant may either replace their bolt rifle with a power sword, or take a power sword in addition to thier other weapons."
+            ],
+            "wargearOptions": [
+                {"name": "Bolt pistol", "equipedByDefault": true}, 
+                {"name": "Bolt rifle", "equipedByDefault": true}, 
+                {"name": "Auto bolt rifle", "equipedByDefault": false}, 
+                {"name": "Stalker bolt rifle", "equipedByDefault": false}, 
+                {"name": "Power sword", "equipedByDefault": false}, 
+                {"name": "Frag grenade", "equipedByDefault": true}, 
+                {"name": "Krak grenade", "equipedByDefault": true}
+            ]
+        },
+        "abilities": [
+            {
+                "name": "And they shall know no fear",
+                "lookup": true,
+                "displayFullText": true
+            },
+            {
+                "name": "Combat Squads",
+                "lookup": true,
+                "displayFullText": true
+            },
+            {
+                "name": "Auxiliary Grenade Launcher",
+                "detail": "If a model is armed with an auxiliary grenade launcher, increase the range of any grenade weapons they have to 30\"",
+                "compact": "Grenade range increased to 30\"."
+            }
+        ],
+        "factionKeywords": ["Imperium","Adeptus astartes","Dark Angels"],
+        "keywords": ["Infantry","Primaris","Intercessor Squad"]
+    },
+    {
+        "id": "da-deathwing-terminators",
+        "name": "Deathwing Terminators",
+        "role": "Elite",
+        "powerRating": 13,
+        "profiles": [ 
+            { 
+                "name": "Terminator", 
+                "move": "5\"", 
+                "weaponSkill": "3+", 
+                "ballisticSkill": "3+", 
+                "strength": "4", 
+                "thoughness": "4", 
+                "wounds": "2", 
+                "attacks": "2", 
+                "leadership": "8", 
+                "save": "2+" 
+            }, 
+            { 
+                "name": "Sergeant", 
+                "move": "5\"", 
+                "weaponSkill": "3+", 
+                "ballisticSkill": "3+", 
+                "strength": "4", 
+                "thoughness": "4", 
+                "wounds": "2", 
+                "attacks": "3", 
+                "leadership": "9", 
+                "save": "2+" 
+            } 
+        ], 
+        "unitComp": "This unit contains 1 Deathwing Terminator Sergeant and 4-9 Deathwing Terminators. Each Deathwing Terminator is armed with a storm bolter and the Deathwing Terminator Sergeant is armed with a power sword and storm bolter.",
+        "weapons": [],
+        "wargear": {
+            "wargearText": [
+                "Any model may replace all of its weapons with two lightning claws or a thunder hammer and storm shield.",
+                "Any model may replace its power fist with a chain fist.",
+                "For every 5 models one Deathwing Terminator may take a cyclone missle launcher or replace his storm bolter with a plasma cannon or an item from the Terminator Heavy Weapon list.",
+                "This unit may be accompanied by a Watcher in the Dark."
+            ],
+            "wargearOptions": [
+                {"name": "Assault Cannon", "equipedByDefault": false},
+                {"name": "Cyclone missle launcher", "equipedByDefault": false},
+                {"name": "Heavy Flamer", "equipedByDefault": false},
+                {"name": "Plasma Cannon", "equipedByDefault": false},
+                {"name": "Storm bolter", "equipedByDefault": true},
+                {"name": "Chain fist", "equipedByDefault": false}, 
+                {"name": "Lightning claw", "equipedByDefault": false}, 
+                {"name": "Power fist", "equipedByDefault": true}, 
+                {"name": "Power sword", "equipedByDefault": true},
+                {"name": "Thunder hammer", "equipedByDefault": false}
+            ]
+        },
+        "abilities": [
+            {
+                "name": "Inner Circle",
+                "lookup": true,
+                "displayFullText": true
+            },
+            {
+                "name": "Crux Terminatus",
+                "lookup": true,
+                "displayFullText": true
+            },
+            
+            {
+                "name": "Teleport Strike",
+                "lookup": true,
+                "displayFullText": false
+            },
+            {
+                "name": "Combat Squads",
+                "lookup": true,
+                "displayFullText": false
+            },
+            {
+                "name": "Storm Shield",
+                "lookup": true,
+                "displayFullText": true
+            },
+            {
+                "name": "Watcher in the Dark",
+                "lookup": true,
+                "displayFullText": true
+            }
+        ],
+        "factionKeywords": ["Imperium","Adeptus astartes","Dark Angels", "Deathwing"],
+        "keywords": ["Infantry","Terminator","Deathwing Terminator Squad"]
+    },
+    {
+        "id": "da-deathwing-knights",
+        "name": "Deathwing Knights",
+        "role": "Elite",
+        "powerRating": 12,
+        "profiles": [
+            {
+                "name": "Knights",
+                "move": "5\"",
+                "weaponSkill": "3+",
+                "ballisticSkill": "3+",
+                "strength": "4",
+                "thoughness": "4",
+                "wounds": "2",
+                "attacks": "2",
+                "leadership": "8",
+                "save": "2+"
+            },
+            {
+                "name": "Master",
+                "move": "5\"",
+                "weaponSkill": "3+",
+                "ballisticSkill": "3+",
+                "strength": "4",
+                "thoughness": "4",
+                "wounds": "2",
+                "attacks": "3",
+                "leadership": "9",
+                "save": "2+"
+            }
+        ],
+        "unitComp": "This unit contains a Deathwing Master and 4-9 Deathwing Knights. Deathwing Knights are armed with a Mace of absolution and a storm shield and the Deathwing Master is armed with a Flail of the Unforgiven and a storm shield.",
+        "weapons": [],
+        "wargear": {
+            "wargearText": [
+                "This unit may be accompanied by a Watcher in the Dark."
+            ],
+            "wargearOptions": [
+                {"name": "Flail of the Unforgiven", "equipedByDefault": true}, 
+                {"name": "Mace of absolution", "equipedByDefault": true}
+            ]
+        },
+        "abilities": [
+            {
+                "name": "Inner Circle",
+                "lookup": true,
+                "displayFullText": true
+            },
+            {
+                "name": "Teleport Strike",
+                "lookup": true,
+                "displayFullText": false
+            },
+            {
+                "name": "Combat Squads",
+                "lookup": true,
+                "displayFullText": false
+            },
+            {
+                "name": "Storm Shield",
+                "lookup": true,
+                "displayFullText": true
+            },
+            {
+                "name": "Watcher in the Dark",
+                "lookup": true,
+                "displayFullText": true
+            }
+        ],
+        "factionKeywords": ["Imperium","Adeptus astartes","Dark Angels", "Deathwing"],
+        "keywords": ["Infantry","Terminator","Deathwing Knights"]
+    },
+    {
+        "id": "da-ravenwing-bikes",
+        "name": "Ravenwing Bike Squad",
+        "role": "Fast Attack",
+        "powerRating": 5,
+        "profiles": [
+            {
+                "name": "Biker",
+                "move": "14\"",
+                "weaponSkill": "3+",
+                "ballisticSkill": "3+",
+                "strength": "4",
+                "thoughness": "5",
+                "wounds": "2",
+                "attacks": "2",
+                "leadership": "7",
+                "save": "3+"
+            },
+            {
+                "name": "Sergeant",
+                "move": "14\"",
+                "weaponSkill": "3+",
+                "ballisticSkill": "3+",
+                "strength": "4",
+                "thoughness": "5",
+                "wounds": "2",
+                "attacks": "2",
+                "leadership": "8",
+                "save": "3+"
+            },
+            {
+                "name": "Attack Bike",
+                "move": "14\"",
+                "weaponSkill": "3+",
+                "ballisticSkill": "3+",
+                "strength": "4",
+                "thoughness": "5",
+                "wounds": "4",
+                "attacks": "2",
+                "leadership": "7",
+                "save": "3+"
+            }
+        ],
+        "unitComp": "This unit contains 1 Ravenwing Sergeant and 2-7 Ravenwing Bikers. It can also include a single Ravenwing Attack Bike. Ravenwing Bikers and Sergeant are each armed with a bolt pistol, frag and krak grenades. Each of their Space Marine Bikes is equipped with a twin boltgun. A Ravenwing Attack Bike is equipped with a twin boltgun and a heavy bolter, and its crewed by two Dark Angels armed with a bolt pistol, frag and krak grenades.",
+        "weapons": [],
+        "wargear": {
+            "wargearText": [
+                "The Ravenwing Sergeant may replace his bolt pistol with an item from chosen from the Melee Weapons or Pistols lists.",
+                "Any Ravenwing Biker may replace his bolt pistol with a chain sword.",
+                "Up to two Ravenwing Bikers may take an item from the Special Weapons list.",
+                "The Ravenwing Attack Bike may replace its heavy bolter with multi-melta."
+            ],
+            "wargearOptions": [
+                {"name": "Bolt pistol", "equipedByDefault": true}, 
+                {"name": "Grav pistol", "equipedByDefault": false}, 
+                {"name": "Plasma pistol", "equipedByDefault": false}, 
+                {"name": "Twin boltgun", "equipedByDefault": true},
+                {"name": "Flamer", "equipedByDefault": false},
+                {"name": "Grav-gun", "equipedByDefault": false},
+                {"name": "Meltagun", "equipedByDefault": false},
+                {"name": "Plasma gun", "equipedByDefault": false},
+                {"name": "Chain sword", "equipedByDefault": true},
+                {"name": "Lightning claw", "equipedByDefault": false},
+                {"name": "Power axe", "equipedByDefault": false},
+                {"name": "Power fist", "equipedByDefault": false},
+                {"name": "Power maul", "equipedByDefault": false},
+                {"name": "Power sword", "equipedByDefault": false},
+                {"name": "Thunder hammer", "equipedByDefault": false},
+                {"name": "Frag grenade", "equipedByDefault": true}, 
+                {"name": "Krak grenade", "equipedByDefault": true}
+            ]
+        },
+        "abilities": [
+            {
+                "name": "And they shall know no fear",
+                "lookup": true,
+                "displayFullText": true
+            },
+            {
+                "name": "Jink",
+                "lookup": true,
+                "displayFullText": true
+            },
+            {
+                "name": "Combat Squads (Bikes)",
+                "lookup": true,
+                "displayFullText": false
+            },
+            {
+                "name": "Turbo Boost",
+                "lookup": true,
+                "displayFullText": true
+            }
+        ],
+        "factionKeywords": ["Imperium","Adeptus astartes","Dark Angels", "Ravenwing"],
+        "keywords": ["Biker","Ravenwing Bike Squad"]
+    }     
 ]

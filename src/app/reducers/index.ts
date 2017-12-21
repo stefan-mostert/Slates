@@ -83,7 +83,9 @@ export function getSlateState(state$: Observable<State>) {
 
 export const getSlates = compose(fromSlate.getSlates, getSlateState);
 export const getWeapons = compose(fromSlate.getWeapons, getSlateState);
+export const getAbilities = compose(fromSlate.getAbilities, getSlateState);
 export const getIsSlatesLoading = compose(fromSlate.getIsSlatesLoading, getSlateState);
 export const getIsWeaponsLoading = compose(fromSlate.getIsWeaponsLoading, getSlateState);
+export const getIsAbilitiesLoading = compose(fromSlate.getIsAbilitiesLoading, getSlateState);
 export const getSelectedFaction = compose(fromSlate.getSelectedFaction, getSlateState);
 export const getSelectedSlates = compose(fromSlate.getSelectedSlates, getSlateState);

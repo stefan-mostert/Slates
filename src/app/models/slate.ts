@@ -1,4 +1,5 @@
 export class Slate {
+    id: string;
     name: string;
     role: BattleFieldRole;
     powerRating: number;
@@ -52,6 +53,7 @@ export interface Ability {
     name: string;
     lookup: boolean;
     detail: string;
+    compact: string;
     displayFullText: boolean;
 }
 

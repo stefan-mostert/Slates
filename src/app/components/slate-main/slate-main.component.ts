@@ -15,12 +15,15 @@ export class SlateMainComponent implements OnInit {
 
   isDoubleDigits = false;
   displayWeaponOptions = false;
+  displayAbilityOptions = false;
   selectedValues: string[] = [];
+  selectedAbilities: string[] = [];
 
   constructor() { }
 
   ngOnInit() {
     this.selectedValues = this.filterEquipedWeapons().map(weapon => weapon.name);
+    this.selectedAbilities = this.filterFullTextAbilities().map(ability => ability.name);
   }
 
   ngOnChanges(changes: SimpleChanges) {
@@ -37,6 +40,10 @@ export class SlateMainComponent implements OnInit {
     this.displayWeaponOptions = true;
   }
 
+  showAbilityOptions() {
+    this.displayAbilityOptions = true;
+  }
+
   saveWeaponOptions() {
     this.slate.weaponAbilities = [];
     let abilityCount = 1;
@@ -44,12 +51,20 @@ export class SlateMainComponent implements OnInit {
       if (this.selectedValues.indexOf(weapon.name) > -1) {
         weapon.equiped = true;
         weapon.profiles.forEach(profile => {
-          if (profile.abilities.length > 0) {
+          if (profile.abilities.length > 0
+              && weapon.equiped
+              && profile.abilities !== '*flamer'
+              && profile.abilities !== '*grav'
+              && profile.abilities !== '*melta'
+              && profile.abilities !== '*plasma'
+              && profile.abilities !== '+1 attack'
+              && profile.abilities !== '-1 to Hit') {
             this.slate.weaponAbilities.push(
               {
                 name: '*' + abilityCount,
                 lookup: false,
                 detail: profile.abilities,
+                compact: '(see codex)',
                 displayFullText: true
               });
             profile.abilityNumber = abilityCount;
@@ -60,12 +75,25 @@ export class SlateMainComponent implements OnInit {
         weapon.equiped = false;
       }
     });
-    console.warn(this.slate.weapons);
-
     this.displayWeaponOptions = false;
+  }
+
+  saveAbilityOptions() {
+    this.slate.abilities.forEach(ability => {
+      if (this.selectedAbilities.indexOf(ability.name) > -1) {
+        ability.displayFullText = true;
+      } else {
+        ability.displayFullText = false;
+      }
+    })
+    this.displayAbilityOptions = false;
   }
 
   filterEquipedWeapons() {
     return this.slate.weapons.filter(weapon => weapon.equiped);
+  }
+
+  filterFullTextAbilities() {
+    return this.slate.abilities.filter(ability => ability.displayFullText);
   }
 }
