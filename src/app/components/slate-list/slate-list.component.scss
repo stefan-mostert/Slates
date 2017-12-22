@@ -3,7 +3,10 @@
 
 .slate-list {
     list-style-type: none;
-    padding-right: 20px;
+    padding-right: 10px;
+    margin-right: 20px;
+    max-height: 600px;
+    overflow: auto;
 }
 
 .slate-list-item {

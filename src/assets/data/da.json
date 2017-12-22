@@ -523,7 +523,7 @@
                 {"name": "Meltagun", "equipedByDefault": false},
                 {"name": "Plasma gun", "equipedByDefault": false},
                 {"name": "Grav-cannon", "equipedByDefault": false},
-                {"name": "Heavy Bolter", "equipedByDefault": false},
+                {"name": "Heavy bolter", "equipedByDefault": false},
                 {"name": "Lascannon", "equipedByDefault": false},
                 {"name": "Missle launcher", "equipedByDefault": false},
                 {"name": "Multi-melta", "equipedByDefault": false},
@@ -667,7 +667,7 @@
                 "This unit may be accompanied by a Watcher in the Dark."
             ],
             "wargearOptions": [
-                {"name": "Assault Cannon", "equipedByDefault": false},
+                {"name": "Assault cannon", "equipedByDefault": false},
                 {"name": "Cyclone missle launcher", "equipedByDefault": false},
                 {"name": "Heavy Flamer", "equipedByDefault": false},
                 {"name": "Plasma Cannon", "equipedByDefault": false},
@@ -1041,7 +1041,7 @@
                 "This model may replace its heavy bolter with an assault cannon"
             ],
             "wargearOptions": [
-                {"name": "Heavy bolter", "equipedByDefault": false},
+                {"name": "Heavy bolter", "equipedByDefault": true},
                 {"name": "Assault cannon", "equipedByDefault": false}
             ]
         },
@@ -1065,5 +1065,118 @@
         "factionKeywords": ["Imperium","Adeptus astartes","Dark Angels", "Ravenwing"],
         "keywords": ["Vehicle", "Land speeder","Fly","Ravenwing Darkshroud"],
         "showWounds": true
+    },
+    {
+        "id": "da-ravenwing-vengeance",
+        "name": "Ravenwing Land Speeder",
+        "name2": "Vengeamce",
+        "role": "Fast Attack",
+        "powerRating": 7,
+        "profiles": [
+            {
+                "name": "",
+                "move": "12\"",
+                "weaponSkill": "3+",
+                "ballisticSkill": "3+",
+                "strength": "4",
+                "thoughness": "6",
+                "wounds": "9",
+                "attacks": "3",
+                "leadership": "8",
+                "save": "3+"
+            }
+        ],
+        "unitComp": "The Ravenwing Darkshroud is a single model equipped with a heavy bolter and a plasma storm battery.",
+        "weapons": [],
+        "wargear": {
+            "wargearText": [
+                "This model may replace its heavy bolter with an assault cannon"
+            ],
+            "wargearOptions": [
+                {"name": "Heavy bolter", "equipedByDefault": true},
+                {"name": "Plasma storm battery", "equipedByDefault": true},
+                {"name": "Assault cannon", "equipedByDefault": false}
+            ]
+        },
+        "abilities": [
+            {
+                "name": "Jink",
+                "lookup": true,
+                "displayFullText": true
+            },
+            {
+                "name": "Explodes",
+                "lookup": true,
+                "displayFullText": true
+            }
+        ],
+        "factionKeywords": ["Imperium","Adeptus astartes","Dark Angels", "Ravenwing"],
+        "keywords": ["Vehicle", "Land speeder","Fly","Ravenwing Land Speeder Vengeance"],
+        "showWounds": true
+    },
+    {
+        "id": "da-hellblaster",
+        "name": "Hellblaster Squad",
+        "role": "Heavy Support",
+        "powerRating": 8,
+        "profiles": [
+            {
+                "name": "Hellblaster",
+                "move": "6\"",
+                "weaponSkill": "3+",
+                "ballisticSkill": "3+",
+                "strength": "4",
+                "thoughness": "4",
+                "wounds": "2",
+                "attacks": "2",
+                "leadership": "7",
+                "save": "3+"
+            },
+            {
+                "name": "Sergeant",
+                "move": "6\"",
+                "weaponSkill": "3+",
+                "ballisticSkill": "3+",
+                "strength": "4",
+                "thoughness": "4",
+                "wounds": "2",
+                "attacks": "3",
+                "leadership": "8",
+                "save": "3+"
+            }
+        ],
+        "unitComp": "This unit contains 1 Hellblaster Sergeant and 4-9 Hellblasters. Each model is armed with a plasma incinerator, bolt pistol frag and krak grenades.",
+        "weapons": [],
+        "wargear": {
+            "wargearText": [
+                "All models in the unit may replace their plasma incinerator with an assault plasma incinerator.",
+                "All models in the unit may replace their plasma incinerator with a haevy plasma incinerator.",
+                "The Hellblaster Sergeant may replace his bolt pistol with a plasma pistol."
+            ],
+            "wargearOptions": [
+                {"name": "Bolt pistol", "equipedByDefault": true}, 
+                {"name": "Plasma pistol", "equipedByDefault": false}, 
+                {"name": "Plasma incinerator", "equipedByDefault": true}, 
+                {"name": "Auto plasma incinerator", "equipedByDefault": false}, 
+                {"name": "Heavy plasma incinerator", "equipedByDefault": false}, 
+                {"name": "Frag grenade", "equipedByDefault": true}, 
+                {"name": "Krak grenade", "equipedByDefault": true}
+            ]
+        },
+        "abilities": [
+            {
+                "name": "And they shall know no fear",
+                "lookup": true,
+                "displayFullText": true
+            },
+            {
+                "name": "Combat Squads",
+                "lookup": true,
+                "displayFullText": true
+            }
+        ],
+        "factionKeywords": ["Imperium","Adeptus astartes","Dark Angels"],
+        "keywords": ["Infantry","Primaris","Hellblaster Squad"],
+        "showWounds": false
     }
 ]

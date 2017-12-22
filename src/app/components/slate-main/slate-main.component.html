@@ -8,15 +8,23 @@
 </div>
 <div class="row" *ngIf="slate">
   <div class="col-xs-6">
-    <div class="row slate theme-sm front">
+    <div class="row slate theme-da front">
       <div class="col-xs-12">
         <div class="row slate-content">
           <div class="col-xs-12 name">
-            <div>
-              {{slate.name}}
-            </div>
-            <div class="name2">
-              {{slate.name2}}
+            <div class="row middle-xs">
+              <div class="col-xs-1 no-pad">
+                <div class="role" [ngClass]="{'hq' : slate.role === 'HQ', 'troop' : slate.role === 'Troop', 'elite' : slate.role === 'Elite', 'flyer' : slate.role === 'Flyer', 'low' : slate.role === 'Lord of War', 'quick' : slate.role === 'Fast Attack', 'heavy' : slate.role === 'Heavy Support'}">
+                </div>
+              </div>
+              <div class="col-xs-11  no-pad">
+                <div>
+                    {{slate.name}}
+                  </div>
+                  <div class="name2">
+                    {{slate.name2}}
+                </div>
+              </div>
             </div>
           </div>
           <div class="col-xs-12 statline">
@@ -85,9 +93,6 @@
               </div>
             </div>
           </div>
-          <!-- <div class="col-xs-12 start-xs unitcomp">
-            {{slate.unitComp}}
-          </div> -->
           <div class="col-xs-12">
             <div class="row middle-xs weapon-heading">
               <div class="col-xs-4 only-left-pad start-xs">

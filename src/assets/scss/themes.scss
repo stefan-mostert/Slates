@@ -1,4 +1,13 @@
 $site-slate-name-image: url("./../../../assets/images/site_slate_name_bg.png");
+$site-role-hq-image: url("./../../../assets/images/hq.png");
+$site-role-troop-image: url("./../../../assets/images/troop.png");
+$site-role-transport-image: url("./../../../assets/images/transport.png");
+$site-role-elite-image: url("./../../../assets/images/elite.png");
+$site-role-flyer-image: url("./../../../assets/images/flyer.png");
+$site-role-quick-image: url("./../../../assets/images/quick.png");
+$site-role-heavy-image: url("./../../../assets/images/heavy.png");
+$site-role-fort-image: url("./../../../assets/images/fort.png");
+$site-role-low-image: url("./../../../assets/images/low.png");
 
 $sm-background-image: url("./../../../assets/images/sm_bg.png");
 $sm-name-background-image: url("./../../../assets/images/sm_name_bg.png");
@@ -6,3 +15,10 @@ $sm-content-background-colour: #dedede;
 $sm-heading-background-colour: #c3c7c3;
 $sm-grid-background-colour1: white;
 $sm-grid-background-colour2: #e8e8e8;
+
+$da-background-image: url("./../../../assets/images/da_bg.png");
+$da-name-background-image: url("./../../../assets/images/sm_name_bg.png");
+$da-content-background-colour: #dedede;
+$da-heading-background-colour: #c3c7c3;
+$da-grid-background-colour1: white;
+$da-grid-background-colour2: #e8e8e8;

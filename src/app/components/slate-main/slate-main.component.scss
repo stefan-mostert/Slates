@@ -44,11 +44,48 @@
             @include oswald-bold(10px);
         }
 
+        
+        .role {
+            // position: absolute;
+            // margin-top: -23px;
+            // margin-left: -15px;
+            background-size: cover;
+            height: 25px;
+            width: 25px;
+
+            &.hq {
+                background-image: $site-role-hq-image;
+            }
+            &.troop {
+                background-image: $site-role-troop-image;
+            }
+            &.elite {
+                background-image: $site-role-elite-image;
+            }
+            &.transport {
+                background-image: $site-role-transport-image;
+            }
+            &.quick {
+                background-image: $site-role-quick-image;
+            }
+            &.low {
+                background-image: $site-role-low-image;
+            }
+            &.fort {
+                background-image: $site-role-fort-image;
+            }
+            &.flyer {
+                background-image: $site-role-flyer-image;
+            }
+            &.heavy {
+                background-image: $site-role-heavy-image;
+            }
+        }
         .name {
             height: fit-content;
             padding-top: 2px;
             padding-bottom: 2px;
-            @include noto-bold(12px);
+            @include noto-bold(14px);
             color: white;
             background-repeat: no-repeat;
             background-size: cover;
@@ -56,6 +93,7 @@
             .name2 {
                 @include noto-bold(9px);
             }
+
         }
 
         .statline {
@@ -206,6 +244,56 @@
 
             .weapon-profile {
                 background-color: $sm-grid-background-colour1;
+            }
+
+            
+        }
+
+    }
+
+    &.theme-da {
+        background-image: $da-background-image;
+
+        .slate-content {
+            background-color: $da-content-background-colour;
+
+            .name {
+                background-image: $da-name-background-image;
+            }
+
+            .statline {
+                background-color: $da-heading-background-colour;
+    
+                .statline-heading {
+                    background-color: $da-grid-background-colour1;
+                }
+        
+                .statline-profile {
+                    &.odd {
+                        background-color: $da-grid-background-colour2;
+                    }
+        
+                }
+            }
+
+            .weapon-heading {
+                background-color: $da-heading-background-colour;
+            }
+
+            .psyker {
+                .psyker-heading {
+                    background-color: $da-heading-background-colour;
+                }
+            }
+
+            .oddweapon {
+                .row {
+                    background-color: $da-grid-background-colour2;
+                }
+            }
+
+            .weapon-profile {
+                background-color: $da-grid-background-colour1;
             }
 
             
