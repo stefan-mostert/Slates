@@ -309,6 +309,21 @@
         ]
     },
     {
+        "name": "Foe smiter",
+        "multiProfileComment": "",
+        "profiles":[
+            {
+                "name": "Foe smiter",
+                "range": "24\"",
+                "type": "RF-2",
+                "strength": "4",
+                "ap": "-1",
+                "damage": "2",
+                "abilities": ""
+            }
+        ]
+    },
+    {
         "name": "Force axe",
         "multiProfileComment": "",
         "profiles":[

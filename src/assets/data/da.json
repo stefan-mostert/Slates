@@ -85,6 +85,7 @@
             "wargearText": [],
             "wargearOptions": [
                 {"name": "Storm bolter", "equipedByDefault": true}, 
+                {"name": "Foe smiter", "equipedByDefault": false}, 
                 {"name": "Sword of Silence", "equipedByDefault": true}
             ]
         },
